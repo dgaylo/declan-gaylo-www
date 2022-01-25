@@ -1,2 +1,5 @@
+[thewebsite]: https://dgaylo.scripts.mit.edu/dev/newsite/
+
+
 # declan-gaylo-www
-[DeclanGaylo.com](https://declangaylo.com)
+[DeclanGaylo.com][thewebsite]
