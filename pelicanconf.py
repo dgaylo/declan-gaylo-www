@@ -30,6 +30,16 @@ THEME = './pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'lumen'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
+# About me
+AVATAR = 'images/avatar.jpeg'
+ABOUT_ME = """
+I\'m a Naval Architect working tword my PhD in Hydrodynamcis at MIT. 
+My reseach interests are the complex interactions between turubelnce and the free surface, 
+and I develop both theoretical models and new CFD codes.
+Before MIT I attended Webb Instutue, where I learned of and experinced the broad range of the marine industry.
+"""
+
+
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = (
     ('Publications', '/publications.html'),
@@ -44,8 +54,8 @@ DISABLE_SIDEBAR_TITLE_ICONS = True
 
 # Social widget
 SOCIAL = (
-    ('github', 'https://github.com/dgaylo/', 'GitHub'),
-    ('linkedin', 'https://www.linkedin.com/in/declan-gaylo', 'LinkedIn'),
+    ('GitHub', 'https://github.com/dgaylo/'),
+    ('LinkedIn', 'https://www.linkedin.com/in/declan-gaylo'),
 )
 
 DEFAULT_PAGINATION = False
