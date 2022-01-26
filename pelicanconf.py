@@ -35,6 +35,7 @@ MENUITEMS = (
     ('Publications', '/publications.html'),
 )
 
+DISABLE_SIDEBAR_TITLE_ICONS = True
 # Blogroll
 #LINKS = (('Pelican', 'https://getpelican.com/'),
 #         ('Python.org', 'https://www.python.org/'),
@@ -42,10 +43,10 @@ MENUITEMS = (
 #         ('You can modify those links in your config file', '#'),)
 
 # Social widget
-#SOCIAL = (
-#    ('Email', 'mailto:dgaylo@mit.edu', 'dgaylo@mit.edu'),
-#    ("Github", "https://github.com/dgaylo/", "Elegant Github Repository"),
-#)
+SOCIAL = (
+    ('github', 'https://github.com/dgaylo/', 'GitHub'),
+    ('linkedin', 'https://www.linkedin.com/in/declan-gaylo', 'LinkedIn'),
+)
 
 DEFAULT_PAGINATION = False
 
