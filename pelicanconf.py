@@ -52,10 +52,12 @@ DISABLE_SIDEBAR_TITLE_ICONS = True
 #         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
 #         ('You can modify those links in your config file', '#'),)
 
-# Social widget
+# Social widget TODO: more icons
 SOCIAL = (
-    ('GitHub', 'https://github.com/dgaylo/'),
     ('LinkedIn', 'https://www.linkedin.com/in/declan-gaylo'),
+    ('Google Scholar', 'https://scholar.google.com/citations?hl=en&user=kA9LJygAAAAJ'),
+    ('ORCiD', 'https://orcid.org/0000-0001-6198-7003'),
+    ('GitHub', 'https://github.com/dgaylo/'),
 )
 
 DEFAULT_PAGINATION = False
