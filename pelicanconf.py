@@ -29,6 +29,7 @@ PLUGINS = ['i18n_subsites']
 THEME = './pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'lumen'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+FONT_AWESOME_KIT = 'b3b7784092'
 
 # About me
 AVATAR = 'images/avatar.jpeg'
@@ -47,16 +48,16 @@ MENUITEMS = (
 
 DISABLE_SIDEBAR_TITLE_ICONS = True
 # Blogroll
-#LINKS = (('Pelican', 'https://getpelican.com/'),
-#         ('Python.org', 'https://www.python.org/'),
-#         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-#         ('You can modify those links in your config file', '#'),)
+LINKS = (
+    ('Vortical Flow Research Lab', 'https://www.mit.edu/~vfrl/'),
+)
 
-# Social widget TODO: more icons
+# Social widget
+SOCIAL_WIDGET_NAME = 'Profiles'
 SOCIAL = (
-    ('LinkedIn', 'https://www.linkedin.com/in/declan-gaylo'),
-    ('Google Scholar', 'https://scholar.google.com/citations?hl=en&user=kA9LJygAAAAJ'),
-    ('ORCiD', 'https://orcid.org/0000-0001-6198-7003'),
+    ('LinkedIn', 'https://www.linkedin.com/in/declan-gaylo', 'fab fa-linkedin'),
+    ('Google Scholar', 'https://scholar.google.com/citations?hl=en&user=kA9LJygAAAAJ', 'fab fa-google'),
+    ('ORCiD', 'https://orcid.org/0000-0001-6198-7003', 'fab fa-orcid'),
     ('GitHub', 'https://github.com/dgaylo/'),
 )
 
