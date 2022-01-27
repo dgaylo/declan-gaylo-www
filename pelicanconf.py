@@ -41,7 +41,7 @@ EXTRA_PATH_METADATA = {
 }
 
 # About me
-AVATAR = 'images/avatar.jpeg'
+AVATAR = 'images/avatar.JPEG'
 ABOUT_ME = """
 I\'m a Naval Architect working tword my PhD in Hydrodynamcis at MIT. 
 My reseach interests are the complex interactions between turubelnce and the free surface, 
