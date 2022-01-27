@@ -1,0 +1,4 @@
+/* More spacing in Social */
+#sidebar #social i, svg {
+    margin-right: 5px;
+}

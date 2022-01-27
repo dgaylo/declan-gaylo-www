@@ -21,6 +21,8 @@ ARTICLE_SAVE_AS = '{category}/{date:%Y}/{date:%m}/{slug}/index.html'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}.html'
 
+STATIC_PATHS = ['images', 'files', 'extra']
+
 # Plugins
 PLUGIN_PATHS = ['./pelican-plugins']
 PLUGINS = ['i18n_subsites']
@@ -31,6 +33,13 @@ BOOTSTRAP_THEME = 'lumen'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 FONT_AWESOME_KIT = 'b3b7784092'
 
+CUSTOM_CSS = 'static/css/custom.css'
+
+# Tell Pelican to change the path to 'static/custom.css' in the output dir
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'static/css/custom.css'},
+}
+
 # About me
 AVATAR = 'images/avatar.jpeg'
 ABOUT_ME = """
@@ -40,6 +49,10 @@ and I develop both theoretical models and new CFD codes.
 Before MIT I attended Webb Instutue, where I learned of and experinced the broad range of the marine industry.
 """
 
+
+# Banner
+BANNER = 'images/banner.jpeg'
+BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
 
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = (
