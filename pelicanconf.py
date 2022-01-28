@@ -16,8 +16,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Setup URLS
-ARTICLE_URL = '{category}/{date:%Y}/{date:%m}/{slug}/index.html'
-ARTICLE_SAVE_AS = '{category}/{date:%Y}/{date:%m}/{slug}/index.html'
+ARTICLE_URL = '{category}/{slug}/index.html'
+ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}.html'
 
