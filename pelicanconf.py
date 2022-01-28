@@ -41,8 +41,7 @@ EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'static/css/custom.css'},
 }
 
-#THEME_TEMPLATES_OVERRIDES = [ 'extra' ]
-TEMPLATE_PAGES = {'extra/index.html': 'index.html',}
+THEME_TEMPLATES_OVERRIDES = [ './src/' ]
 
 TYPOGRIFY = True
 
