@@ -22,6 +22,7 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}.html'
 
 STATIC_PATHS = ['images', 'files', 'extra']
+ARTICLE_EXCLUDES = ['extra']
 
 # Plugins
 PLUGIN_PATHS = ['./pelican-plugins']
@@ -39,6 +40,13 @@ CUSTOM_CSS = 'static/css/custom.css'
 EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'static/css/custom.css'},
 }
+
+THEME_TEMPLATES_OVERRIDES = [ './src/' ]
+
+TYPOGRIFY = True
+
+# If the author, category and tag collections are not needed,
+DIRECT_TEMPLATES = ['index', 'archives']
 
 # About me
 AVATAR = 'images/avatar.JPEG'
