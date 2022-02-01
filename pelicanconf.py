@@ -28,7 +28,7 @@ AUTHOR_SAVE_AS = ''
 TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
-STATIC_PATHS = ['images', 'files', 'extra']
+STATIC_PATHS = ['images', 'files']
 ARTICLE_PATHS  = ['posts']
 PAGE_PATHS = ['pages']
 
@@ -49,7 +49,7 @@ EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'static/css/custom.css'},
 }
 
-THEME_TEMPLATES_OVERRIDES = [ './src/' ]
+THEME_TEMPLATES_OVERRIDES = [ './content/extra/' ]
 
 TYPOGRIFY = True
 
