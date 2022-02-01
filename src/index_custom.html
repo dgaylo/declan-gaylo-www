@@ -23,9 +23,9 @@
 	</section>
 	
 	{% if articles %}
-	{% for article in (articles_page.object_list if articles_page else articles) %}
 	<section id="articlelist" class="body">
-		<h2>Recent Posts</h1>
+	<h1>Recent Posts</h1>
+	{% for article in (articles_page.object_list if articles_page else articles) %}
 		<article>
 			<h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
 			{% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
@@ -39,8 +39,8 @@
 			</div>
 		</article>
 		<hr/>
-	</section>
 	{% endfor %}
+	</section>
 	{% endif %}
 
 	{% include 'includes/pagination.html' %}
