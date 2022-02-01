@@ -28,7 +28,7 @@ AUTHOR_SAVE_AS = ''
 TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
-STATIC_PATHS = ['images', 'files']
+STATIC_PATHS = ['static', 'files']
 ARTICLE_PATHS  = ['posts']
 PAGE_PATHS = ['pages']
 
@@ -42,12 +42,7 @@ BOOTSTRAP_THEME = 'lumen'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 FONT_AWESOME_KIT = 'b3b7784092'
 
-CUSTOM_CSS = 'static/css/custom.css'
-
-# Tell Pelican to change the path to 'static/custom.css' in the output dir
-EXTRA_PATH_METADATA = {
-    'extra/custom.css': {'path': 'static/css/custom.css'},
-}
+CUSTOM_CSS = 'static/custom.css'
 
 THEME_TEMPLATES_OVERRIDES = [ './content/theme/' ]
 
