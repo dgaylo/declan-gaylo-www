@@ -75,8 +75,8 @@ BANNER_ALL_PAGES = True
 DISPLAY_PAGES_ON_MENU = False
 DEFAULT_CATEGORY  = "Posts"
 MENUITEMS = (
-    ('Publications', '/publications'),
-    ('Education', '/education'),
+    ('Publications', 'publications'),
+    ('Education', 'education'),
 )
 
 DISABLE_SIDEBAR_TITLE_ICONS = True
