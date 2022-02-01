@@ -28,7 +28,7 @@ AUTHOR_SAVE_AS = ''
 TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
-STATIC_PATHS = ['static', 'files']
+STATIC_PATHS = ['images','static', 'files']
 ARTICLE_PATHS  = ['posts']
 PAGE_PATHS = ['pages']
 
