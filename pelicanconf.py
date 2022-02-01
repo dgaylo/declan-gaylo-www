@@ -29,7 +29,8 @@ TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
 STATIC_PATHS = ['images', 'files', 'extra']
-ARTICLE_EXCLUDES = ['extra']
+ARTICLE_PATHS  = ['posts']
+PAGE_PATHS = ['pages']
 
 # Plugins
 PLUGIN_PATHS = ['./pelican-plugins']
