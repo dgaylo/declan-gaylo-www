@@ -11,6 +11,9 @@
     background-attachment: fixed;
 }
 
+#banner .copy {
+    background-color: rgba(0, 5, 5, 0.4);
+}
 
 /* Got Colors from .well*/
 table, thead tr {
