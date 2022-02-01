@@ -49,7 +49,7 @@ EXTRA_PATH_METADATA = {
     'extra/custom.css': {'path': 'static/css/custom.css'},
 }
 
-THEME_TEMPLATES_OVERRIDES = [ './content/extra/' ]
+THEME_TEMPLATES_OVERRIDES = [ './content/theme/' ]
 
 TYPOGRIFY = True
 
