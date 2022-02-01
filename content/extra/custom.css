@@ -26,3 +26,28 @@ tbody tr:nth-child(odd) {
     background-color: #fafafa;
 }
 
+/* For Edcuation Page */
+.degree-img {
+    float: left;
+    height: 100px;
+    margin: 0 10px 10px 0;
+    position: relative;
+    width: 100px;
+  }
+
+.degree-img img {
+    height: 100px;
+    width: 100px;
+}
+
+.degree-info {
+    display: table;
+}
+
+.degree-card:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

@@ -65,6 +65,7 @@ BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = (
     ('Publications', '/publications.html'),
+    ('Education', '/education.html'),
 )
 
 DISABLE_SIDEBAR_TITLE_ICONS = True
