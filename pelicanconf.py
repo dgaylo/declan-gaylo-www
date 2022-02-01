@@ -61,7 +61,9 @@ Before MIT I attended Webb Instutue, where I learned of and experinced the broad
 # Banner
 BANNER = 'images/banner.jpeg'
 BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
+BANNER_ALL_PAGES = True
 
+# Nav bar
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = (
     ('Publications', '/publications.html'),
