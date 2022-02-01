@@ -1,6 +1,5 @@
 Title: Hiking New Hampshires 4,000 Footers
 Date: 2022-01-08 11:59
-Category: Misc
 slug: hiking4ks
 
 I've been slowley working on hiking all of <a href="http://4000footers.com/nh.shtml" target="_blank">New Hampshire's 48 mountains over 4,000 feet</a>. Here's my current progress:

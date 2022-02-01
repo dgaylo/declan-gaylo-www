@@ -65,6 +65,7 @@ BANNER_ALL_PAGES = True
 
 # Nav bar
 DISPLAY_PAGES_ON_MENU = False
+DEFAULT_CATEGORY  = "Posts"
 MENUITEMS = (
     ('Publications', '/publications.html'),
     ('Education', '/education.html'),
