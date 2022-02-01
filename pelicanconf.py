@@ -26,6 +26,7 @@ PAGE_SAVE_AS = '{slug}/index.html'
 # Defualts not to generate
 AUTHOR_SAVE_AS = ''
 TAG_SAVE_AS = ''
+ARCHIVES_SAVE_AS = ''
 
 STATIC_PATHS = ['images', 'files', 'extra']
 ARTICLE_EXCLUDES = ['extra']
