@@ -60,6 +60,10 @@ and I develop both theoretical models and new CFD codes.
 Before MIT I attended Webb Instutue, where I learned of and experinced the broad range of the marine industry.
 """
 
+# Favicon
+FAVICON = 'images/logo.svg'
+SITELOGO = 'images/logo.svg'
+SITELOGO_SIZE = 18
 
 # Banner
 BANNER = 'images/banner.jpeg'
