@@ -4,15 +4,39 @@
     margin-right: 5px;
 }
 
+/* Customizing Banner */
 #banner {
     padding: 100px 0;
     background-size: 2000px auto;
     background-position: top center;
     background-attachment: fixed;
 }
-
 #banner .copy {
     background-color: rgba(0, 5, 5, 0.4);
+    padding: 20px 20px 14px;
+}
+#banner h1 {
+    font-size: 54px;
+    font-stretch: inherit;
+    font-family: "HelveticaNeue-Bold","Helvetica Neue CE 600","Helvetica Neue LT","Helvetica Neue 600","HelveticaNeue-Bold","Helvetica Neue Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#banner .intro {
+    font-size: 28px;
+    margin: 0 0 0 0;
+}
+
+
+/* Solutions for mobile and small screens  */
+@media (max-width: 650px) {
+    #banner .copy {
+        padding: 10px 10px 7px;
+    }
+    #banner h1{
+        font-size: 27px; /* !important;*/
+     }
+    #banner .intro {
+        font-size: 14px;
+    }
 }
 
 /* Got Colors from .well*/
