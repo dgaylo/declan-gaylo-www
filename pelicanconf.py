@@ -34,7 +34,17 @@ PAGE_PATHS = ['pages']
 
 # Plugins
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['i18n_subsites']
+PLUGINS = ['i18n_subsites', 'sitemap']
+
+# Sitemap
+SITEMAP = {
+    "format": "xml",
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly"
+    }
+}
 
 # Theme setup
 THEME = './pelican-themes/pelican-bootstrap3'
