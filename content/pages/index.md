@@ -14,6 +14,6 @@ Before coming to MIT I studied Naval Architecture & Marine Engineering at Webb I
 
 - [Publications]({filename}/pages/publications.md) page for a list of my presentations and publications.
 
-- [Educaction]({filename}/pages/education.html) page for my academic degrees.
+- [Education]({filename}/pages/education.html) page for my academic degrees.
 
 - [Posts](/home/posts) page for recent posts on my work and my hobbies.

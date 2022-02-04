@@ -3,7 +3,7 @@ slug: publications
 modified: 2022-01-25 22:00
 
 
-### Jounal Papers
+### Journal Papers
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2021). Effects of power-law entrainment on bubble fragmentation cascades. *Journal of Fluid Mechanics, 917*, R1. doi:[10.1017/jfm.2021.333](https://doi.org/10.1017/jfm.2021.333)
 

@@ -2,11 +2,11 @@ Title: Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls
 slug: undergradthesis
 date: 2019-06-28 00:00
 
-This work performed at Webb Institute along with Dan Roske as part of our undergraduate degree.
+This work was performed at Webb Institute along with Dan Roske as part of our undergraduate degree.
 
 ### Introduction
 
-Trim tabs and interceptros are two devices used on high-speed planing craft to lower resistance at pre-planing speeds, as well as to decrease motions in waves.  These devices work by creating lift near the transom. Our work used a model hull fitted with pressure sensors to measure the pressure distribution created by these devices while also measuring resistance. Dan and I used a model hull fitted with a 3D-printed pressure sensor manifold to measure the pressure distribution created by these devices, while also measuring resistance. We used our results to comment on the effectiveness of the two devices, as well as the accuracy of empirical methods used to predict the performance of these devices.
+Trim tabs and interceptors are two devices used on high-speed planing craft to lower resistance at pre-planing speeds, as well as to decrease motions in waves.  These devices work by creating lift near the transom. Our work used a model hull fitted with pressure sensors to measure the pressure distribution created by these devices while also measuring resistance. Dan and I used a model hull fitted with a 3D-printed pressure sensor manifold to measure the pressure distribution created by these devices, while also measuring resistance. We used our results to comment on the effectiveness of the two devices, as well as the accuracy of empirical methods used to predict the performance of these devices.
 
 ### Testing
 
