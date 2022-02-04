@@ -11,7 +11,7 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 SSH_HOST=Scripts
 SSH_PORT=22
 SSH_USER=dgaylo
-SSH_TARGET_DIR=~/web_scripts/dev/newsite
+SSH_TARGET_DIR=~/web_scripts/home
 
 
 DEBUG ?= 0

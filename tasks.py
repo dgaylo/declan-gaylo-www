@@ -29,7 +29,7 @@ CONFIG = {
     'ssh_user': 'dgaylo',
     'ssh_host': 'Scripts',
     'ssh_port': '22',
-    'ssh_path': '~/web_scripts/dev/newsite',
+    'ssh_path': '~/web_scripts/home',
     # Host and port for `serve`
     'host': 'localhost',
     'port': 8000,
