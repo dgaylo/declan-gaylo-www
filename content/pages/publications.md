@@ -18,4 +18,4 @@ Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2020, November). *Eulerian Label 
 Gaylo, D. B. (2021). *Effects of power-law entrainment on bubble fragmentation cascades* (Master's thesis). Massachusetts Institute of Technology, Cambridge. doi:[1721.1/139428](https://hdl.handle.net/1721.1/139438)
 
 Gaylo, D. B., & Roske, D. (2019). [*Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls*]({filename}/posts/undergradthesis.md) (Bachelor's thesis). Webb Institute, Glen Cove, NY. 
-[Download <i class="fa fa-file-pdf-o"></i>]({static}/files/publications/Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls.pdf)
+[Download <i class="fa fa-file-pdf-o"></i>](/files/Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls.pdf)

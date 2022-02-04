@@ -22,4 +22,4 @@ Testing was done at both Webb Institute’s Robinson Model Basin and Stevens Ins
 
 Trough our testing, we were able to measure the longitudinal pressure distribution with higher resolution and precision than earlier work. We compared our measurements to the operating principals of interceptors and trim tabs, and to performance prediction methods. From these comparisons, we made suggestions for improvements to current performance prediction methods. Additionally, we were able to observe that both interceptors and trim tabs have similar speed regimes of effectiveness.
 
-Dowload the full thesis [here <i class="fa fa-file-pdf-o"></i>]({static}/files/publications/Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls.pdf).
+Dowload the full thesis [here <i class="fa fa-file-pdf-o"></i>](/files/Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls.pdf).
