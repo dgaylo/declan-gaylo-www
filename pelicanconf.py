@@ -8,6 +8,8 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
+GOOGLE_GLOBAL_SITE_TAG = 'UA-154894669-1'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
