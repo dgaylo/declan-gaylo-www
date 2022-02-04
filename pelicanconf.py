@@ -49,7 +49,7 @@ CUSTOM_CSS = 'static/custom.css'
 
 THEME_TEMPLATES_OVERRIDES = [ './content/theme/' ]
 
-TYPOGRIFY = True
+TYPOGRIFY = False
 
 # If the author, category and tag collections are not needed,
 DIRECT_TEMPLATES = ['index', 'archives']
