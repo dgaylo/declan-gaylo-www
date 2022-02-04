@@ -9,6 +9,7 @@ TIMEZONE = 'America/New_York'
 DEFAULT_LANG = 'en'
 
 GOOGLE_GLOBAL_SITE_TAG = 'UA-154894669-1'
+GOOGLE_VERIFICATIION_TAG = 'QUWwxfPE7bJsHk2xKt1srAdzcLBN26SwiIsGFBMgGGw'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
