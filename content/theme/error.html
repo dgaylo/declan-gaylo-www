@@ -5,7 +5,7 @@
 {% block content %}
 <section id="content" class="body">
 <div class="text-over-img">
-    <img src="{{ SITE_URL }}/{{ page.background_image }}" {% if page.background_image_alt %} alt="{{page.background_image_alt}}" {% endif %} class="background-img">
+    <img src="{{ SITEURL }}/{{ page.background_image }}" {% if page.background_image_alt %} alt="{{page.background_image_alt}}" {% endif %} class="background-img">
     
 
     <div class="forground-text">
@@ -17,7 +17,7 @@
         <div class="entry-content">
 			{{ page.content }}
 		</div>
-        <a class="btn btn-primary" href="{{ SITE_URL }}/" role="button">Return Home</a>
+        <a class="btn btn-primary" href="{{ SITEURL }}/" role="button">Return Home</a>
     </div>
 
 </div>
