@@ -1,4 +1,4 @@
-[thewebsite]: https://dgaylo.scripts.mit.edu/dev/newsite/
+[thewebsite]: https://declangaylo.com
 
 
 # declan-gaylo-www
