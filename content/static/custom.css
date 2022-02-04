@@ -37,6 +37,22 @@
     #banner .intro {
         font-size: 14px;
     }
+
+    footer .col-xs-10 {
+        font-size: 8px;
+    }
+    footer .col-xs-2 {
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px) {
+    footer .col-xs-10 {
+        max-width: 70%;
+        font-size: 8px;
+    }
+    footer .col-xs-2 {
+        min-width: 30%;
+    }
 }
 
 /* Got Colors from .well*/
