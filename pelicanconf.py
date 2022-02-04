@@ -41,6 +41,7 @@ THEME = './pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'lumen'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 FONT_AWESOME_KIT = 'b3b7784092'
+DISPLAY_ARTICLE_LIST_ON_INDEX = False
 
 CUSTOM_CSS = 'static/custom.css'
 
@@ -54,10 +55,9 @@ DIRECT_TEMPLATES = ['index', 'archives']
 # About me
 AVATAR = 'images/avatar.JPEG'
 ABOUT_ME = """
-I\'m a Naval Architect working tword my PhD in Hydrodynamcis at MIT. 
-My reseach interests are the complex interactions between turubelnce and the free surface, 
-and I develop both theoretical models and new CFD codes.
-Before MIT I attended Webb Instutue, where I learned of and experinced the broad range of the marine industry.
+I’m currently a PhD student at MIT studying Hydrodynamics. 
+My research interests are turbulent bubbly flow near the free surface. 
+My work includes both theoretical models and new CFD tools.
 """
 
 # Favicon

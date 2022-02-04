@@ -22,7 +22,7 @@
 		</div>
 	</section>
 	
-	{% if articles %}
+	{% if articles and DISPLAY_ARTICLE_LIST_ON_INDEX%}
 	<section id="articlelist" class="body">
 	<h1>Recent Posts</h1>
 	{% for article in (articles_page.object_list if articles_page else articles) %}
