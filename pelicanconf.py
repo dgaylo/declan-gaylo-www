@@ -65,7 +65,7 @@ My work includes both theoretical models and new CFD tools.
 # Favicon
 FAVICON = 'images/logo.svg'
 SITELOGO = 'images/logo.svg'
-SITELOGO_SIZE = 18
+SITELOGO_SIZE = '18px'
 
 # Banner
 BANNER = 'images/banner.jpeg'
