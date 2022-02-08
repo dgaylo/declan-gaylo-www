@@ -55,6 +55,7 @@ BOOTSTRAP_THEME = 'lumen'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 FONT_AWESOME_KIT = 'b3b7784092'
 DISPLAY_ARTICLE_LIST_ON_INDEX = False
+USE_WEBP = True
 
 SOURCE_CODE_URL= 'https://github.com/dgaylo/declan-gaylo-www'
 
@@ -69,6 +70,7 @@ DIRECT_TEMPLATES = ['index', 'archives']
 
 # About me
 AVATAR = 'images/avatar.JPEG'
+AVATAR_WEBP = 'images/avatar.webp'
 ABOUT_ME = """
 I’m currently a PhD student at MIT studying Hydrodynamics. 
 My research interests are turbulent bubbly flow near the free surface. 
@@ -82,6 +84,7 @@ SITELOGO_SIZE = '18px'
 
 # Banner
 BANNER = 'images/banner.jpeg'
+BANNER_WEBP = 'images/banner.webp'
 BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
 BANNER_ALL_PAGES = True
 
