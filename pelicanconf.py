@@ -70,6 +70,7 @@ DIRECT_TEMPLATES = ['index', 'archives']
 
 # About me
 AVATAR = 'images/avatar.JPEG'
+AVATAR_WEBP = 'images/avatar.webp'
 ABOUT_ME = """
 I’m currently a PhD student at MIT studying Hydrodynamics. 
 My research interests are turbulent bubbly flow near the free surface. 
