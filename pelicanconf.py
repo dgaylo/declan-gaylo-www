@@ -59,6 +59,7 @@ DISPLAY_ARTICLE_LIST_ON_INDEX = False
 SOURCE_CODE_URL= 'https://github.com/dgaylo/declan-gaylo-www'
 
 CUSTOM_CSS = 'static/custom.css'
+CUSTOM_JS = 'static/custom.js'
 
 THEME_TEMPLATES_OVERRIDES = [ './content/theme/' ]
 
