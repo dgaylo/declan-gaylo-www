@@ -55,11 +55,11 @@ BOOTSTRAP_THEME = 'lumen'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 FONT_AWESOME_KIT = 'b3b7784092'
 DISPLAY_ARTICLE_LIST_ON_INDEX = False
+USE_WEBP = True
 
 SOURCE_CODE_URL= 'https://github.com/dgaylo/declan-gaylo-www'
 
 CUSTOM_CSS = 'static/custom.css'
-CUSTOM_JS = 'static/custom.js'
 
 THEME_TEMPLATES_OVERRIDES = [ './content/theme/' ]
 
@@ -83,6 +83,7 @@ SITELOGO_SIZE = '18px'
 
 # Banner
 BANNER = 'images/banner.jpeg'
+BANNER_WEBP = 'images/banner.webp'
 BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
 BANNER_ALL_PAGES = True
 
