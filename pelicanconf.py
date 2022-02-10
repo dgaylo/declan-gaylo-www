@@ -31,7 +31,7 @@ AUTHOR_SAVE_AS = ''
 TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
-STATIC_PATHS = ['images','static']
+STATIC_PATHS = ['images','static','extra']
 ARTICLE_PATHS  = ['posts']
 PAGE_PATHS = ['pages']
 
@@ -113,6 +113,14 @@ SOCIAL = (
 )
 
 DEFAULT_PAGINATION = False
+
+# Cache settings using .htaccess files
+EXTRA_PATH_METADATA = {
+    'extra/htaccess/theme_css': {'path': 'theme/css/.htaccess'},
+    'extra/htaccess/theme_js': {'path': 'theme/js/.htaccess'},
+    'extra/htaccess/images': {'path': 'images/.htaccess'},
+    'extra/htaccess/static': {'path': 'static/.htaccess'},
+}
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
