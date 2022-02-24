@@ -22,5 +22,24 @@
 
 </div>
 </section>
+
+{% if page.logfile %}
+<?php
+    //Record this page load to log 404 error page views.
+    $filename = "../logs/{{ page.logfile }}";
+    //Get _SERVER variables
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $request_uri = $_SERVER['REQUEST_URI'];
+    $request_method = $_SERVER['REQUEST_METHOD'];
+    $server_protocol = $_SERVER['SERVER_PROTOCOL'];
+    //Get the Time of Access
+    $log_time = date("n/j/Y g:i:s A",time());
+
+    // Log
+    $fh =fopen($filename,"at");
+    fwrite($fh, $log_time . "\t" . $ip . "\t" . $request_uri . "\t" . $request_method . "\t" . $server_protocol . "\n");
+    fclose($fh);
+?>
+{% endif %}
 {% endblock %}
 
