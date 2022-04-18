@@ -15,7 +15,7 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | <i class="fas fa-check"></i> | Lincoln | 5089 | Nov. 21, 2020 |
 | | South Twin | 4902 | |
 | <i class="fas fa-check"></i> | Carter Dome | 4832 | Aug. 15, 2021 |
-| | Moosilauke | 4802 | |
+| <i class="fas fa-check"></i> | Moosilauke | 4802 | April 17, 2022 |
 | | Eisenhower | 4780 | |
 | | North Twin | 4761 | |
 | <i class="fas fa-check"></i> | Carrigain | 4700 | Aug. 28, 2021 |
