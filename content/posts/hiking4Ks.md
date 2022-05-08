@@ -1,5 +1,5 @@
 Title: Hiking New Hampshires 4,000 Footers
-Date: 2022-01-08 11:59
+Date: 2022-05-07 11:59
 slug: hiking4ks
 
 I've been slowly working on hiking all of <a href="http://4000footers.com/nh.shtml" target="_blank">New Hampshire's 48 mountains over 4,000 feet</a>. Here's my current progress:
@@ -47,10 +47,10 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | | Tom | 4051 | |
 | <i class="fas fa-check"></i> | Wildcat, D Peak | 4050 | July 31, 2021|
 | | Moriah | 4049 | |
-| | Passaconaway | 4043 | |
+| <i class="fas fa-check"></i> | Passaconaway | 4043 |  May 7, 2022 |
 | | Owl's Head | 4025 | |
 | | Galehead | 4024 | |
-| | Whiteface | 4020 | |
+| <i class="fas fa-check"></i> | Whiteface | 4020 | May 7, 2022 |
 | | Waumbek | 4006 | |
 | | Isolation | 4004 | |
 | <i class="fas fa-check"></i> | Tecumseh | 4003 | Jan. 8, 2022|
