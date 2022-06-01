@@ -29,7 +29,7 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | | Hancock | 4420 | |
 | | South Kinsman | 4358 | |
 | | Field | 4340 | |
-| | Osceola | 4340 | |
+| <i class="fas fa-check"></i> | Osceola | 4340 | May 30, 2022 |
 | <i class="fas fa-check"></i> | Flume | 4328 | Oct. 9, 2021 |
 | | South Hancock | 4319 | |
 | | Pierce | 4310 | |
@@ -39,7 +39,7 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | | Zealand | 4260 | |
 | | North Tripyramid | 4180 | |
 | | Cabot | 4170 | |
-| | East Osceola | 4156 | |
+| <i class="fas fa-check"></i> | East Osceola | 4156 | May 30, 2022 |
 | | Middle Tripyramid | 4140 | |
 | | Cannon | 4100 | |
 | | Hale | 4054 | |
