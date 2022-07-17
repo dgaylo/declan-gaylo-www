@@ -1,5 +1,5 @@
 Title: Hiking New Hampshires 4,000 Footers
-Date: 2022-05-07 11:59
+Date: 2022-07-16 11:59
 slug: hiking4ks
 
 I've been slowly working on hiking all of <a href="http://4000footers.com/nh.shtml" target="_blank">New Hampshire's 48 mountains over 4,000 feet</a>. Here's my current progress:
@@ -16,7 +16,7 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | | South Twin | 4902 | |
 | <i class="fas fa-check"></i> | Carter Dome | 4832 | Aug. 15, 2021 |
 | <i class="fas fa-check"></i> | Moosilauke | 4802 | April 17, 2022 |
-| | Eisenhower | 4780 | |
+| <i class="fas fa-check"></i> | Eisenhower | 4780 | July 16, 2022 |
 | | North Twin | 4761 | |
 | <i class="fas fa-check"></i> | Carrigain | 4700 | Aug. 28, 2021 |
 | | Bond | 4698 | |
@@ -32,7 +32,7 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | <i class="fas fa-check"></i> | Osceola | 4340 | May 30, 2022 |
 | <i class="fas fa-check"></i> | Flume | 4328 | Oct. 9, 2021 |
 | | South Hancock | 4319 | |
-| | Pierce | 4310 | |
+| <i class="fas fa-check"></i> | Pierce | 4310 | July 16, 2022 |
 | | North Kinsman | 4293 | |
 | | Willey | 4285 | |
 | | Bondcliff | 4265 | |
@@ -43,7 +43,7 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | | Middle Tripyramid | 4140 | |
 | | Cannon | 4100 | |
 | | Hale | 4054 | |
-| | Jackson | 4052 | |
+| <i class="fas fa-check"></i> | Jackson | 4052 | July 16, 2022 |
 | | Tom | 4051 | |
 | <i class="fas fa-check"></i> | Wildcat, D Peak | 4050 | July 31, 2021|
 | | Moriah | 4049 | |
