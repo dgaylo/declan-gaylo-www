@@ -1,5 +1,5 @@
 Title: Hiking New Hampshires 4,000 Footers
-Date: 2022-07-16 11:59
+Date: 2022-07-24 11:59
 slug: hiking4ks
 
 I've been slowly working on hiking all of <a href="http://4000footers.com/nh.shtml" target="_blank">New Hampshire's 48 mountains over 4,000 feet</a>. Here's my current progress:
@@ -37,10 +37,10 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | | Willey | 4285 | |
 | | Bondcliff | 4265 | |
 | | Zealand | 4260 | |
-| | North Tripyramid | 4180 | |
+| <i class="fas fa-check"></i> | North Tripyramid | 4180 | July 24, 2022 |
 | | Cabot | 4170 | |
 | <i class="fas fa-check"></i> | East Osceola | 4156 | May 30, 2022 |
-| | Middle Tripyramid | 4140 | |
+| <i class="fas fa-check"></i> | Middle Tripyramid | 4140 | July 24, 2022 |
 | | Cannon | 4100 | |
 | | Hale | 4054 | |
 | <i class="fas fa-check"></i> | Jackson | 4052 | July 16, 2022 |
