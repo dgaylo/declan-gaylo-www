@@ -1,5 +1,5 @@
 Title: Hiking New Hampshire's 4,000 Footers
-Date: 2022-08-07 11:59
+Date: 2022-09-17 11:59
 slug: hiking4ks
 
 I've been slowly working on hiking all of <a href="http://4000footers.com/nh.shtml" target="_blank">New Hampshire's 48 mountains over 4,000 feet</a>. Here's my current progress:
@@ -7,8 +7,8 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 |  Complete  | Mountain | Elevation (ft) | Date First Hiked |
 |-----------|----------|----------------|------------|
 | | Washington | 6288 | |
-| | Adams | 5774 | |
-| | Jefferson | 5712 | |
+| <i class="fas fa-check"></i> | Adams | 5774 | Sept. 17, 2022 |
+| <i class="fas fa-check"></i> | Jefferson | 5712 | Sept. 17, 2022 |
 | | Monroe | 5384 | |
 | | Madison | 5367 | |
 | <i class="fas fa-check"></i> | Lafayette | 5260 | Nov. 21, 2020 | <!-- Aug. 6, 2022 -->
