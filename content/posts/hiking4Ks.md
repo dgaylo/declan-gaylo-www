@@ -7,10 +7,10 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 |  Complete  | Mountain | Elevation (ft) | Date First Hiked |
 |-----------|----------|----------------|------------|
 | | Washington | 6288 | |
-| <i class="fas fa-check"></i> | Adams | 5774 | Sept. 17, 2022 |
+| <i class="fas fa-check"></i> | Adams | 5774 | Sept. 17, 2022 | <!-- Oct. 11, 2022 -->
 | <i class="fas fa-check"></i> | Jefferson | 5712 | Sept. 17, 2022 |
 | | Monroe | 5384 | |
-| | Madison | 5367 | |
+| <i class="fas fa-check"></i> | Madison | 5367 | Oct. 11, 2022 |
 | <i class="fas fa-check"></i> | Lafayette | 5260 | Nov. 21, 2020 | <!-- Aug. 6, 2022 -->
 | <i class="fas fa-check"></i> | Lincoln | 5089 | Nov. 21, 2020 | <!-- Aug. 6, 2022 -->
 | <i class="fas fa-check"></i> | South Twin | 4902 | Aug. 6, 2022 |
