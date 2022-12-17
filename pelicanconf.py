@@ -37,7 +37,7 @@ PAGE_PATHS = ['pages']
 
 # Plugins
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['i18n_subsites', 'sitemap']
+PLUGINS = ['i18n_subsites', 'sitemap', 'webassets']
 
 # Sitemap
 SITEMAP = {
