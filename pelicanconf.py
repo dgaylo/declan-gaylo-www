@@ -61,7 +61,7 @@ CUSTOM_HEAD = 'customhead.html'
 
 SOURCE_CODE_URL= 'https://github.com/dgaylo/declan-gaylo-www'
 
-CUSTOM_CSS = 'static/custom.css'
+CUSTOM_CSS = 'theme/custom.css'
 WEBASSETS_SOURCE_PATHS = ['../../content/', 'dynamic']
 
 THEME_TEMPLATES_OVERRIDES = [ './content/theme/' ]
