@@ -3,6 +3,7 @@
 
 import os
 import sys
+import git
 sys.path.append(os.curdir)
 from pelicanconf import *
 
@@ -19,3 +20,6 @@ DELETE_OUTPUT_DIRECTORY = True
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
+
+sha = git.Repo(search_parent_directories=True).head.object.hexsha
+SOURCE_CODE_URL= SOURCE_CODE_URL+'/tree/'+sha
