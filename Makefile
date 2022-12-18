@@ -75,6 +75,7 @@ devserver-global:
 
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
+	purifycss $(OUTPUTDIR)/theme/css/style.min.css $(shell find $(OUTPUTDIR) -name '*.html') $(shell find $(OUTPUTDIR) -name '*.js') -m -o $(OUTPUTDIR)/theme/css/style.min.css
 
 ssh_upload: publish
 	if [ -f ~/.scripts/krbSetup_MIT ]; then  ~/.scripts/krbSetup_MIT; fi
