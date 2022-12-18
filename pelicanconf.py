@@ -57,6 +57,7 @@ JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 FONT_AWESOME_KIT = 'b3b7784092'
 DISPLAY_ARTICLE_LIST_ON_INDEX = False
 USE_WEBP = True
+CUSTOM_HEAD = 'customhead.html'
 
 SOURCE_CODE_URL= 'https://github.com/dgaylo/declan-gaylo-www'
 
