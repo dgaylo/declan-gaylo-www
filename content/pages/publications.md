@@ -12,6 +12,7 @@ Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2021). Effects of power-law entra
 ### Conference Presentations
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2022, July). *Quantifying Fragmentation Statistics in Two-Phase Turbulent Flows for Ship Wake Applications*. Presented at the 34th Symposium on Naval Hydrodynamics, Washington, D.C.
+[Download <i class="fa fa-file-pdf-o"></i>](/files/Quantifying Fragmentation Statistics in Two-Phase Turbulent Flows for Ship Wake Applications.pdf)
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2021, November). *Effects of split power-law entrainment on bubble fragmentation cascades*. Presented at the 74th Annual Meeting of the APS Division of Fluid Dynamics, Phoenix, AZ.
 
