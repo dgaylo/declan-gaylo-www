@@ -26,12 +26,12 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | <i class="fas fa-check"></i> | Liberty | 4459 | Oct. 9, 2021 | <!-- Aug. 6, 2022 -->
 | <i class="fas fa-check"></i> | South Carter | 4430 | Aug. 15, 2021 |
 | <i class="fas fa-check"></i> | Wildcat, A peak | 4422 | July 31, 2021 |
-| | Hancock | 4420 | |
+| <i class="fas fa-check"></i> | Hancock | 4420 | July 8, 2023 |
 | | South Kinsman | 4358 | |
 | | Field | 4340 | |
 | <i class="fas fa-check"></i> | Osceola | 4340 | May 30, 2022 |
 | <i class="fas fa-check"></i> | Flume | 4328 | Oct. 9, 2021 | <!-- Aug. 6, 2022 -->
-| | South Hancock | 4319 | |
+| <i class="fas fa-check"></i> | South Hancock | 4319 | July 8, 2023 |
 | <i class="fas fa-check"></i> | Pierce | 4310 | July 16, 2022 |
 | | North Kinsman | 4293 | |
 | | Willey | 4285 | |
