@@ -27,13 +27,13 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | <i class="fas fa-check"></i> | South Carter | 4430 | Aug. 15, 2021 |
 | <i class="fas fa-check"></i> | Wildcat, A peak | 4422 | July 31, 2021 |
 | <i class="fas fa-check"></i> | Hancock | 4420 | July 8, 2023 |
-| | South Kinsman | 4358 | |
+| <i class="fas fa-check"></i> | South Kinsman | 4358 | Oct. 10, 2023 |
 | | Field | 4340 | |
 | <i class="fas fa-check"></i> | Osceola | 4340 | May 30, 2022 |
 | <i class="fas fa-check"></i> | Flume | 4328 | Oct. 9, 2021 | <!-- Aug. 6, 2022 -->
 | <i class="fas fa-check"></i> | South Hancock | 4319 | July 8, 2023 |
 | <i class="fas fa-check"></i> | Pierce | 4310 | July 16, 2022 |
-| | North Kinsman | 4293 | |
+| <i class="fas fa-check"></i> | North Kinsman | 4293 | Oct. 10, 2023 |
 | | Willey | 4285 | |
 | <i class="fas fa-check"></i> | Bondcliff | 4265 | Aug. 7, 2022 |
 | | Zealand | 4260 | |
@@ -41,7 +41,7 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | | Cabot | 4170 | |
 | <i class="fas fa-check"></i> | East Osceola | 4156 | May 30, 2022 |
 | <i class="fas fa-check"></i> | Middle Tripyramid | 4140 | July 24, 2022 |
-| | Cannon | 4100 | |
+| <i class="fas fa-check"></i> | Cannon | 4100 | Oct. 10, 2023 |
 | | Hale | 4054 | |
 | <i class="fas fa-check"></i> | Jackson | 4052 | July 16, 2022 |
 | | Tom | 4051 | |
