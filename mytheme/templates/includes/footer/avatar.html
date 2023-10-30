@@ -1,0 +1,10 @@
+
+{% if USE_WEBP and AVATAR_WEBP %}
+<picture>  
+  <source srcset="{{ SITEURL }}/{{ AVATAR_WEBP }}" type="image/webp">
+  <source srcset="{{ SITEURL }}/{{ AVATAR }}" type="image/jpeg">
+  <img width="100%" class="img-fluid" src="{{ SITEURL }}/{{ AVATAR }}" alt=""/>
+</picture>
+{% else %}
+<img width="100%" class="img-fluid" src="{{ SITEURL }}/{{ AVATAR }}"/>
+{% endif %}
