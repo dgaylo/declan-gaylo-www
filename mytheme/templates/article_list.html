@@ -4,8 +4,8 @@
 {% for article in (articles_page.object_list if articles_page else articles) %}
   <hr/>
   <article>
-    <div class="row">
-      <div class="col-12 order-1 col-sm-6 offset-sm-3 col-lg-4 offset-lg-0 order-lg-2">
+    <div class="row justify-content-center"">
+      <div class="col-10 order-1 col-sm-6 col-lg-4 order-lg-2">
         {% if article.graphic %}
         <img src="{{article.graphic}}" class="img-thumbnail img-fluid img-md-center">
         {% endif %}
