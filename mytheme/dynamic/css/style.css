@@ -57,3 +57,8 @@ body {
         font-size: x-small;
     }
 }
+
+/* Justify description in article list */
+#article-list div.summary {
+    text-align: justify;
+}

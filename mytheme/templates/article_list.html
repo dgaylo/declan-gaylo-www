@@ -3,7 +3,7 @@
 {% if articles %}
 {% for article in (articles_page.object_list if articles_page else articles) %}
   <hr/>
-  <article>
+  <article  id="article-list">
     <div class="row justify-content-center"">
       <div class="col-10 order-1 col-sm-6 col-lg-4 order-lg-2">
         {% if article.graphic %}
