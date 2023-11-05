@@ -75,7 +75,7 @@ USE_WEBP = True
 
 SOURCE_CODE_URL= 'https://github.com/dgaylo/declan-gaylo-www'
 
-CUSTOM_CSS = 'theme/custom.css'
+#CUSTOM_CSS = 'theme/custom.css'
 WEBASSETS_SOURCE_PATHS = ['../content/', 'dynamic']
 
 
