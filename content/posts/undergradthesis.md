@@ -3,6 +3,7 @@ slug: undergradthesis
 date: 2019-06-28 00:00
 description: My undergraduate thesis was on trim tabs and interceptors for high speed planing craft. This post provides an overview of the work.
 graphic: images/undergradthesis.jpg
+graphicAlt: The model hull fittes with pressure sensors
 
 This work was performed at Webb Institute along with Dan Roske as part of our undergraduate degree.
 
