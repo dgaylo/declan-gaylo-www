@@ -8,6 +8,8 @@ OUTPUTDIR=$(BASEDIR)/build
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
+ICON_SVG=$(INPUTDIR)/images/logo.svg
+
 SSH_HOST=Scripts
 SSH_PORT=22
 SSH_USER=dgaylo
@@ -84,9 +86,16 @@ sftp_upload: publish
 	printf 'put -r $(OUTPUTDIR)/*' | sftp $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
 
-rsync_upload: publish
+rsync_upload: publish icons
 	if [ -f ~/.scripts/krbSetup_MIT ]; then  ~/.scripts/krbSetup_MIT; fi
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --include tags --cvs-exclude --delete "$(OUTPUTDIR)"/ "$(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)"
 
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload
+
+# icons
+.PHONY: icons
+icons: $(OUTPUTDIR)/icon-80.png $(OUTPUTDIR)/icon-120.png $(OUTPUTDIR)/icon-180.png  
+
+$(OUTPUTDIR)/icon-%.png: $(ICON_SVG)
+	convert -density 2400 -resize $*x$* $<  $@
