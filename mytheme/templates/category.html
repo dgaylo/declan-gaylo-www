@@ -1,0 +1,18 @@
+{% extends "article_list.html" %}
+{% block title %}{{ category | capitalize}} - {{ SITENAME }}{% endblock %}
+{% block meta %}
+    <meta name="author" content="{{ AUTHOR }}" />
+    <meta name="keywords" content="{{ category }}" />
+{% endblock %}
+
+{% block breadcrumb %}
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="{{ SITEURL }}/">{{ _('Home') }}</a></li>
+  <li class="breadcrumb-item active">{{ category.slug | capitalize }}</li>
+</ol>
+{% endblock %}
+
+{% block content %}
+    <h1>{{ category | capitalize}}</h1>
+    {{ super() }}
+{% endblock %}

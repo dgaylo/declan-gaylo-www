@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+  {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'includes/ga.html' %}
+
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/{{FONT_AWESOME_KIT}}.js" crossorigin="anonymous" defer></script>
+
+    <!-- Bootstrap -->
+    <!--link href="{{BOOTSTRAP_CDN_CSS}}" integrity="{{BOOTSTRAP_CDN_CSS_INTEGRITY}}" crossorigin="anonymous"-->
+    <link href="{{BOOTSWATCH_CDN}}" crossorigin="anonymous" rel="stylesheet">
+    
+    {% if CUSTOM_CSS %}
+    {% assets filters="cssmin", output="css/style.min.css", 
+      "css/style.css", CUSTOM_CSS 
+    %}
+    <link rel="stylesheet" href="{{SITEURL}}/{{ASSET_URL}}" type="text/css"/>
+    {% endassets %}{% endif %}
+    {% include 'includes/favicon.html' %}
+
+    {% if THEME_COLOR %}
+    <meta name="theme-color" content="--bs-tertiary-bg">
+    {% endif %}
+  {% block canonical_rel %}{% endblock %}
+  {% block meta %}{% endblock %}
+  {% endblock %}
+  </head>
+
+  <body>
+  {% include 'includes/navbar.html' %}  
+  <!-- Breadcrumb -->
+  <div id="breadcrumb">
+    <div class="container-md">
+      
+    </div>
+  </div>
+  <!-- End Breadcrumb -->
+
+  <!-- Banner -->
+  {% if BANNER and BANNER_ALL_PAGES %}
+    {% include 'includes/banner.html' %}
+  {% elif BANNER and not BANNER_ALL_PAGES %}
+    {% block banner %}{% endblock %}
+  {% endif %}
+  <!-- End Banner -->
+
+  <div id="content">
+  <div class="container py-1" id="breadcrumb">
+    <nav aria-label="breadcrumb">
+      {% block breadcrumb %}
+      {% endblock %}
+    </nav>
+  </div>
+  <div class="container py-3 pb-3">
+    {% block content %}{% endblock %}
+  </div>
+  </div>
+
+  {% include 'includes/footer.html' %}
+
+  <script src="{{BOOTSTRAP_CDN_JS}}" integrity="{{BOOTSTRAP_CDN_JS_INTEGRITY}}" crossorigin="anonymous"></script>
+
+  {% if USE_WEBP %}
+  <!-- Enable Modernizr -->
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/modernizr-custom.js"></script>
+  {% endif %}
+
+  </body>
+</html>

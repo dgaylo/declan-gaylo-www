@@ -1,0 +1,64 @@
+
+body {
+    background-color: rgba(var(--bs-tertiary-bg-rgb));
+}
+#content {
+    background: var(--bs-body-bg);
+}
+
+
+#footer-widgets  .list-group, #footer-widgets  .list-group-item {
+    background-color: transparent;
+}
+
+#footer-widgets a {
+    text-decoration: none;
+    color: inherit;
+}
+#footer-widgets a:hover {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+/* Custom banner text spacing */
+#banner h1 {
+    line-height: 1;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+#banner p {
+    line-height: 1;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Dont show links in article header */
+#content h1.article-title a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Breadcrumb settings */
+#breadcrumb ol {
+    margin-bottom: 0;
+    font-size: small
+}
+
+/* Solutions for mobile and small screens */
+@media (max-width: 768px) {
+    /*Font size for tables*/
+    #content table {
+        font-size: small;
+    }
+}
+@media (max-width: 576px) {
+    /*Font size for tables*/
+    #content table {
+        font-size: x-small;
+    }
+}
+
+/* Justify description in article list */
+#article-list div.summary {
+    text-align: justify;
+}

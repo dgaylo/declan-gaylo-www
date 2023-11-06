@@ -4,6 +4,7 @@
 import os
 import sys
 import git
+import datetime
 sys.path.append(os.curdir)
 from pelicanconf import *
 
@@ -18,8 +19,14 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+GOOGLE_GLOBAL_SITE_TAG = 'G-0SEL0G18LQ'
+GOOGLE_VERIFICATIION_TAG = 'QUWwxfPE7bJsHk2xKt1srAdzcLBN26SwiIsGFBMgGGw'
 
+#DISQUS_SITENAME = ""
+
+# source code link (with hash)
 sha = git.Repo(search_parent_directories=True).head.object.hexsha
 SOURCE_CODE_URL= SOURCE_CODE_URL+'/tree/'+sha
+
+# copy right date
+COPY_DATE=datetime.date.today().strftime('%Y')

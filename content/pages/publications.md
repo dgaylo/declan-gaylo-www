@@ -3,7 +3,7 @@ slug: publications
 modified: 2022-01-25 22:00
 
 
-### Journal Papers
+## Journal Papers
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2023). Fundamental time scales of bubble fragmentation in homogeneous isotropic turbulence. *Journal of Fluid Mechanics, 962*, A25. doi: [10.1017/jfm.2023.281](https://doi.org/10.1017/jfm.2023.281)
 
@@ -11,7 +11,7 @@ Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2022). An Eulerian label advectio
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2021). Effects of power-law entrainment on bubble fragmentation cascades. *Journal of Fluid Mechanics, 917*, R1. doi: [10.1017/jfm.2021.333](https://doi.org/10.1017/jfm.2021.333)
 
-### Conference Presentations
+## Conference Presentations
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2022, July). *Quantifying Fragmentation Statistics in Two-Phase Turbulent Flows for Ship Wake Applications*. Presented at the 34th Symposium on Naval Hydrodynamics, Washington, D.C.
 [Download <i class="fa fa-file-pdf-o"></i>](/files/Quantifying Fragmentation Statistics in Two-Phase Turbulent Flows for Ship Wake Applications.pdf)
@@ -20,7 +20,7 @@ Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2021, November). *Effects of spli
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2020, November). *Eulerian Label Advection method for bubble tracking in two-fluid Navier-Stokes simulations*. Presented at the 73rd Annual Meeting of the APS Division of Fluid Dynamics, Chicago, IL.
 
-### Academic Theses
+## Academic Theses
 
 Gaylo, D. B. (2021). *Effects of power-law entrainment on bubble fragmentation cascades* (Master's thesis). Massachusetts Institute of Technology, Cambridge, MA. doi: [1721.1/139428](https://hdl.handle.net/1721.1/139438)
 

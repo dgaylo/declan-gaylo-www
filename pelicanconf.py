@@ -8,8 +8,7 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
-GOOGLE_GLOBAL_SITE_TAG = 'G-0SEL0G18LQ'
-GOOGLE_VERIFICATIION_TAG = 'QUWwxfPE7bJsHk2xKt1srAdzcLBN26SwiIsGFBMgGGw'
+COPY_DATE='20XX'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -31,13 +30,19 @@ AUTHOR_SAVE_AS = ''
 TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
-STATIC_PATHS = ['images','static','extra']
+STATIC_PATHS = ['images','extra']
 ARTICLE_PATHS  = ['posts']
 PAGE_PATHS = ['pages']
 
 # Plugins
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['i18n_subsites', 'sitemap', 'webassets']
+PLUGINS = ['i18n_subsites', 'sitemap', 'webassets', 'pelican.plugins.add_css_classes']
+
+ADD_CSS_CLASSES = {}
+ADD_CSS_CLASSES_TO_PAGE = {}
+ADD_CSS_CLASSES_TO_ARTICLE = {
+    "table": ["table table-striped table-sm"],
+}
 
 # Sitemap
 SITEMAP = {
@@ -51,19 +56,27 @@ SITEMAP = {
 }
 
 # Theme setup
-THEME = './pelican-themes/pelican-bootstrap3'
-BOOTSTRAP_THEME = 'lumen'
+THEME = './mytheme'
+
+# Bootstrap setup
+BOOTSTRAP_CDN_CSS='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'
+BOOTSTRAP_CDN_CSS_INTEGRITY='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN'
+BOOTSTRAP_CDN_JS='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'
+BOOTSTRAP_CDN_JS_INTEGRITY='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL'
+
+# Themes from http://bootswatch.com
+BOOTSWATCH_THEME="cosmo"
+BOOTSWATCH_CDN='https://cdn.jsdelivr.net/npm/bootswatch@5.3/dist/'+BOOTSWATCH_THEME.lower()+'/bootstrap.min.css'
+THEME_COLOR='#F8F9FA'
+
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 FONT_AWESOME_KIT = 'b3b7784092'
-DISPLAY_ARTICLE_LIST_ON_INDEX = False
 USE_WEBP = True
-CUSTOM_HEAD = 'customhead.html'
 
 SOURCE_CODE_URL= 'https://github.com/dgaylo/declan-gaylo-www'
 
-CUSTOM_CSS = 'theme/custom.css'
-WEBASSETS_SOURCE_PATHS = ['../../content/', 'dynamic']
-
+#CUSTOM_CSS = 'theme/custom.css'
+WEBASSETS_SOURCE_PATHS = ['../content/', 'dynamic']
 THEME_TEMPLATES_OVERRIDES = [ './content/theme/' ]
 
 TYPOGRIFY = False
@@ -75,22 +88,21 @@ DIRECT_TEMPLATES = ['index', 'archives']
 AVATAR = 'images/avatar.JPEG'
 AVATAR_WEBP = 'images/avatar.webp'
 ABOUT_ME = """
-I’m currently a PhD student at MIT studying Hydrodynamics. 
-My research interests are turbulent bubbly flow near the free surface. 
-My work includes both theoretical models and new CFD tools.
+A PhD student at MIT studying Hydrodynamics. 
+Research interests are turbulent bubbly flow near the free surface. 
+Work includes both theoretical models and new CFD tools.
 """
 
 # Favicon
 FAVICON = 'images/logo.svg'
 SITELOGO = 'images/logo.svg'
 SITELOGO_SIZE = '18px'
-SITELOGO_ALT = 'Site Logo'
 
 # Banner
 BANNER = 'images/banner.jpeg'
 BANNER_WEBP = 'images/banner.webp'
 BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
-BANNER_ALL_PAGES = True
+BANNER_ALL_PAGES = False
 
 # Nav bar
 DISPLAY_PAGES_ON_MENU = False
@@ -102,6 +114,7 @@ MENUITEMS = (
 
 DISABLE_SIDEBAR_TITLE_ICONS = True
 # Blogroll
+LINKS_WIDGET_NAME = 'Links'
 LINKS = (
     ('Vortical Flow Research Lab', 'https://www.mit.edu/~vfrl/'),
 )
@@ -112,7 +125,7 @@ SOCIAL = (
     ('LinkedIn', 'https://www.linkedin.com/in/declan-gaylo', 'fab fa-linkedin'),
     ('Google Scholar', 'https://scholar.google.com/citations?hl=en&user=kA9LJygAAAAJ', 'fab fa-google'),
     ('ORCiD', 'https://orcid.org/0000-0001-6198-7003', 'fab fa-orcid'),
-    ('GitHub', 'https://github.com/dgaylo/'),
+    ('GitHub', 'https://github.com/dgaylo/', 'fab fa-github'),
 )
 
 DEFAULT_PAGINATION = False
