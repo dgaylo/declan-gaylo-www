@@ -23,13 +23,12 @@ body {
 /* Custom banner text spacing */
 #banner h1 {
     line-height: 1;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
+    margin-top: 0;
 }
 #banner p {
     line-height: 1;
     margin-top: 0.25rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 }
 
 /* Dont show links in article header */
