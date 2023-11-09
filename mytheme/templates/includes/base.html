@@ -22,6 +22,8 @@
     {% endassets %}
     {% include 'includes/favicon.html' %}
 
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/darkmode.js"></script>
+
     {% if THEME_COLOR %}
     <meta name="theme-color" content="--bs-tertiary-bg">
     {% endif %}
@@ -30,7 +32,7 @@
   {% endblock %}
   </head>
 
-  <body>
+  <body>  
   {% include 'includes/navbar.html' %}  
   <!-- Breadcrumb -->
   <div id="breadcrumb">
@@ -68,7 +70,6 @@
   <!-- Enable Modernizr -->
   <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/modernizr-custom.js"></script>
   {% endif %}
-  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/darkmode.js"></script>
 
   </body>
 </html>
