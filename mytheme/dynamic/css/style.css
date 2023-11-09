@@ -6,20 +6,6 @@ body {
     background: var(--bs-body-bg);
 }
 
-
-#footer-widgets  .list-group, #footer-widgets  .list-group-item {
-    background-color: transparent;
-}
-
-#footer-widgets a {
-    text-decoration: none;
-    color: inherit;
-}
-#footer-widgets a:hover {
-    text-decoration: inherit;
-    color: inherit;
-}
-
 /* Custom banner text spacing */
 #banner h1 {
     line-height: 1;
