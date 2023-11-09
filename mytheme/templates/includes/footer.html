@@ -11,7 +11,7 @@
       {% if ABOUT_ME %}{% include 'includes/footer/aboutme.html' %}{% endif %}
       </div>
     </div>
-    <div class="row">
+    <div class="row small">
       <div class="col-auto">
         <p class="small">
           {{ AUTHOR }} &copy; {{ COPY_DATE }}.
@@ -22,9 +22,9 @@
         </p>
       </div>
       <div class="col-auto ms-auto">
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" id="darkMode">
-          <label class="form-check-label" for="darkMode">Dark Mode</label>
+        <div class="form-check form-switch ">
+          <input class="form-check-input" type="checkbox" role="switch" id="darkMode" aria-label="Dark Mode">
+          <label class="form-check-label" for="darkMode"><i class="fa-solid fa-moon"></i></label>
         </div>
       </div>
     </div>
