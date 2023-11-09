@@ -11,18 +11,22 @@
       {% if ABOUT_ME %}{% include 'includes/footer/aboutme.html' %}{% endif %}
       </div>
     </div>
-    <div class="d-flex flex-column flex-sm-row justify-content-between">
-      <p class="small">
-        {{ AUTHOR }} &copy; {{ COPY_DATE }}.
-        {{ _('Powered by') }} <a href="http://getpelican.com/" target="_blank">Pelican</a>.
-        {{ _('Theme by')}} <a href="http://bootswatch.com/{{BOOTSWATCH_THEME}}/" target="_blank">Bootswatch</a>.
-        {{ _('Icons by')}} <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
-      </p>
-      {% if SOURCE_CODE_URL %}
-      <p class="small">
-        <a href={{SOURCE_CODE_URL}} target="_blank">{{ _('Source Code') }}</a>
-      </p>
-      {% endif %}
+    <div class="row small">
+      <div class="col-auto">
+        <p class="small">
+          {{ AUTHOR }} &copy; {{ COPY_DATE }}.
+          {{ _('Powered by') }} <a href="http://getpelican.com/" target="_blank">Pelican</a>.
+          {{ _('Theme by')}} <a href="http://bootswatch.com/{{BOOTSWATCH_THEME}}/" target="_blank">Bootswatch</a>.
+          {{ _('Icons by')}} <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
+          {% if SOURCE_CODE_URL %}<a href={{SOURCE_CODE_URL}} target="_blank">{{ _('Source Code') }}</a>{% endif %}
+        </p>
+      </div>
+      <div class="col-auto ms-auto">
+        <div class="form-check form-switch ">
+          <input class="form-check-input" type="checkbox" role="switch" id="darkMode" aria-label="Dark Mode">
+          <label class="form-check-label" for="darkMode"><i class="fa-solid fa-moon"></i></label>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
