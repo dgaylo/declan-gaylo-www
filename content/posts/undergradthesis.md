@@ -13,12 +13,20 @@ Trim tabs and interceptors are two devices used on high-speed planing craft to l
 
 ### Testing
 
-A hull was modified to add a pressure sensor array which was designed and 3D printed for this testing. 11 pressure sensors were used to allow fine measurements of the pressure near the transom of the hull. Three sets of trim tabs were 3D printed, as well as a single interceptor plate with variable deployment.
+<div class="row">
+<div class="col-12 col-lg-8">
 
-Testing was done at both Webb Institute’s Robinson Model Basin and Stevens Institute of Technology’s [Davidson Laboratory](https://www.stevens.edu/davidson-laboratory). Tests focused on the pre-planing speeds, where transom lift devices are known to be the most useful at decreasing resistance.
+<p>A hull was modified to add a pressure sensor array which was designed and 3D printed for this testing. 11 pressure sensors were used to allow fine measurements of the pressure near the transom of the hull. Three sets of trim tabs were 3D printed, as well as a single interceptor plate with variable deployment.</p>
 
-<div class="youtube youtube-16x9">
-<iframe src="https://www.youtube-nocookie.com/embed/ekA59PTnhR0?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen seamless ></iframe>
+<p>Testing was done at both Webb Institute’s Robinson Model Basin and Stevens Institute of Technology’s <a href="https://www.stevens.edu/davidson-laboratory">Davidson Laboratory</a>. Tests focused on the pre-planing speeds, where transom lift devices are known to be the most useful at decreasing resistance.</p>
+
+</div>
+
+<div class="col-12 col-lg-4">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/ekA59PTnhR0?rel=0" title="YouTube video player" frameBorder="0" allowfullscreen seamless></iframe>
+  </div>
+</div>
 </div>
 
 ### Results
