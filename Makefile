@@ -84,7 +84,7 @@ devserver-global:
 
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
-	$(MAKE) purify
+#	$(MAKE) purify
 	$(MAKE) icons
 
 ssh_upload: publish
