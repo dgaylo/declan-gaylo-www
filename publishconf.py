@@ -19,8 +19,8 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-GOOGLE_GLOBAL_SITE_TAG = 'G-0SEL0G18LQ'
-GOOGLE_VERIFICATIION_TAG = 'QUWwxfPE7bJsHk2xKt1srAdzcLBN26SwiIsGFBMgGGw'
+# Google Analytics
+GOGGLE_DEBUG_MODE = False
 
 #DISQUS_SITENAME = ""
 
