@@ -64,13 +64,14 @@ BOOTSTRAP_CDN_CSS_INTEGRITY='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GA
 BOOTSTRAP_CDN_JS='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'
 BOOTSTRAP_CDN_JS_INTEGRITY='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL'
 
+BOOTSTRAP_ICONS_CDN='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11/font/bootstrap-icons.min.css'
+
 # Themes from http://bootswatch.com
 BOOTSWATCH_THEME="cosmo"
 BOOTSWATCH_CDN='https://cdn.jsdelivr.net/npm/bootswatch@5.3/dist/'+BOOTSWATCH_THEME.lower()+'/bootstrap.min.css'
 THEME_COLOR='#F8F9FA'
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
-FONT_AWESOME_KIT = 'b3b7784092'
 USE_WEBP = True
 
 SOURCE_CODE_URL= 'https://github.com/dgaylo/declan-gaylo-www'
