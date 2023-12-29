@@ -1,5 +1,6 @@
 Title: Publications
 slug: publications
+icon: "fas fa-book"
 modified: 2022-01-25 22:00
 
 

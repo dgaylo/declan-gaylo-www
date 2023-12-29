@@ -13,6 +13,6 @@
 {% endblock %}
 
 {% block content %}
-    <h1>{{ page.title }}</h1>
+    <h1>{% if page.icon %}<i class={{ page.icon }}></i>&nbsp;&nbsp;{% endif %}{{ page.title }}</h1>
     {{ page.content }}
 {% endblock %}
