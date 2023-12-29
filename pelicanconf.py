@@ -136,8 +136,7 @@ DEFAULT_PAGINATION = False
 EXTRA_PATH_METADATA = {
     'extra/htaccess/theme_css': {'path': 'theme/css/.htaccess'},
     'extra/htaccess/theme_js': {'path': 'theme/js/.htaccess'},
-    'extra/htaccess/images': {'path': 'images/.htaccess'},
-    'extra/htaccess/static': {'path': 'static/.htaccess'},
+    'extra/htaccess/images': {'path': 'images/.htaccess'}
 }
 
 # Google Analytics
