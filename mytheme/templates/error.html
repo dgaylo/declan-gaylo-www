@@ -3,6 +3,27 @@
 {% block breadcrumb %}
 {% endblock %}
 
+{% block head %}
+{{ super() }}
+{% if GOOGLE_GLOBAL_SITE_TAG %}
+  {% if page.error_code %}
+    <script>
+      gtag('event', 'error_page', {
+        'error_code': '{{ page.error_code }}',
+        'request_uri': '<?php echo $_SERVER['REQUEST_URI']?>'
+      });
+    </script>
+  {% else %}
+  <script>
+    gtag('event', 'error_page', {
+      'error_code': 'Unknown',
+      'request_uri': '<?php echo $_SERVER['REQUEST_URI']?>'
+    });
+  </script>
+  {% endif %}
+{% endif %}
+{% endblock %}
+
 {% block content %}
 {{ super() }}
 {% if page.logfile %}
