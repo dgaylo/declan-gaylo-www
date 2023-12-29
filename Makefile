@@ -85,6 +85,7 @@ devserver-global:
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 	$(MAKE) purify
+	$(MAKE) icons
 
 ssh_upload: publish
 	if [ -f ~/.scripts/krbSetup_MIT ]; then  ~/.scripts/krbSetup_MIT; fi
@@ -93,7 +94,7 @@ sftp_upload: publish
 	printf 'put -r $(OUTPUTDIR)/*' | sftp $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
 
-rsync_upload: publish icons
+rsync_upload: publish
 	if [ -f ~/.scripts/krbSetup_MIT ]; then  ~/.scripts/krbSetup_MIT; fi
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --include tags --cvs-exclude --delete "$(OUTPUTDIR)"/ "$(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)"
 
