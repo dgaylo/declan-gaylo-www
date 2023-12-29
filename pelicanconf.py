@@ -126,7 +126,7 @@ SOCIAL_WIDGET_NAME = 'Profiles'
 SOCIAL = (
     ('Resume', '/files/Declan Gaylo - Resume.pdf', 'fas fa-file-pdf'),
     ('LinkedIn', 'https://www.linkedin.com/in/declan-gaylo', 'fab fa-linkedin'),
-    ('Google Scholar', 'https://scholar.google.com/citations?hl=en&user=kA9LJygAAAAJ', 'fab fa-google-scholar'),
+    ('Google Scholar', 'https://scholar.google.com/citations?hl=en&user=kA9LJygAAAAJ', 'fab fa-google'),
     ('GitHub', 'https://github.com/dgaylo/', 'fab fa-github'),
 )
 
