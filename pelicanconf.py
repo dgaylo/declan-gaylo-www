@@ -138,5 +138,10 @@ EXTRA_PATH_METADATA = {
     'extra/htaccess/static': {'path': 'static/.htaccess'},
 }
 
+# Google Analytics
+GOOGLE_GLOBAL_SITE_TAG = 'G-0SEL0G18LQ'
+GOOGLE_VERIFICATIION_TAG = 'QUWwxfPE7bJsHk2xKt1srAdzcLBN26SwiIsGFBMgGGw'
+GOGGLE_DEBUG_MODE = True
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

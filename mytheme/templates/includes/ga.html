@@ -38,7 +38,11 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
+        {% if GOGGLE_DEBUG_MODE %}
+        gtag('config', '{{GOOGLE_GLOBAL_SITE_TAG}}', {'debug_mode':true});
+        {% else %}
         gtag('config', '{{GOOGLE_GLOBAL_SITE_TAG}}');
+        {% endif %}
     </script>
 {% endif %}
 {% if GOOGLE_VERIFICATIION_TAG %}
