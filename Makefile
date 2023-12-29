@@ -7,6 +7,7 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/build
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
+PUBLISHCONF_DEV=$(BASEDIR)/publishconf_dev.py
 
 ICON_SVG=$(INPUTDIR)/images/logo.svg
 
@@ -14,7 +15,13 @@ SSH_HOST=Scripts
 SSH_PORT=22
 SSH_USER=dgaylo
 SSH_TARGET_DIR=~/web_scripts/home
+SSH_TARGET_DIR_DEV=~/web_scripts/dev/home
 
+DEV ?= 0
+ifeq ($(DEV), 1)
+	PUBLISHCONF=$(PUBLISHCONF_DEV)
+	SSH_TARGET_DIR=$(SSH_TARGET_DIR_DEV)
+endif
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
