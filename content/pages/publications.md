@@ -16,7 +16,7 @@ Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2021). Effects of power-law entra
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2023, November). *Quantifying bubble degassing in entraining free-surface turbulence*. Presented at the 76th Annual Meeting of the APS Division of Fluid Dynamics, Washington, D.C.
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2022, July). *Quantifying Fragmentation Statistics in Two-Phase Turbulent Flows for Ship Wake Applications*. Presented at the 34th Symposium on Naval Hydrodynamics, Washington, D.C.
-[Download <i class="fa fa-file-pdf-o"></i>](/files/Quantifying Fragmentation Statistics in Two-Phase Turbulent Flows for Ship Wake Applications.pdf)
+[Download <i class="bi bi-file-earmark-pdf"></i>](/files/Quantifying Fragmentation Statistics in Two-Phase Turbulent Flows for Ship Wake Applications.pdf)
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2021, November). *Effects of split power-law entrainment on bubble fragmentation cascades*. Presented at the 74th Annual Meeting of the APS Division of Fluid Dynamics, Phoenix, AZ.
 
@@ -27,4 +27,4 @@ Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2020, November). *Eulerian Label 
 Gaylo, D. B. (2021). *Effects of power-law entrainment on bubble fragmentation cascades* (Master's thesis). Massachusetts Institute of Technology, Cambridge, MA. doi: [1721.1/139428](https://hdl.handle.net/1721.1/139438)
 
 Gaylo, D. B., & Roske, D. (2019). [*Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls*]({filename}/posts/undergradthesis.md) (Bachelor's thesis). Webb Institute, Glen Cove, NY. 
-[Download <i class="fa fa-file-pdf-o"></i>](/files/Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls.pdf)
+[Download <i class="bi bi-file-earmark-pdf"></i>](/files/Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls.pdf)
