@@ -84,7 +84,7 @@ devserver-global:
 
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
-	purifycss $(OUTPUTDIR)/theme/css/style.min.css $(shell find $(OUTPUTDIR) -name '*.html') $(shell find $(OUTPUTDIR) -name '*.js') -m -o $(OUTPUTDIR)/theme/css/style.min.css
+	$(MAKE) purify
 
 ssh_upload: publish
 	if [ -f ~/.scripts/krbSetup_MIT ]; then  ~/.scripts/krbSetup_MIT; fi
@@ -106,3 +106,8 @@ icons: $(OUTPUTDIR)/icon-80.png $(OUTPUTDIR)/icon-120.png $(OUTPUTDIR)/icon-180.
 
 $(OUTPUTDIR)/icon-%.png: $(ICON_SVG)
 	convert -density 2400 -resize $*x$* $<  $@
+
+# run purify
+.PHONY: purify
+purify: $(OUTPUTDIR)/theme/css/style.min.css $(shell find $(OUTPUTDIR) -name '*.html') $(shell find $(OUTPUTDIR) -name '*.js')
+	purifycss $^ -m -o $<
