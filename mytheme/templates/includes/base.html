@@ -8,15 +8,22 @@
 
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
 
-    <!-- Font Awesome-->
-    <script src="https://kit.fontawesome.com/{{FONT_AWESOME_KIT}}.js" crossorigin="anonymous" defer></script>
-
     <!-- Bootstrap -->
     <!--link href="{{BOOTSTRAP_CDN_CSS}}" integrity="{{BOOTSTRAP_CDN_CSS_INTEGRITY}}" crossorigin="anonymous"-->
     <link href="{{BOOTSWATCH_CDN}}" crossorigin="anonymous" rel="stylesheet">
     
+    <style type="text/css">
+      @font-face {
+        font-display: block;
+        font-family: "bootstrap-icons";
+        src: url("theme/fonts/bootstrap-icons.woff2?7141511ac37f13e1a387fb9fc6646256") format("woff2"),
+        url("theme/fonts/bootstrap-icons.woff?7141511ac37f13e1a387fb9fc6646256") format("woff");
+      }
+    </style>
+
     {% assets filters="cssmin", output="css/style.min.css", 
-      "css/style.css"
+      "css/style.css",
+      "css/bootstrap-icons.css"
     %}
     <link rel="stylesheet" href="{{SITEURL}}/{{ASSET_URL}}" type="text/css"/>
     {% endassets %}

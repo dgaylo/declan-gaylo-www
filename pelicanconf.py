@@ -70,7 +70,6 @@ BOOTSWATCH_CDN='https://cdn.jsdelivr.net/npm/bootswatch@5.3/dist/'+BOOTSWATCH_TH
 THEME_COLOR='#F8F9FA'
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
-FONT_AWESOME_KIT = 'b3b7784092'
 USE_WEBP = True
 
 SOURCE_CODE_URL= 'https://github.com/dgaylo/declan-gaylo-www'
@@ -124,10 +123,10 @@ LINKS = (
 # Social widget
 SOCIAL_WIDGET_NAME = 'Profiles'
 SOCIAL = (
-    ('Resume', 'files/Declan Gaylo - Resume.pdf', 'fas fa-file-pdf'),
-    ('LinkedIn', 'https://www.linkedin.com/in/declan-gaylo', 'fab fa-linkedin'),
-    ('Google Scholar', 'https://scholar.google.com/citations?hl=en&user=kA9LJygAAAAJ', 'fab fa-google'),
-    ('GitHub', 'https://github.com/dgaylo/', 'fab fa-github'),
+    ('Resume', 'files/Declan Gaylo - Resume.pdf', 'bi bi-file-earmark-pdf-fill'),
+    ('LinkedIn', 'https://www.linkedin.com/in/declan-gaylo', 'bi bi-linkedin'),
+    ('Google Scholar', 'https://scholar.google.com/citations?hl=en&user=kA9LJygAAAAJ', 'bi bi-google'),
+    ('GitHub', 'https://github.com/dgaylo/', 'bi bi-github'),
 )
 
 DEFAULT_PAGINATION = False
