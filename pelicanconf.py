@@ -30,7 +30,7 @@ AUTHOR_SAVE_AS = ''
 TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
-STATIC_PATHS = ['images','extra']
+STATIC_PATHS = ['images','extra','static']
 ARTICLE_PATHS  = ['posts']
 PAGE_PATHS = ['pages']
 
@@ -136,7 +136,8 @@ DEFAULT_PAGINATION = False
 EXTRA_PATH_METADATA = {
     'extra/htaccess/theme_css': {'path': 'theme/css/.htaccess'},
     'extra/htaccess/theme_js': {'path': 'theme/js/.htaccess'},
-    'extra/htaccess/images': {'path': 'images/.htaccess'}
+    'extra/htaccess/images': {'path': 'images/.htaccess'},
+    'static/robots.txt': {'path': 'robots.txt'}
 }
 
 # Google Analytics
