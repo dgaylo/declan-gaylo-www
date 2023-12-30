@@ -123,7 +123,7 @@ LINKS = (
 # Social widget
 SOCIAL_WIDGET_NAME = 'Profiles'
 SOCIAL = (
-    ('Resume', 'files/Declan Gaylo - Resume.pdf', 'bi bi-file-earmark-pdf-fill'),
+    ('Resume', '/files/Declan Gaylo - Resume.pdf', 'bi bi-file-earmark-pdf-fill'),
     ('LinkedIn', 'https://www.linkedin.com/in/declan-gaylo', 'bi bi-linkedin'),
     ('Google Scholar', 'https://scholar.google.com/citations?hl=en&user=kA9LJygAAAAJ', 'bi bi-google'),
     ('GitHub', 'https://github.com/dgaylo/', 'bi bi-github'),
