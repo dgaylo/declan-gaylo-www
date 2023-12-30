@@ -1,5 +1,5 @@
-[thewebsite]: https://declangaylo.com
+[thewebsite]: https://dgaylo.com
 
 
 # declan-gaylo-www
-[DeclanGaylo.com][thewebsite]
+[dgaylo.com][thewebsite]
