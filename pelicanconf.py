@@ -30,7 +30,7 @@ AUTHOR_SAVE_AS = ''
 TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
-STATIC_PATHS = ['images','extra']
+STATIC_PATHS = ['images','static','files']
 ARTICLE_PATHS  = ['posts']
 PAGE_PATHS = ['pages']
 
@@ -123,7 +123,7 @@ LINKS = (
 # Social widget
 SOCIAL_WIDGET_NAME = 'Profiles'
 SOCIAL = (
-    ('Resume', '/files/Declan Gaylo - Resume.pdf', 'bi bi-file-earmark-pdf-fill'),
+    ('Resume', 'files/Declan Gaylo - Resume.pdf', 'bi bi-file-earmark-pdf-fill'),
     ('LinkedIn', 'https://www.linkedin.com/in/declan-gaylo', 'bi bi-linkedin'),
     ('Google Scholar', 'https://scholar.google.com/citations?hl=en&user=kA9LJygAAAAJ', 'bi bi-google'),
     ('GitHub', 'https://github.com/dgaylo/', 'bi bi-github'),
@@ -133,11 +133,7 @@ DEFAULT_PAGINATION = False
 
 # Cache settings using .htaccess files
 EXTRA_PATH_METADATA = {
-    'extra/htaccess/theme_css': {'path': 'theme/css/.htaccess'},
-    'extra/htaccess/theme_js': {'path': 'theme/js/.htaccess'},
-    'extra/htaccess/theme_fonts': {'path': 'theme/fonts/.htaccess'},
-    'extra/htaccess/images': {'path': 'images/.htaccess'},
-    'extra/htaccess/static': {'path': 'static/.htaccess'},
+    'static/robots.txt': {'path': 'robots.txt'}
 }
 
 # Google Analytics
