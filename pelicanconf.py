@@ -30,7 +30,7 @@ AUTHOR_SAVE_AS = ''
 TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
-STATIC_PATHS = ['images','extra','static']
+STATIC_PATHS = ['images','extra','static','files']
 ARTICLE_PATHS  = ['posts']
 PAGE_PATHS = ['pages']
 
@@ -124,7 +124,7 @@ LINKS = (
 # Social widget
 SOCIAL_WIDGET_NAME = 'Profiles'
 SOCIAL = (
-    ('Resume', '/files/Declan Gaylo - Resume.pdf', 'fas fa-file-pdf'),
+    ('Resume', 'files/Declan Gaylo - Resume.pdf', 'fas fa-file-pdf'),
     ('LinkedIn', 'https://www.linkedin.com/in/declan-gaylo', 'fab fa-linkedin'),
     ('Google Scholar', 'https://scholar.google.com/citations?hl=en&user=kA9LJygAAAAJ', 'fab fa-google'),
     ('GitHub', 'https://github.com/dgaylo/', 'fab fa-github'),
