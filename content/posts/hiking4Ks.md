@@ -6,7 +6,6 @@ graphic: images/hiking4Ks.jpg
 graphicAlt: Declan hiking in the White Mounatains
 template: sortableTables
 
-
 I've been slowly working on hiking all of <a href="http://4000footers.com/nh.shtml" target="_blank">New Hampshire's 48 mountains over 4,000 feet</a>. Here's my current progress:
 
 | <button type="button" class="btn sortable">Complete<span aria-hidden="true"></span></button> | <button class="btn sortable">Mountain<span aria-hidden="true"></span></button> | <button class="btn sortable sortable-num">Elevation (ft)<span aria-hidden="true"></span></button> | <button class="btn sortable sortable-date">Date First Hiked<span aria-hidden="true"></span></button> |
