@@ -77,6 +77,9 @@ class SortableTable {
     if (typeof isNumber !== 'boolean') {
       isNumber = false;
     }
+    if (typeof isDate !== 'boolean') {
+      isDate = false;
+    }
 
     var tbodyNode = this.tableNode.querySelector('tbody');
     var rowNodes = [];
