@@ -1,0 +1,37 @@
+{% extends "!theme/article.html" %}
+
+{% block head %}
+{{ super() }}
+
+{% assets output="js/sortable-table.js", 
+    "static/js/sortable-table.js"
+%}
+<script src="{{SITEURL}}/{{ASSET_URL}}"></script>
+{% endassets %}
+
+<style>
+th button.sortable {
+    font: inherit;
+    width: 100%;
+    padding: 0;
+}
+
+
+th[aria-sort="descending"] button.sortable span::after{
+    content: "▼";
+}
+th[aria-sort="ascending"] button.sortable span::after {
+  content: "▲";
+}
+th:not([aria-sort]) button.sortable span::after {
+    content: "▼";
+    visibility: hidden;
+    color: var(--bs-tertiary-color);
+}
+th:not([aria-sort]) button.sortable:focus span::after,
+th:not([aria-sort]) button.sortable:hover span::after {
+    visibility: visible;
+}
+
+</style>
+{% endblock %}
