@@ -9,7 +9,7 @@ template: sortableTables
 
 I've been slowly working on hiking all of <a href="http://4000footers.com/nh.shtml" target="_blank">New Hampshire's 48 mountains over 4,000 feet</a>. Here's my current progress:
 
-| <button type="button" class="btn sortable">Complete<span aria-hidden="true"></span></button> | <button class="btn sortable">Mountain<span aria-hidden="true"></span></button> | <button class="btn sortable">Elevation (ft)<span aria-hidden="true"></span></button> | <button class="btn sortable">Date First Hiked<span aria-hidden="true"></span></button> |
+| <button type="button" class="btn sortable">Complete<span aria-hidden="true"></span></button> | <button class="btn sortable">Mountain<span aria-hidden="true"></span></button> | <button class="btn sortable sortable-num">Elevation (ft)<span aria-hidden="true"></span></button> | <button class="btn sortable">Date First Hiked<span aria-hidden="true"></span></button> |
 |:----------:|:--------:|:--------------:|:----------------:|
 | | Washington | 6288 | |
 | <i class="bi bi-check-lg"></i> | Adams | 5774 | Sept. 17, 2022 | <!-- Oct. 11, 2022 -->

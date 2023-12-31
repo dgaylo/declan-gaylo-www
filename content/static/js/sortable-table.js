@@ -41,14 +41,14 @@ class SortableTable {
           this.sortColumn(
             columnIndex,
             'ascending',
-            ch.classList.contains('num')
+            ch.querySelector('button.sortable-num') != null
           );
         } else {
           ch.setAttribute('aria-sort', 'descending');
           this.sortColumn(
             columnIndex,
             'descending',
-            ch.classList.contains('num')
+            ch.querySelector('button.sortable-num') != null
           );
         }
       } else {
@@ -66,6 +66,7 @@ class SortableTable {
           return 0;
         } else {
           if (isNumber) {
+            console.log("is Number");
             return a.value - b.value;
           } else {
             return a.value < b.value ? -1 : 1;
@@ -76,6 +77,7 @@ class SortableTable {
           return 0;
         } else {
           if (isNumber) {
+            console.log("is Number");
             return b.value - a.value;
           } else {
             return a.value > b.value ? -1 : 1;
