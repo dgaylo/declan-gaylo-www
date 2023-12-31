@@ -69,7 +69,7 @@ class SortableTable {
             console.log("is Number");
             return a.value - b.value;
           } else {
-            return a.value < b.value ? -1 : 1;
+            return b.value.localeCompare(a.value);
           }
         }
       } else {
@@ -80,7 +80,7 @@ class SortableTable {
             console.log("is Number");
             return b.value - a.value;
           } else {
-            return a.value > b.value ? -1 : 1;
+            return a.value.localeCompare(b.value);
           }
         }
       }
