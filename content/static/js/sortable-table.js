@@ -62,36 +62,16 @@ class SortableTable {
   }
 
   sortColumn(columnIndex, sortValue, isNumber, isDate) {
-    function compareValues(a, b) {
-      if (sortValue === 'ascending') {
-        if (a.value === b.value) {
-          return 0;
-        } else {
-          if (isNumber || isDate) {
-            return a.value - b.value;
-          } else {
-            try {
-              return b.value.localeCompare(a.value);
-            } catch (TypeError) {
-              return a.value - b.value;
-            }
-          }
-        }
+    function compareValues(a,b) {
+      var diff = 0
+
+      if ((typeof b.value == "string") && (typeof a.value == "string")) {
+        diff =  b.value.localeCompare(a.value);
       } else {
-        if (a.value === b.value) {
-          return 0;
-        } else {
-          if (isNumber || isDate) {
-            return b.value - a.value;
-          } else {
-            try {
-              return a.value.localeCompare(b.value);
-            } catch (TypeError) {
-              return b.value - a.value;
-            }
-          }
-        }
+        diff =  a.value - b.value;
       }
+
+      return diff * ((sortValue === 'ascending') ? 1 : -1);
     }
 
     if (typeof isNumber !== 'boolean') {
