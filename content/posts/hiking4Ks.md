@@ -4,10 +4,12 @@ slug: hiking4ks
 description: There are 48 mountains in New Hampshire's White Mountains over 4,000 feet. On this page I track my progress hiking all of them.
 graphic: images/hiking4Ks.jpg
 graphicAlt: Declan hiking in the White Mounatains
+template: sortableTables
+
 
 I've been slowly working on hiking all of <a href="http://4000footers.com/nh.shtml" target="_blank">New Hampshire's 48 mountains over 4,000 feet</a>. Here's my current progress:
 
-|  Complete  | Mountain | Elevation (ft) | Date First Hiked |
+| <button type="button" class="btn sortable">Complete<span aria-hidden="true"></span></button> | <button class="btn sortable">Mountain<span aria-hidden="true"></span></button> | <button class="btn sortable">Elevation (ft)<span aria-hidden="true"></span></button> | <button class="btn sortable">Date First Hiked<span aria-hidden="true"></span></button> |
 |:----------:|:--------:|:--------------:|:----------------:|
 | | Washington | 6288 | |
 | <i class="bi bi-check-lg"></i> | Adams | 5774 | Sept. 17, 2022 | <!-- Oct. 11, 2022 -->
