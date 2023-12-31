@@ -70,7 +70,11 @@ class SortableTable {
           if (isNumber || isDate) {
             return a.value - b.value;
           } else {
-            return b.value.localeCompare(a.value);
+            try {
+              return b.value.localeCompare(a.value);
+            } catch (TypeError) {
+              return a.value - b.value;
+            }
           }
         }
       } else {
@@ -80,7 +84,11 @@ class SortableTable {
           if (isNumber || isDate) {
             return b.value - a.value;
           } else {
-            return a.value.localeCompare(b.value);
+            try {
+              return a.value.localeCompare(b.value);
+            } catch (TypeError) {
+              return b.value - a.value;
+            }
           }
         }
       }
@@ -109,6 +117,9 @@ class SortableTable {
         data.value = parseFloat(data.value);
       } else if (isDate) {
         data.value = Date.parse(data.value) || 0;
+      } else if (!data.value) {
+        // hack to sort based on number of childeren if no text content
+        data.value = dataCell.childNodes.length
       }
       dataCells.push(data);
       rowNode = rowNode.nextElementSibling;
