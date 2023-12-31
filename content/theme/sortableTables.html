@@ -2,6 +2,13 @@
 
 {% block head %}
 {{ super() }}
+
+{% assets output="js/sortable-table.js", 
+    "static/js/sortable-table.js"
+%}
+<script src="{{SITEURL}}/{{ASSET_URL}}"></script>
+{% endassets %}
+
 <style>
 th button.sortable {
     font: inherit;
