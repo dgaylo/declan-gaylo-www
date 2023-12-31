@@ -125,16 +125,6 @@ class SortableTable {
     var tgt = event.currentTarget;
     this.setColumnHeaderSort(tgt.getAttribute('data-column-index'));
   }
-
-  handleOptionChange(event) {
-    var tgt = event.currentTarget;
-
-    if (tgt.checked) {
-      this.tableNode.classList.add('show-unsorted-icon');
-    } else {
-      this.tableNode.classList.remove('show-unsorted-icon');
-    }
-  }
 }
 
 // Initialize sortable table buttons
