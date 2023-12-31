@@ -41,14 +41,16 @@ class SortableTable {
           this.sortColumn(
             columnIndex,
             'ascending',
-            ch.querySelector('button.sortable-num') != null
+            ch.querySelector('button.sortable-num') != null,
+            ch.querySelector('button.sortable-date') != null
           );
         } else {
           ch.setAttribute('aria-sort', 'descending');
           this.sortColumn(
             columnIndex,
             'descending',
-            ch.querySelector('button.sortable-num') != null
+            ch.querySelector('button.sortable-num') != null,
+            ch.querySelector('button.sortable-date') != null
           );
         }
       } else {
@@ -59,14 +61,13 @@ class SortableTable {
     }
   }
 
-  sortColumn(columnIndex, sortValue, isNumber) {
+  sortColumn(columnIndex, sortValue, isNumber, isDate) {
     function compareValues(a, b) {
       if (sortValue === 'ascending') {
         if (a.value === b.value) {
           return 0;
         } else {
-          if (isNumber) {
-            console.log("is Number");
+          if (isNumber || isDate) {
             return a.value - b.value;
           } else {
             return b.value.localeCompare(a.value);
@@ -76,8 +77,7 @@ class SortableTable {
         if (a.value === b.value) {
           return 0;
         } else {
-          if (isNumber) {
-            console.log("is Number");
+          if (isNumber || isDate) {
             return b.value - a.value;
           } else {
             return a.value.localeCompare(b.value);
@@ -104,9 +104,11 @@ class SortableTable {
 
       var data = {};
       data.index = index;
-      data.value = dataCell.textContent.toLowerCase().trim();
+      data.value = dataCell.textContent.trim();
       if (isNumber) {
         data.value = parseFloat(data.value);
+      } else if (isDate) {
+        data.value = Date.parse(data.value) || 0;
       }
       dataCells.push(data);
       rowNode = rowNode.nextElementSibling;
