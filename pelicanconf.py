@@ -35,8 +35,7 @@ ARTICLE_PATHS  = ['posts']
 PAGE_PATHS = ['pages']
 
 # Plugins
-PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['i18n_subsites', 'sitemap', 'webassets', 'pelican.plugins.add_css_classes']
+PLUGINS = ['sitemap', 'webassets', 'pelican.plugins.add_css_classes']
 
 ADD_CSS_CLASSES = {}
 ADD_CSS_CLASSES_TO_PAGE = {}
@@ -69,7 +68,7 @@ BOOTSWATCH_THEME="cosmo"
 BOOTSWATCH_CDN='https://cdn.jsdelivr.net/npm/bootswatch@5.3/dist/'+BOOTSWATCH_THEME.lower()+'/bootstrap.min.css'
 THEME_COLOR='#F8F9FA'
 
-JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+JINJA_ENVIRONMENT = {}
 USE_WEBP = True
 
 SOURCE_CODE_URL= 'https://github.com/dgaylo/declan-gaylo-www'

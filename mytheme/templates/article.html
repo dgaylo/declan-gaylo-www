@@ -24,7 +24,7 @@
 
 {% block breadcrumb %}
 <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="{{ SITEURL }}/">{{ _('Home') }}</a></li>
+  <li class="breadcrumb-item"><a href="{{ SITEURL }}/">Home</a></li>
   <li class="breadcrumb-item"><a href="{{ SITEURL }}/{{article.category}}">{{ article.category | capitalize }}</a></li>
   <li class="breadcrumb-item active">{{article.slug | capitalize}}</li>
 </ol>
@@ -37,7 +37,7 @@
         <h1 class="article-title">
           <a href="{{ SITEURL }}/{{ article.url }}"
           rel="bookmark"
-          title="{{ _('Permalink to') }} {{ article.title|striptags }}">
+          title="Permalink to {{ article.title|striptags }}">
           {{ article.title }}
           </a>
         </h1>
