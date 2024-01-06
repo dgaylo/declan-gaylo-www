@@ -35,7 +35,6 @@ ARTICLE_PATHS  = ['posts']
 PAGE_PATHS = ['pages']
 
 # Plugins
-PLUGIN_PATHS = ['./pelican-plugins']
 PLUGINS = ['sitemap', 'webassets', 'pelican.plugins.add_css_classes']
 
 ADD_CSS_CLASSES = {}
