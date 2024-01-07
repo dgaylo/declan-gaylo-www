@@ -71,6 +71,12 @@ jobs:
             This pull request does not change the generated website.
           comment_tag: diff-report
           mode: recreate
+      - name: Remove label
+        run: gh pr edit $NUMBER --remove-label "changes-website"
+        env:
+          NUMBER: ${{ github.event.number }}
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # when there are differences in the generated website
   output-diff:
