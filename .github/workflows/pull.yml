@@ -30,6 +30,8 @@ jobs:
   compare:
     needs: build
     runs-on: ubuntu-latest
+    outputs: 
+      diff: ${{ steps.diff.outputs.diff }}
     steps:
       - name: Get ref build artifacts
         uses: actions/download-artifact@v4
@@ -42,10 +44,40 @@ jobs:
           name: publish-${{ github.head_ref }}
           path: build-head
       - name: Generate diff
+        id: diff
         run: |
-          diff -r build-base build-head > diff.txt || [ $? -eq 1 ]
-      - name: Comment diff in PR
-        uses: thollander/actions-comment-pull-request@v2
+          diff -r build-base build-head > diff.txt \
+            && echo "diff=no" >> "$GITHUB_OUTPUT" \
+            || if [ $? -eq 1 ]; then echo "diff=yes" >> "$GITHUB_OUTPUT"; else exit $?; fi
+      - name: Archive diff results
+        if: steps.diff.outputs.diff == 'yes'
+        uses: actions/upload-artifact@v4
         with:
-          filePath: diff.txt
-    
+          name: website-diff
+          path: diff.txt
+
+  # when there is no differences in the generated website
+  output-no-diff:
+    needs: compare
+    runs-on: ubuntu-latest
+    if: needs.compare.outputs.diff == 'no'
+    steps:
+      - name: Comment
+        uses: thollander/actions-comment-pull-request@v2
+        with: 
+          message: |
+            This pull request does not change the generated website.
+          comment_tag: diff-report
+
+  # when there are differences in the generated website
+  output-diff:
+    needs: compare
+    runs-on: ubuntu-latest
+    if: needs.compare.outputs.diff == 'yes'
+    steps:
+      - name: Comment
+        uses: thollander/actions-comment-pull-request@v2
+        with: 
+          message: |
+            :warning: This pull request changes the generated website.
+          comment_tag: diff-report
