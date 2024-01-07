@@ -68,6 +68,7 @@ jobs:
           message: |
             This pull request does not change the generated website.
           comment_tag: diff-report
+          mode: recreate
 
   # when there are differences in the generated website
   output-diff:
@@ -81,3 +82,4 @@ jobs:
           message: |
             :warning: This pull request changes the generated website.
           comment_tag: diff-report
+          mode: recreate
