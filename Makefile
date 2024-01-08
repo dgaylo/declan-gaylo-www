@@ -107,7 +107,7 @@ rsync_upload: publish
 icons: $(OUTPUTDIR)/icon-80.png $(OUTPUTDIR)/icon-120.png $(OUTPUTDIR)/icon-180.png  
 
 $(OUTPUTDIR)/icon-%.png: $(ICON_SVG)
-	convert -density 2400 -resize $*x$* $<  $@
+	convert -density 2400 -resize $*x$* $< -strip $@
 
 # note the commit hash
 .PHONY: $(OUTPUTDIR)/commit.txt
