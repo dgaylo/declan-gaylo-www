@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+env:
+  YES_DIFF_LABEL: changes-website
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -72,7 +75,7 @@ jobs:
           comment_tag: diff-report
           mode: recreate
       - name: Remove label
-        run: gh pr edit $NUMBER --remove-label "changes-website"
+        run: gh pr edit $NUMBER --remove-label "${{ env.YES_DIFF_LABEL }}"
         env:
           NUMBER: ${{ github.event.number }}
           GH_REPO: ${{ github.repository }}
@@ -106,7 +109,7 @@ jobs:
           comment_tag: diff-report
           mode: recreate
       - name: Add label
-        run: gh pr edit $NUMBER --add-label "changes-website"
+        run: gh pr edit $NUMBER --add-label "${{ env.YES_DIFF_LABEL }}"
         env:
           NUMBER: ${{ github.event.number }}
           GH_REPO: ${{ github.repository }}
