@@ -1,6 +1,5 @@
 import os
 import sys
-import git
 import datetime
 sys.path.append(os.curdir)
 from pelicanconf import *
@@ -16,10 +15,6 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Google Analytics
 GOGGLE_DEBUG_MODE = True
-
-# source code link (with hash)
-sha = git.Repo(search_parent_directories=True).head.object.hexsha
-SOURCE_CODE_URL= SOURCE_CODE_URL+'/tree/'+sha
 
 # copy right date
 COPY_DATE=datetime.date.today().strftime('%Y')
