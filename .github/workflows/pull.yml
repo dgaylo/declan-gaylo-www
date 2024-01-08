@@ -1,0 +1,116 @@
+name: Pull Request Checks
+
+on:
+  pull_request:
+    branches:
+      - master
+
+env:
+  YES_DIFF_LABEL: changes-website
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branch: [ "${{ github.base_ref }}", "${{ github.head_ref }}"]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.branch }}
+      - uses: actions/setup-python@v3
+      - name: Install dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          sudo apt install -y imagemagick
+      - name: Build website
+        run: |
+          make publish
+      - name: Archive build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: publish-${{ matrix.branch }}
+          path: build
+
+  compare:
+    needs: build
+    runs-on: ubuntu-latest
+    outputs: 
+      diff: ${{ steps.diff.outputs.diff }}
+    steps:
+      - name: Get ref build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: publish-${{ github.base_ref }}
+          path: build-base
+      - name: Get head build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: publish-${{ github.head_ref }}
+          path: build-head
+      - name: Generate diff
+        id: diff
+        run: |
+          diff -r build-base build-head > diff.txt \
+            && echo "diff=no" >> "$GITHUB_OUTPUT" \
+            || if [ $? -eq 1 ]; then echo "diff=yes" >> "$GITHUB_OUTPUT"; else exit $?; fi
+      - name: Archive diff results
+        if: steps.diff.outputs.diff == 'yes'
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-diff
+          path: diff.txt
+
+  # when there is no differences in the generated website
+  output-no-diff:
+    needs: compare
+    runs-on: ubuntu-latest
+    if: needs.compare.outputs.diff == 'no'
+    steps:
+      - name: Comment
+        uses: thollander/actions-comment-pull-request@v2
+        with: 
+          message: |
+            This pull request does not change the generated website.
+          comment_tag: diff-report
+          mode: recreate
+      - name: Remove label
+        run: gh pr edit $NUMBER --remove-label "${{ env.YES_DIFF_LABEL }}"
+        env:
+          NUMBER: ${{ github.event.number }}
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # when there are differences in the generated website
+  output-diff:
+    needs: compare
+    runs-on: ubuntu-latest
+    if: needs.compare.outputs.diff == 'yes'
+    steps:
+      - name: Load diff artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: website-diff
+      - name: Generate comment
+        run: |
+          touch comment.txt
+          echo ":warning: This pull request changes the generated website." >> comment.txt
+          echo "<details>" >> comment.txt
+          echo "" >> comment.txt
+          echo "\`\`\`Diff" >> comment.txt
+          cat diff.txt >> comment.txt
+          echo "\`\`\`" >> comment.txt
+          echo "" >> comment.txt
+          echo "</details>" >> comment.txt
+      - name: Comment
+        uses: thollander/actions-comment-pull-request@v2
+        with: 
+          filePath: comment.txt
+          comment_tag: diff-report
+          mode: recreate
+      - name: Add label
+        run: gh pr edit $NUMBER --add-label "${{ env.YES_DIFF_LABEL }}"
+        env:
+          NUMBER: ${{ github.event.number }}
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
