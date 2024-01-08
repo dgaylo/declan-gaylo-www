@@ -86,6 +86,7 @@ publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 #	$(MAKE) purify
 	$(MAKE) icons
+	$(MAKE) $(OUTPUTDIR)/commit.txt
 
 ssh_upload: publish
 	if [ -f ~/.scripts/krbSetup_MIT ]; then  ~/.scripts/krbSetup_MIT; fi
@@ -107,6 +108,12 @@ icons: $(OUTPUTDIR)/icon-80.png $(OUTPUTDIR)/icon-120.png $(OUTPUTDIR)/icon-180.
 
 $(OUTPUTDIR)/icon-%.png: $(ICON_SVG)
 	convert -density 2400 -resize $*x$* $<  $@
+
+# note the commit hash
+.PHONY: $(OUTPUTDIR)/commit.txt
+
+$(OUTPUTDIR)/commit.txt:
+	python -c "import sys; import git; sys.stdout.write(git.Repo().head.object.hexsha)" >  $@
 
 # run purify
 .PHONY: purify
