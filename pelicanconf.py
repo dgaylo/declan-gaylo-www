@@ -18,12 +18,12 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Setup URLS
-CATEGORY_URL = '{slug}'
-CATEGORY_SAVE_AS  = '{slug}/index.html'
-ARTICLE_URL = '{category}/{slug}'
-ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
-PAGE_URL = '{slug}'
-PAGE_SAVE_AS = '{slug}/index.html'
+CATEGORY_URL = '{slug}/'
+CATEGORY_SAVE_AS  = CATEGORY_URL+'index.html'
+ARTICLE_URL = '{category}/{slug}/'
+ARTICLE_SAVE_AS = ARTICLE_URL+'index.html'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = PAGE_URL+'index.html'
 
 # Defualts not to generate
 AUTHOR_SAVE_AS = ''
@@ -109,8 +109,8 @@ BANNER_ALL_PAGES = False
 DISPLAY_PAGES_ON_MENU = False
 DEFAULT_CATEGORY  = "Posts"
 MENUITEMS = (
-    ('Publications', 'publications'),
-    ('Education', 'education'),
+    ('Publications', 'publications/'),
+    ('Education', 'education/'),
 )
 
 DISABLE_SIDEBAR_TITLE_ICONS = True
