@@ -66,6 +66,9 @@ jobs:
   output-no-diff:
     needs: compare
     runs-on: ubuntu-latest
+    permissions: 
+      pull-requests: write 
+
     if: needs.compare.outputs.diff == 'no'
     steps:
       - name: Comment
@@ -86,6 +89,9 @@ jobs:
   output-diff:
     needs: compare
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write 
+
     if: needs.compare.outputs.diff == 'yes'
     steps:
       - name: Load diff artifact
