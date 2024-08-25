@@ -5,6 +5,8 @@ modified: 2023-11-24 00:00
 
 ## Journal Papers
 
+Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (in press). Effect of degassing on bubble populations in air-entraining free-surface turbulent flows. *Journal of Fluid Mechanics*.
+
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2023). Fundamental time scales of bubble fragmentation in homogeneous isotropic turbulence. *Journal of Fluid Mechanics, 962*, A25. doi: [10.1017/jfm.2023.281](https://doi.org/10.1017/jfm.2023.281)
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2022). An Eulerian label advection method for conservative volume-based tracking of bubbles/droplets. *Journal of Computational Physics*. doi: [10.1016/j.jcp.2022.111560](https://doi.org/10.1016/j.jcp.2022.111560)
