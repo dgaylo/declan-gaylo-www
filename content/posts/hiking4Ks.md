@@ -17,11 +17,11 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | <i class="bi bi-check-lg"></i> | Madison | 5367 | Oct. 11, 2022 |
 | <i class="bi bi-check-lg"></i> | Lafayette | 5260 | Nov. 21, 2020 | <!-- Aug. 6, 2022 -->
 | <i class="bi bi-check-lg"></i> | Lincoln | 5089 | Nov. 21, 2020 | <!-- Aug. 6, 2022 -->
-| <i class="bi bi-check-lg"></i> | South Twin | 4902 | Aug. 6, 2022 |
+| <i class="bi bi-check-lg"></i> | South Twin | 4902 | Aug. 6, 2022 | <!-- Sept. 15, 2024 -->
 | <i class="bi bi-check-lg"></i> | Carter Dome | 4832 | Aug. 15, 2021 |
 | <i class="bi bi-check-lg"></i> | Moosilauke | 4802 | April 17, 2022 |
 | <i class="bi bi-check-lg"></i> | Eisenhower | 4780 | July 16, 2022 |
-| | North Twin | 4761 | |
+| <i class="bi bi-check-lg"></i> | North Twin | 4761 | Sept. 15, 2024 |
 | <i class="bi bi-check-lg"></i> | Carrigain | 4700 | Aug. 28, 2021 |
 | <i class="bi bi-check-lg"></i> | Bond | 4698 | Aug. 7, 2022 |
 | <i class="bi bi-check-lg"></i> | Middle Carter | 4610 | Aug. 15, 2021 |
