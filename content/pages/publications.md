@@ -5,7 +5,7 @@ modified: 2023-11-24 00:00
 
 ## Journal Papers
 
-Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (in press). Effect of degassing on bubble populations in air-entraining free-surface turbulent flows. *Journal of Fluid Mechanics*.
+Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2024). Effect of degassing on bubble populations in air-entraining free-surface turbulent flows. *Journal of Fluid Mechanics, 995*, A12. doi: [doi:10.1017/jfm.2024.780](https://doi.org/10.1017/jfm.2024.780)
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2023). Fundamental time scales of bubble fragmentation in homogeneous isotropic turbulence. *Journal of Fluid Mechanics, 962*, A25. doi: [10.1017/jfm.2023.281](https://doi.org/10.1017/jfm.2023.281)
 
