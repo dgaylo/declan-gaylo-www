@@ -133,7 +133,8 @@ DEFAULT_PAGINATION = False
 
 # Cache settings using .htaccess files
 EXTRA_PATH_METADATA = {
-    'static/robots.txt': {'path': 'robots.txt'}
+    'static/robots.txt': {'path': 'robots.txt'},
+    'static/redirects.txt': {'path': '_redirects'}
 }
 
 # Google Analytics
