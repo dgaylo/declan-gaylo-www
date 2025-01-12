@@ -52,7 +52,7 @@ SITEMAP = {
         "indexes": "monthly",
         "pages": "monthly"
     },
-    "exclude": ["index"]
+    "exclude": ["index","posts/$"]
 }
 
 # Theme setup
