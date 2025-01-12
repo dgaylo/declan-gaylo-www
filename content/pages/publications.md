@@ -1,7 +1,8 @@
 Title: Publications
 slug: publications
 modified: 2023-11-24 00:00
-
+ChangeFreq: monthly
+Priority: 0.7
 
 ## Journal Papers
 
