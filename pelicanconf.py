@@ -48,8 +48,8 @@ ADD_CSS_CLASSES_TO_ARTICLE = {
 SITEMAP = {
     "format": "xml",
     "changefreqs": {
-        "articles": "monthly",
-        "indexes": "daily",
+        "articles": "never",
+        "indexes": "monthly",
         "pages": "monthly"
     },
     "exclude": ["index"]
