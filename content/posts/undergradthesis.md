@@ -1,6 +1,8 @@
 Title: Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls
 slug: undergradthesis
 date: 2019-06-28 00:00
+ChangeFreq: never
+Priority: 0.3
 description: My undergraduate thesis was on trim tabs and interceptors for high speed planing craft. This post provides an overview of the work.
 graphic: images/undergradthesis.jpg
 graphicAlt: The model hull fittes with pressure sensors
