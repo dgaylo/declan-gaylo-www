@@ -1,6 +1,6 @@
 Title: Publications
 slug: publications
-modified: 2023-11-24 00:00
+modified: 2025-03-24 00:00
 ChangeFreq: monthly
 Priority: 0.7
 
@@ -15,6 +15,8 @@ Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2022). An Eulerian label advectio
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2021). Effects of power-law entrainment on bubble fragmentation cascades. *Journal of Fluid Mechanics, 917*, R1. doi: [10.1017/jfm.2021.333](https://doi.org/10.1017/jfm.2021.333)
 
 ## Conference Presentations
+
+Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2024, November). *Degassing-dominated bubble populations in air-entraining free-surface turbulence*. Presented at the 77th Annual Meeting of the APS Division of Fluid Dynamics, Salt Lake City, UT.
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2024, July). *Quantifying Entrainment and Degassing of Bubbles by Free-Surface Turbulence for Ship Wake Applications*. Presented at the 35th Symposium on Naval Hydrodynamics, Nantes, France.
 [Download <i class="bi bi-file-earmark-pdf"></i>](/files/Quantifying Entrainment and Degassing of Bubbles by Free-Surface Turbulence for Ship Wake Applications.pdf)
