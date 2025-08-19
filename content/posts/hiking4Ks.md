@@ -42,13 +42,13 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 | <i class="bi bi-check-lg"></i> | North Kinsman | 4293 | Oct. 10, 2023 |
 | | Willey | 4285 | |
 | <i class="bi bi-check-lg"></i> | Bondcliff | 4265 | Aug. 7, 2022 |
-| | Zealand | 4260 | |
+| <i class="bi bi-check-lg"></i> | Zealand | 4260 | Aug. 17, 2025 |
 | <i class="bi bi-check-lg"></i> | North Tripyramid | 4180 | July 24, 2022 |
 | | Cabot | 4170 | |
 | <i class="bi bi-check-lg"></i> | East Osceola | 4156 | May 30, 2022 |
 | <i class="bi bi-check-lg"></i> | Middle Tripyramid | 4140 | July 24, 2022 |
 | <i class="bi bi-check-lg"></i> | Cannon | 4100 | Oct. 10, 2023 |
-| | Hale | 4054 | |
+| <i class="bi bi-check-lg"></i> | Hale | 4054 | Aug. 17, 2025 |
 | <i class="bi bi-check-lg"></i> | Jackson | 4052 | July 16, 2022 |
 | | Tom | 4051 | |
 | <i class="bi bi-check-lg"></i> | Wildcat, D Peak | 4050 | July 31, 2021|
