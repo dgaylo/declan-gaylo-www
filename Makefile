@@ -85,7 +85,7 @@ devserver-global:
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 #	$(MAKE) purify
-	$(MAKE) icons
+	if [ -f $(ICON_SVG) ]; then $(MAKE) icons; fi
 	$(MAKE) $(OUTPUTDIR)/commit.txt
 
 ssh_upload: publish
