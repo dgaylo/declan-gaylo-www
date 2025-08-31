@@ -55,7 +55,7 @@ jobs:
       - name: Generate diff
         id: diff
         run: |
-          diff -r --exclude=${{ env.DIFF_EXCLUDE_PAT }} build-base build-head > diff.txt \
+          diff -r --exclude=${{ env.DIFF_EXCLUDE_PAT }} --ignore-space-change build-base build-head > diff.txt \
             && echo "diff=no" >> "$GITHUB_OUTPUT" \
             || if [ $? -eq 1 ]; then echo "diff=yes" >> "$GITHUB_OUTPUT"; else exit $?; fi
       - name: Archive diff results
