@@ -8,17 +8,15 @@
 
 {% block meta %}
   {% if article.author %}
-    <meta name="author" content="{{ article.author }}" />
+  <meta name="author" content="{{ article.author }}" />
   {% else %}
-    <meta name="author" content="{{ AUTHOR }}" />
+  <meta name="author" content="{{ AUTHOR }}" />
   {% endif %}
-
   {% if article.description %}
   <meta name="description" content="{{article.description}}" />
   {% endif %}
-
   {% for tag in article.tags %}
-    <meta name="tags" content="{{tag}}" />
+  <meta name="tags" content="{{tag}}" />
   {% endfor %}
 {% endblock %}
 

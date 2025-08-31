@@ -4,6 +4,7 @@
 {% block head %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% block meta %}{% endblock %}
   {% include 'includes/ga.html' %}
 
   <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
@@ -43,7 +44,6 @@
 
   <!-- Dark/Light Mode Switch -->
   <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/darkmode.js"></script>
-{% block meta %}{% endblock %}
 {% endblock %}
 </head>
 
