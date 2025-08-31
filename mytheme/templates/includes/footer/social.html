@@ -1,9 +1,8 @@
-<h1 class="h5">{{ (SOCIAL_WIDGET_NAME|default('Social')) }}</h1>
-<ul class="nav flex-column" id="social">
-  {% for name,link,icon in SOCIAL %}
-  {% set iconattributes = '"' ~ icon ~ '"' %}
-  <li class="nav-item mb-2">
-    <a href="{{link}}" class="nav-link p-0 text-body-secondary"><i class={{ iconattributes }}></i> {{ name }}</a>
-  </li>
-  {% endfor %}
-</ul>
+        <h1 class="h5">{{ (SOCIAL_WIDGET_NAME|default('Social')) }}</h1>
+        <ul class="nav flex-column" id="social">
+          {% for name,link,icon in SOCIAL %}
+          {% set iconattributes = '"' ~ icon ~ '"' %}
+          <li class="nav-item mb-2"><a href="{{link}}" class="nav-link p-0 text-body-secondary"><i class={{ iconattributes }}></i> {{ name }}</a></li>
+          {% endfor %}
+        </ul>
+

@@ -1,8 +1,7 @@
-<h1 class="h5">{{ (LINKS_WIDGET_NAME|default('Links')) }}</h1>
-<ul class="nav flex-column" id="links">
-  {% for name,link in LINKS %}
-  <li class="nav-item mb-2">
-    <a href="{{link}}" class="nav-link p-0 text-body-secondary">{{ name }}</a>
-  </li>
-  {% endfor %}
-</ul>
+        <h1 class="h5">{{ (LINKS_WIDGET_NAME|default('Links')) }}</h1>
+        <ul class="nav flex-column" id="links">
+          {% for name,link in LINKS %}
+          <li class="nav-item mb-2"><a href="{{link}}" class="nav-link p-0 text-body-secondary">{{ name }}</a></li>
+          {% endfor %}
+        </ul>
+
