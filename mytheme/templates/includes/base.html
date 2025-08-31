@@ -53,14 +53,12 @@
 {% include 'includes/navbar.html' %}  
 <!-- End Navigation -->
 
-<!-- Banner -->
 {% if BANNER and BANNER_ALL_PAGES %}
   {% include 'includes/banner.html' %}
 {% elif BANNER and not BANNER_ALL_PAGES %}
   {% block banner %}{% endblock %}
 {% endif %}
 
-<!-- End Banner -->
 
 <div id="content">
 
