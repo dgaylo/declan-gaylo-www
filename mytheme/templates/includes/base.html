@@ -51,15 +51,7 @@
 
 <!-- Navigation -->  
 {% include 'includes/navbar.html' %}  
-<!-- End Navigation -->  
-
-<!-- Breadcrumb -->
-<div id="breadcrumb">
-  <div class="container-md">
-    
-  </div>
-</div>
-<!-- End Breadcrumb -->
+<!-- End Navigation -->
 
 <!-- Banner -->
 {% if BANNER and BANNER_ALL_PAGES %}
@@ -71,12 +63,16 @@
 <!-- End Banner -->
 
 <div id="content">
+
+<!-- Breadcrumb -->
 <div class="container py-1" id="breadcrumb">
   <nav aria-label="breadcrumb">
     {% block breadcrumb %}
     {% endblock %}
   </nav>
 </div>
+<!-- End Breadcrumb -->
+
 <div class="container py-3 pb-3">
   {% block content %}{% endblock %}
 </div>
