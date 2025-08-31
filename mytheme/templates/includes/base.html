@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" >
-  <head>
-  {% block head %}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include 'includes/ga.html' %}
-
-    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
-
-    <!-- Bootstrap -->
-    <!--link href="{{BOOTSTRAP_CDN_CSS}}" integrity="{{BOOTSTRAP_CDN_CSS_INTEGRITY}}" crossorigin="anonymous"-->
-    <link href="{{BOOTSWATCH_CDN}}" crossorigin="anonymous" rel="stylesheet">
-    
-    <style type="text/css">
-      @font-face {
-        font-display: block;
-        font-family: "bootstrap-icons";
-        src: url("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fonts/bootstrap-icons.woff2") format("woff2"),
-        url("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fonts/bootstrap-icons.woff") format("woff");
-      }
-    </style>
-
-    {% assets filters="cssmin", output="css/style.min.css", 
-      "css/style.css",
-      "css/bootstrap-icons.css"
-    %}
-    <link rel="stylesheet" href="{{SITEURL}}/{{ASSET_URL}}" type="text/css"/>
-    {% endassets %}
-    {% include 'includes/favicon.html' %}
-
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/darkmode.js"></script>
-
-    {% if THEME_COLOR %}
-    <meta name="theme-color" content="--bs-tertiary-bg">
-    {% endif %}
-  {% block canonical_rel %}{% endblock %}
+<head>
+{% block head %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   {% block meta %}{% endblock %}
-  {% endblock %}
-  </head>
+  {% include 'includes/ga.html' %}
 
-  <body>
-  {% include 'includes/navbar.html' %}  
-  <!-- Breadcrumb -->
-  <div id="breadcrumb">
-    <div class="container-md">
-      
-    </div>
-  </div>
-  <!-- End Breadcrumb -->
+  <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+  {% block canonical_rel %}{% endblock %}
 
-  <!-- Banner -->
-  {% if BANNER and BANNER_ALL_PAGES %}
-    {% include 'includes/banner.html' %}
-  {% elif BANNER and not BANNER_ALL_PAGES %}
-    {% block banner %}{% endblock %}
-  {% endif %}
-  <!-- End Banner -->
+  <!-- Bootstrap -->
+  <link href="{{BOOTSWATCH_CDN}}" crossorigin="anonymous" rel="stylesheet">
+  
+  <!-- Font Icons -->
+  <style type="text/css">
+    @font-face {
+      font-display: block;
+      font-family: "bootstrap-icons";
+      src: url("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fonts/bootstrap-icons.woff2") format("woff2"),
+      url("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fonts/bootstrap-icons.woff") format("woff");
+    }
+  </style>
 
-  <div id="content">
-  <div class="container py-1" id="breadcrumb">
-    <nav aria-label="breadcrumb">
-      {% block breadcrumb %}
-      {% endblock %}
-    </nav>
-  </div>
-  <div class="container py-3 pb-3">
-    {% block content %}{% endblock %}
-  </div>
-  </div>
-
-  {% include 'includes/footer.html' %}
-
-  <script src="{{BOOTSTRAP_CDN_JS}}" integrity="{{BOOTSTRAP_CDN_JS_INTEGRITY}}" crossorigin="anonymous"></script>
-
-  {% if USE_WEBP %}
-  <!-- Enable Modernizr -->
-  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/modernizr-custom.js"></script>
+  <!-- Theme CSS -->
+  {% assets filters="cssmin", output="css/style.min.css", 
+    "css/style.css",
+    "css/bootstrap-icons.css"
+  %}
+  <link rel="stylesheet" href="{{SITEURL}}/{{ASSET_URL}}" type="text/css"/>
+  {% endassets %}
+  {% if THEME_COLOR %}
+  <meta name="theme-color" content="--bs-tertiary-bg">
   {% endif %}
 
-  </body>
+  {% if FAVICON %}
+  <!-- Favicon and Variations -->
+  <link rel="icon" type="image/x-icon" href="{{ SITEURL }}/{{ FAVICON }}" >
+  <link rel="apple-touch-icon" href="{{ SITEURL }}/icon-80.png" sizes="80x80">
+  <link rel="apple-touch-icon" href="{{ SITEURL }}/icon-120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="{{ SITEURL }}/icon-180.png" sizes="180x180">
+  {% endif %}
+
+  <!-- Dark/Light Mode Switch -->
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/darkmode.js"></script>
+{% endblock %}
+</head>
+
+<body>
+
+{% include 'includes/navbar.html' %}
+
+{% block banner %}{% endblock %}
+
+<div id="content">
+
+<!-- Breadcrumb -->
+<div class="container py-1" id="breadcrumb">
+  <nav aria-label="breadcrumb">
+    {% block breadcrumb %}
+    {% endblock %}
+  </nav>
+</div>
+<!-- End Breadcrumb -->
+
+<div class="container py-3 pb-3">
+  {% block content %}{% endblock %}
+</div>
+</div>
+
+{% include 'includes/footer.html' %}
+
+<script src="{{BOOTSTRAP_CDN_JS}}" integrity="{{BOOTSTRAP_CDN_JS_INTEGRITY}}" crossorigin="anonymous"></script>
+
+{% if USE_WEBP %}
+<!-- Enable Modernizr -->
+<script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/modernizr-custom.js"></script>
+{% endif %}
+
+</body>
 </html>

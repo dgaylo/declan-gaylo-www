@@ -1,8 +1,9 @@
+<!-- Navigation -->
 <nav class="navbar navbar-expand-sm bg-body-tertiary border-bottom">
   <div class="container-md">
     <a class="navbar-brand" href="{{ SITEURL }}/">
       {% if SITELOGO %}
-        <img src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE }}" height="{{ SITELOGO_SIZE }}" alt="Site Logo" class="img-fluid"/>
+      <img src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE }}" height="{{ SITELOGO_SIZE }}" alt="Site Logo" class="img-fluid"/>
       {% endif %}
       {{SITENAME}}
     </a>
@@ -17,13 +18,14 @@
         </li>
         {% endfor %}
         {% if DISPLAY_CATEGORIES_ON_MENU %}
-          {% for cat, null in categories %}
-          <li {% if cat == category %}class="active"{% endif %}>
-            <a class="nav-link" href="{{ SITEURL }}/{{ cat.url }}">{{ cat | capitalize }}</a>
-          </li>
-          {% endfor %}
+        {% for cat, null in categories %}
+        <li {% if cat == category %}class="active"{% endif %}>
+          <a class="nav-link" href="{{ SITEURL }}/{{ cat.url }}">{{ cat | capitalize }}</a>
+        </li>
+        {% endfor %}
         {% endif %}
       </ul>
     </div>
   </div>
 </nav>
+<!-- End Navigation -->

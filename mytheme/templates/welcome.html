@@ -1,0 +1,49 @@
+{% extends "!theme/page.html" %}
+
+{% block head %}
+{{ super () }}
+  <!-- Banner Style -->
+  <style>
+    {% if USE_WEBP and BANNER_WEBP %}
+    .webp #banner{
+      background-image:url("{{ SITEURL}}/{{ BANNER_WEBP }}");
+    }
+    .no-webp #banner{
+      background-image:url("{{ SITEURL}}/{{ BANNER }}");
+    }
+    {% else %}
+    #banner{
+      background-image:url("{{ SITEURL}}/{{ BANNER }}");
+    }
+    {% endif %}
+    #banner{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      /*color: white;*/
+    }
+
+    #banner .banner-text {
+      background-color: rgba(0, 5, 5, 0.4);
+    }
+  </style>
+{% endblock %}
+
+{% block banner %}
+<!-- Banner -->
+<div id="banner">
+  <div class="container-md py-md-5">
+    <div class="row align-items-center">
+      <div class="col-md-auto banner-text py-5 py-md-2">
+        <h1 class="display-2 text-light">{{ SITENAME }}</h1>
+        {% if BANNER_SUBTITLE %}
+        <p class="h3 text-light">{{ BANNER_SUBTITLE }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Banner -->
+{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
