@@ -139,7 +139,7 @@ EXTRA_PATH_METADATA = {
 
 # Google Analytics
 # GOOGLE_GLOBAL_SITE_TAG =
-GOOGLE_VERIFICATIION_TAG = 'QUWwxfPE7bJsHk2xKt1srAdzcLBN26SwiIsGFBMgGGw'
+# GOOGLE_VERIFICATIION_TAG =
 GOGGLE_DEBUG_MODE = True
 
 # Uncomment following line if you want document-relative URLs when developing
