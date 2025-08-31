@@ -103,7 +103,6 @@ SITELOGO_SIZE = '18px'
 BANNER = 'images/banner.jpeg'
 BANNER_WEBP = 'images/banner.webp'
 BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
-BANNER_ALL_PAGES = False
 
 # Nav bar
 DISPLAY_PAGES_ON_MENU = False
