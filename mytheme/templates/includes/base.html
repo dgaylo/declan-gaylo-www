@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" >
-  <head>
-  {% block head %}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include 'includes/ga.html' %}
+<head>
+{% block head %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include 'includes/ga.html' %}
 
-    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
-    {% block canonical_rel %}{% endblock %}
+  <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+  {% block canonical_rel %}{% endblock %}
 
-    <!-- Bootstrap -->
-    <link href="{{BOOTSWATCH_CDN}}" crossorigin="anonymous" rel="stylesheet">
-    
-    <!-- Font Icons -->
-    <style type="text/css">
-      @font-face {
-        font-display: block;
-        font-family: "bootstrap-icons";
-        src: url("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fonts/bootstrap-icons.woff2") format("woff2"),
-        url("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fonts/bootstrap-icons.woff") format("woff");
-      }
-    </style>
+  <!-- Bootstrap -->
+  <link href="{{BOOTSWATCH_CDN}}" crossorigin="anonymous" rel="stylesheet">
+  
+  <!-- Font Icons -->
+  <style type="text/css">
+    @font-face {
+      font-display: block;
+      font-family: "bootstrap-icons";
+      src: url("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fonts/bootstrap-icons.woff2") format("woff2"),
+      url("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fonts/bootstrap-icons.woff") format("woff");
+    }
+  </style>
 
-    <!-- Theme CSS -->
-    {% assets filters="cssmin", output="css/style.min.css", 
-      "css/style.css",
-      "css/bootstrap-icons.css"
-    %}
-    <link rel="stylesheet" href="{{SITEURL}}/{{ASSET_URL}}" type="text/css"/>
-    {% endassets %}
-    {% if THEME_COLOR %}
-    <meta name="theme-color" content="--bs-tertiary-bg">
-    {% endif %}
+  <!-- Theme CSS -->
+  {% assets filters="cssmin", output="css/style.min.css", 
+    "css/style.css",
+    "css/bootstrap-icons.css"
+  %}
+  <link rel="stylesheet" href="{{SITEURL}}/{{ASSET_URL}}" type="text/css"/>
+  {% endassets %}
+  {% if THEME_COLOR %}
+  <meta name="theme-color" content="--bs-tertiary-bg">
+  {% endif %}
 
-    {% if FAVICON %}
-    <!-- Favicon and Variations -->
-    <link rel="icon" type="image/x-icon" href="{{ SITEURL }}/{{ FAVICON }}" >
-    <link rel="apple-touch-icon" href="{{ SITEURL }}/icon-80.png" sizes="80x80">
-    <link rel="apple-touch-icon" href="{{ SITEURL }}/icon-120.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="{{ SITEURL }}/icon-180.png" sizes="180x180">
-    {% endif %}
+  {% if FAVICON %}
+  <!-- Favicon and Variations -->
+  <link rel="icon" type="image/x-icon" href="{{ SITEURL }}/{{ FAVICON }}" >
+  <link rel="apple-touch-icon" href="{{ SITEURL }}/icon-80.png" sizes="80x80">
+  <link rel="apple-touch-icon" href="{{ SITEURL }}/icon-120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="{{ SITEURL }}/icon-180.png" sizes="180x180">
+  {% endif %}
 
-    <!-- Dark/Light Mode Switch -->
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/darkmode.js"></script>
-  {% block meta %}{% endblock %}
-  {% endblock %}
-  </head>
+  <!-- Dark/Light Mode Switch -->
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/darkmode.js"></script>
+{% block meta %}{% endblock %}
+{% endblock %}
+</head>
 
-  <body>
+<body>
   {% include 'includes/navbar.html' %}  
   <!-- Breadcrumb -->
   <div id="breadcrumb">
@@ -86,5 +86,5 @@
   <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/modernizr-custom.js"></script>
   {% endif %}
 
-  </body>
+</body>
 </html>
