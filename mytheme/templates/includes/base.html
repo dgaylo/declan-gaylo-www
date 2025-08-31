@@ -48,43 +48,48 @@
 </head>
 
 <body>
-  {% include 'includes/navbar.html' %}  
-  <!-- Breadcrumb -->
-  <div id="breadcrumb">
-    <div class="container-md">
-      
-    </div>
+
+<!-- Navigation -->  
+{% include 'includes/navbar.html' %}  
+<!-- End Navigation -->  
+
+<!-- Breadcrumb -->
+<div id="breadcrumb">
+  <div class="container-md">
+    
   </div>
-  <!-- End Breadcrumb -->
+</div>
+<!-- End Breadcrumb -->
 
-  <!-- Banner -->
-  {% if BANNER and BANNER_ALL_PAGES %}
-    {% include 'includes/banner.html' %}
-  {% elif BANNER and not BANNER_ALL_PAGES %}
-    {% block banner %}{% endblock %}
-  {% endif %}
-  <!-- End Banner -->
+<!-- Banner -->
+{% if BANNER and BANNER_ALL_PAGES %}
+  {% include 'includes/banner.html' %}
+{% elif BANNER and not BANNER_ALL_PAGES %}
+  {% block banner %}{% endblock %}
+{% endif %}
 
-  <div id="content">
-  <div class="container py-1" id="breadcrumb">
-    <nav aria-label="breadcrumb">
-      {% block breadcrumb %}
-      {% endblock %}
-    </nav>
-  </div>
-  <div class="container py-3 pb-3">
-    {% block content %}{% endblock %}
-  </div>
-  </div>
+<!-- End Banner -->
 
-  {% include 'includes/footer.html' %}
+<div id="content">
+<div class="container py-1" id="breadcrumb">
+  <nav aria-label="breadcrumb">
+    {% block breadcrumb %}
+    {% endblock %}
+  </nav>
+</div>
+<div class="container py-3 pb-3">
+  {% block content %}{% endblock %}
+</div>
+</div>
 
-  <script src="{{BOOTSTRAP_CDN_JS}}" integrity="{{BOOTSTRAP_CDN_JS_INTEGRITY}}" crossorigin="anonymous"></script>
+{% include 'includes/footer.html' %}
 
-  {% if USE_WEBP %}
-  <!-- Enable Modernizr -->
-  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/modernizr-custom.js"></script>
-  {% endif %}
+<script src="{{BOOTSTRAP_CDN_JS}}" integrity="{{BOOTSTRAP_CDN_JS_INTEGRITY}}" crossorigin="anonymous"></script>
+
+{% if USE_WEBP %}
+<!-- Enable Modernizr -->
+<script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/modernizr-custom.js"></script>
+{% endif %}
 
 </body>
 </html>
