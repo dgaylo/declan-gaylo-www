@@ -1,6 +1,6 @@
-all: icons
+all: icons thumbnails
 
-# icon
+# Icons
 ICON_SVG = logo.svg
 
 .PHONY: icons
@@ -11,3 +11,10 @@ $(OUTPUTDIR)/logo.svg: $(ICON_SVG)
 
 $(OUTPUTDIR)/icon-%.png: $(ICON_SVG)
 	convert -density 2400 -resize $*x$* $< -strip $@
+
+# Thumbnails
+.PHONY: thumbnails
+thumbnails: $(OUTPUTDIR)/hiking4Ks-thumbnail.jpg $(OUTPUTDIR)/undergradthesis-thumbnail.jpg
+
+$(OUTPUTDIR)/%-thumbnail.jpg: %.jpg
+	convert -quality 85 -resize x416 $< $@
