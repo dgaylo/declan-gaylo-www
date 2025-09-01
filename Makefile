@@ -18,8 +18,6 @@ ifeq ($(RELATIVE), 1)
 	PELICANOPTS += --relative-urls
 endif
 
-SERVER ?= "0.0.0.0"
-
 PORT ?= 0
 ifneq ($(PORT), 0)
 	PELICANOPTS += -p $(PORT)
