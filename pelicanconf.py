@@ -64,8 +64,8 @@ BOOTSTRAP_CDN_CSS_INTEGRITY='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GA
 BOOTSTRAP_CDN_JS='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'
 BOOTSTRAP_CDN_JS_INTEGRITY='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL'
 
-FONT_URL = 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap'
-FONT_NAME = 'Source Sans Pro'
+FONT_URL = 'https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap'
+FONT_NAME = "Source Sans 3"
 
 JINJA_ENVIRONMENT = {}
 USE_WEBP = True
