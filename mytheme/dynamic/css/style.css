@@ -40,3 +40,13 @@ body {
         font-size: x-small;
     }
 }
+
+/* hover animation for cards */
+.hover-card {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.hover-card:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transform: translateY(-2px); /* subtle lift */
+}
