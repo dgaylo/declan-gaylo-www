@@ -82,7 +82,7 @@ TYPOGRIFY = False
 DIRECT_TEMPLATES = ['index', 'archives']
 
 # About me
-AVATAR = 'images/avatar.JPEG'
+AVATAR = 'images/avatar.jpg'
 AVATAR_WEBP = 'images/avatar.webp'
 AVATAR_WIDTH = 1067
 AVATAR_HEIGHT = 800
@@ -92,13 +92,12 @@ Research interests are turbulent bubbly flow near the free surface.
 Work includes both theoretical models and new CFD tools.
 """
 
-# Favicon
-FAVICON = 'images/logo.svg'
+# Site Logo
 SITELOGO = 'images/logo.svg'
 SITELOGO_SIZE = '18px'
 
 # Banner
-BANNER = 'images/banner.jpeg'
+BANNER = 'images/banner.jpg'
 BANNER_WEBP = 'images/banner.webp'
 BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
 

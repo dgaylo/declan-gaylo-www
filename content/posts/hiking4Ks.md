@@ -4,7 +4,7 @@ slug: hiking4ks
 ChangeFreq: monthly
 Priority: 0.3
 description: There are 48 mountains in New Hampshire's White Mountains over 4,000 feet. On this page I track my progress hiking all of them.
-graphic: images/hiking4Ks.jpg
+graphic: images/hiking4Ks-thumbnail.jpg
 graphicAlt: Declan hiking in the White Mounatains
 template: sortableTables
 
