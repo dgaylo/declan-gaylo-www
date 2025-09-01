@@ -2,9 +2,6 @@
 body {
     background-color: rgba(var(--bs-tertiary-bg-rgb));
 }
-#content {
-    background: var(--bs-body-bg);
-}
 
 /* change bootstrap link colors */
 [data-bs-theme=light] {

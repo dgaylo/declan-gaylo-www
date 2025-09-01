@@ -11,11 +11,14 @@
   {% block canonical_rel %}{% endblock %}
 
   <!-- Bootstrap -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link href="{{ BOOTSTRAP_CDN_CSS }}" rel="stylesheet" integrity="{{ BOOTSTRAP_CDN_CSS_INTEGRITY }}" crossorigin="anonymous">
 
-  <!-- Font -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="{{ FONT_URL }}&display=swap" rel="stylesheet">
   <style type="text/css">
-    @import url('{{FONT_URL}}');
     :root {
       --bs-font-sans-serif: "{{FONT_NAME}}",  sans-serif;
     }
@@ -24,7 +27,7 @@
   <!-- Font Icons -->
   <style type="text/css">
     @font-face {
-      font-display: block;
+      font-display: swap;
       font-family: "bootstrap-icons";
       src: url("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fonts/bootstrap-icons.woff2") format("woff2"),
       url("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fonts/bootstrap-icons.woff") format("woff");
@@ -59,7 +62,7 @@
 
 {% block banner %}{% endblock %}
 
-<div id="content">
+<div id="content" class="bg-body">
 
 <!-- Breadcrumb -->
 <div class="container py-1" id="breadcrumb">
