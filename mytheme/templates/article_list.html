@@ -1,21 +1,24 @@
 {% extends "includes/base.html" %}
 {% block content %}
 {% if articles %}
+<div class="album">
+<div class="container">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 {% for article in (articles_page.object_list if articles_page else articles) %}
-  <hr/>
-  <article  id="article-list">
-    <div class="row justify-content-center">
-      <div class="col-10 order-1 col-sm-6 col-lg-4 order-lg-2">
-        {% if article.graphic %}
-        <img src="{{ SITEURL }}/{{article.graphic}}" class="img-fluid img-md-center" {% if article.graphicalt %}alt="{{article.graphicalt}}"{% endif %}>
-        {% endif %}
-      </div>
-      <div class="col-12 col-lg-8 order-2 order-lg-1">
-        <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-        <div class="summary lead">{{ article.description }}</div>
+  <div class="col" id="article-list">
+    <div class="card">
+      <a href="{{ SITEURL }}/{{ article.url }}" class="stretched-link">
+        <img src="{{ SITEURL }}/{{article.graphic}}" class="card-img-top" {% if article.graphicalt %}alt="{{article.graphicalt}}"{% endif %}>
+      </a>
+      <div class="card-body">
+        <div class="text-center"><h2 class="card-title fs-5">{{ article.title }}</h2></div>
+        <p class="card-text">{{ article.description }}</p>
       </div>
     </div>
-  </article>
+  </div>
 {% endfor %}
+</div>
+</div>
+</div>
 {% endif %}
 {% endblock content %}
