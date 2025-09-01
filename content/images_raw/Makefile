@@ -1,4 +1,6 @@
-all: icons thumbnails $(OUTPUTDIR)/avatar.jpg $(OUTPUTDIR)/avatar.webp
+all: icons thumbnails \
+	 $(OUTPUTDIR)/avatar.jpg $(OUTPUTDIR)/avatar.webp \
+	 $(OUTPUTDIR)/banner.jpg $(OUTPUTDIR)/banner.webp
 
 # Icons
 ICON_SVG = logo.svg
@@ -23,3 +25,6 @@ $(OUTPUTDIR)/%-thumbnail.jpg: %.jpg
 # Miscellaneous
 $(OUTPUTDIR)/avatar.% : avatar.jpg
 	convert -resize x800 -quality 85 $< $@
+
+$(OUTPUTDIR)/banner.% : banner.jpg
+	convert -resize 2500x $< $@

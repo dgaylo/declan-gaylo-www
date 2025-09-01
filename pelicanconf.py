@@ -97,7 +97,7 @@ SITELOGO = 'images/logo.svg'
 SITELOGO_SIZE = '18px'
 
 # Banner
-BANNER = 'images/banner.jpeg'
+BANNER = 'images/banner.jpg'
 BANNER_WEBP = 'images/banner.webp'
 BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
 
