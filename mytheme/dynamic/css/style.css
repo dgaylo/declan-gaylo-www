@@ -15,17 +15,6 @@ body {
     --bs-link-hover-color-rgb: 0, 0, 63;
 }
 
-/* Custom banner text spacing */
-#banner h1 {
-    line-height: 1;
-    margin-top: 0;
-}
-#banner p {
-    line-height: 1;
-    margin-top: 0.25rem;
-    margin-bottom: 0;
-}
-
 /* Dont show links in article header */
 #content h1.article-title a{
     text-decoration: none;
