@@ -11,7 +11,7 @@
   {% block canonical_rel %}{% endblock %}
 
   <!-- Bootstrap -->
-  <link href="{{BOOTSWATCH_CDN}}" crossorigin="anonymous" rel="stylesheet">
+  <link href="{{ BOOTSTRAP_CDN_CSS }}" rel="stylesheet" integrity="{{ BOOTSTRAP_CDN_CSS_INTEGRITY }}" crossorigin="anonymous">
   
   <!-- Font Icons -->
   <style type="text/css">
@@ -30,9 +30,7 @@
   %}
   <link rel="stylesheet" href="{{SITEURL}}/{{ASSET_URL}}" type="text/css"/>
   {% endassets %}
-  {% if THEME_COLOR %}
   <meta name="theme-color" content="--bs-tertiary-bg">
-  {% endif %}
 
   {% if FAVICON %}
   <!-- Favicon and Variations -->
