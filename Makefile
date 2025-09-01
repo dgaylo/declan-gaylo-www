@@ -61,31 +61,29 @@ help:
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
 	@echo '                                                                          '
 
-html:
+html: image_generation
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
 clean:
 	[ ! -d "$(OUTPUTDIR)" ] || rm -rf "$(OUTPUTDIR)"
 
-regenerate:
+regenerate: image_generation
 	"$(PELICAN)" -r "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
-serve:
+serve: image_generation
 	"$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
-serve-global:
+serve-global: image_generation
 	"$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b $(SERVER)
 
-devserver:
+devserver: image_generation
 	"$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
-devserver-global:
+devserver-global: image_generation
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -b 0.0.0.0
 
-publish:
+publish: image_generation
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
-#	$(MAKE) purify
-	if [ -f $(ICON_SVG) ]; then $(MAKE) icons; fi
 	$(MAKE) $(OUTPUTDIR)/commit.txt
 
 ssh_upload: publish
@@ -102,12 +100,13 @@ rsync_upload: publish
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload
 
-# icons
-.PHONY: icons
-icons: $(OUTPUTDIR)/icon-80.png $(OUTPUTDIR)/icon-120.png $(OUTPUTDIR)/icon-180.png  
+# Image generation
+.PHONY: image_generation
+image_generation: $(OUTPUTDIR)/images
+	$(MAKE) -C $(INPUTDIR)/images_raw all OUTPUTDIR=$<
 
-$(OUTPUTDIR)/icon-%.png: $(ICON_SVG)
-	convert -density 2400 -resize $*x$* $< -strip $@
+$(OUTPUTDIR)/images:
+	mkdir -p $@
 
 # note the commit hash
 .PHONY: $(OUTPUTDIR)/commit.txt

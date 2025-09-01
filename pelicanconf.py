@@ -92,8 +92,7 @@ Research interests are turbulent bubbly flow near the free surface.
 Work includes both theoretical models and new CFD tools.
 """
 
-# Favicon
-FAVICON = 'images/logo.svg'
+# Site Logo
 SITELOGO = 'images/logo.svg'
 SITELOGO_SIZE = '18px'
 
