@@ -17,4 +17,4 @@ DELETE_OUTPUT_DIRECTORY = True
 GOGGLE_DEBUG_MODE = False
 
 # copy right date
-COPY_DATE=datetime.date.today().strftime('%Y')
+COPY_DATE = datetime.date.today().strftime('%Y')

@@ -8,7 +8,7 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
-COPY_DATE='20XX'
+COPY_DATE = '20XX'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -19,20 +19,20 @@ AUTHOR_FEED_RSS = None
 
 # Setup URLS
 CATEGORY_URL = '{slug}/'
-CATEGORY_SAVE_AS  = CATEGORY_URL+'index.html'
+CATEGORY_SAVE_AS = CATEGORY_URL+'index.html'
 ARTICLE_URL = '{category}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL+'index.html'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = PAGE_URL+'index.html'
 
-# Defualts not to generate
+# Defaults not to generate
 AUTHOR_SAVE_AS = ''
 TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 INDEX_SAVE_AS = ''
 
-STATIC_PATHS = ['images','static','files']
-ARTICLE_PATHS  = ['posts']
+STATIC_PATHS = ['images', 'static', 'files']
+ARTICLE_PATHS = ['posts']
 PAGE_PATHS = ['pages']
 
 # Plugins
@@ -59,10 +59,10 @@ SITEMAP = {
 THEME = './mytheme'
 
 # Bootstrap setup
-BOOTSTRAP_CDN_CSS='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'
-BOOTSTRAP_CDN_CSS_INTEGRITY='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN'
-BOOTSTRAP_CDN_JS='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'
-BOOTSTRAP_CDN_JS_INTEGRITY='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL'
+BOOTSTRAP_CDN_CSS = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'
+BOOTSTRAP_CDN_CSS_INTEGRITY = 'sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN'
+BOOTSTRAP_CDN_JS = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js'
+BOOTSTRAP_CDN_JS_INTEGRITY = 'sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL'
 
 FONT_URL = 'https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900'
 FONT_NAME = "Source Sans 3"
@@ -70,11 +70,11 @@ FONT_NAME = "Source Sans 3"
 JINJA_ENVIRONMENT = {}
 USE_WEBP = True
 
-SOURCE_CODE_URL= 'https://github.com/dgaylo/declan-gaylo-www'
+SOURCE_CODE_URL = 'https://github.com/dgaylo/declan-gaylo-www'
 
-#CUSTOM_CSS = 'theme/custom.css'
+# CUSTOM_CSS = 'theme/custom.css'
 WEBASSETS_SOURCE_PATHS = ['../content/', 'dynamic']
-THEME_TEMPLATES_OVERRIDES = [ './content/theme/' ]
+THEME_TEMPLATES_OVERRIDES = ['./content/theme/']
 
 TYPOGRIFY = False
 
@@ -87,8 +87,8 @@ AVATAR_WEBP = 'images/avatar.webp'
 AVATAR_WIDTH = 1067
 AVATAR_HEIGHT = 800
 ABOUT_ME = """
-A PhD student at MIT studying Hydrodynamics. 
-Research interests are turbulent bubbly flow near the free surface. 
+A PhD student at MIT studying Hydrodynamics.
+Research interests are turbulent bubbly flow near the free surface.
 Work includes both theoretical models and new CFD tools.
 """
 
@@ -103,7 +103,7 @@ BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
 
 # Nav bar
 DISPLAY_PAGES_ON_MENU = False
-DEFAULT_CATEGORY  = "Posts"
+DEFAULT_CATEGORY = "Posts"
 MENUITEMS = (
     ('Publications', 'publications/'),
     ('Education', 'education/'),
@@ -139,4 +139,4 @@ EXTRA_PATH_METADATA = {
 GOGGLE_DEBUG_MODE = True
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
