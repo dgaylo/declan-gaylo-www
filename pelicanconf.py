@@ -82,7 +82,7 @@ TYPOGRIFY = False
 DIRECT_TEMPLATES = ['index', 'archives']
 
 # About me
-AVATAR = 'images/avatar.JPEG'
+AVATAR = 'images/avatar.jpg'
 AVATAR_WEBP = 'images/avatar.webp'
 AVATAR_WIDTH = 1067
 AVATAR_HEIGHT = 800

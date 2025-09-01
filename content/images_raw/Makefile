@@ -1,4 +1,4 @@
-all: icons thumbnails
+all: icons thumbnails $(OUTPUTDIR)/avatar.jpg $(OUTPUTDIR)/avatar.webp
 
 # Icons
 ICON_SVG = logo.svg
@@ -18,3 +18,8 @@ thumbnails: $(OUTPUTDIR)/hiking4Ks-thumbnail.jpg $(OUTPUTDIR)/undergradthesis-th
 
 $(OUTPUTDIR)/%-thumbnail.jpg: %.jpg
 	convert -quality 85 -resize x416 $< $@
+
+
+# Miscellaneous
+$(OUTPUTDIR)/avatar.% : avatar.jpg
+	convert -resize x800 -quality 85 $< $@
