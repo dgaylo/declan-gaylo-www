@@ -12,7 +12,15 @@
 
   <!-- Bootstrap -->
   <link href="{{ BOOTSTRAP_CDN_CSS }}" rel="stylesheet" integrity="{{ BOOTSTRAP_CDN_CSS_INTEGRITY }}" crossorigin="anonymous">
-  
+
+  <!-- Font -->
+  <style type="text/css">
+    @import url('{{FONT_URL}}');
+    :root {
+      --bs-font-sans-serif: "{{FONT_NAME}}",  sans-serif;
+    }
+  </style>
+
   <!-- Font Icons -->
   <style type="text/css">
     @font-face {
