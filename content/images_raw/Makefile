@@ -24,7 +24,7 @@ $(OUTPUTDIR)/%-thumbnail.jpg: %.jpg
 
 # Miscellaneous
 $(OUTPUTDIR)/avatar.% : avatar.jpg
-	convert -resize x800 -quality 85 $< $@
+	convert -resize x400 -quality 85 $< $@
 
 $(OUTPUTDIR)/banner.% : banner.jpg
 	convert -resize 2500x $< $@
