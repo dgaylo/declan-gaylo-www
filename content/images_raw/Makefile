@@ -20,7 +20,10 @@ $(OUTPUTDIR)/icon-%.png: $(ICON_SVG)
 thumbnails: $(OUTPUTDIR)/hiking4Ks-thumbnail.jpg $(OUTPUTDIR)/undergradthesis-thumbnail.jpg
 
 $(OUTPUTDIR)/%-thumbnail.jpg: %.jpg
-	convert -quality 85 -resize x416 $< $@
+	convert -quality 85 -resize x300 $< $@
+
+$(OUTPUTDIR)/%-thumbnail.jpg: %.png
+	convert -quality 85 -resize x300 $< $@
 
 
 # Miscellaneous
