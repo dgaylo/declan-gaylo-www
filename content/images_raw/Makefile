@@ -1,6 +1,7 @@
 all: icons thumbnails \
 	 $(OUTPUTDIR)/avatar.jpg $(OUTPUTDIR)/avatar.webp \
-	 $(OUTPUTDIR)/banner.jpg $(OUTPUTDIR)/banner.webp
+	 $(OUTPUTDIR)/banner.jpg $(OUTPUTDIR)/banner.webp \
+	 $(OUTPUTDIR)/seal_mit.png $(OUTPUTDIR)/seal_webb.png
 
 # Icons
 ICON_SVG = logo.svg
@@ -19,12 +20,21 @@ $(OUTPUTDIR)/icon-%.png: $(ICON_SVG)
 thumbnails: $(OUTPUTDIR)/hiking4Ks-thumbnail.jpg $(OUTPUTDIR)/undergradthesis-thumbnail.jpg
 
 $(OUTPUTDIR)/%-thumbnail.jpg: %.jpg
-	convert -quality 85 -resize x416 $< $@
+	convert -quality 85 -resize x300 $< $@
+
+$(OUTPUTDIR)/%-thumbnail.jpg: %.png
+	convert -quality 85 -resize x300 $< $@
 
 
 # Miscellaneous
 $(OUTPUTDIR)/avatar.% : avatar.jpg
-	convert -resize x800 -quality 85 $< $@
+	convert -resize x400 -quality 85 $< $@
 
 $(OUTPUTDIR)/banner.% : banner.jpg
 	convert -resize 2500x $< $@
+
+$(OUTPUTDIR)/seal_mit.% : seal_mit.png # MIT requires at least 300px
+	convert -resize 300x $< $@
+
+$(OUTPUTDIR)/seal_webb.% : seal_webb.png
+	convert -resize 300x $< $@
