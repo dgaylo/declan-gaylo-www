@@ -19,12 +19,12 @@ Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2021). Effects of power-law entra
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2024, November). *Degassing-dominated bubble populations in air-entraining free-surface turbulence*. Presented at the 77th Annual Meeting of the APS Division of Fluid Dynamics, Salt Lake City, UT.
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2024, July). *Quantifying Entrainment and Degassing of Bubbles by Free-Surface Turbulence for Ship Wake Applications*. Presented at the 35th Symposium on Naval Hydrodynamics, Nantes, France.
-[Download <i class="bi bi-file-earmark-pdf"></i>](/files/Quantifying Entrainment and Degassing of Bubbles by Free-Surface Turbulence for Ship Wake Applications.pdf)
+[Download <i class="bi bi-file-earmark-pdf"></i>](/files/Quantifying%20Entrainment%20and%20Degassing%20of%20Bubbles%20by%20Free-Surface%20Turbulence%20for%20Ship%20Wake%20Applications.pdf)
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2023, November). *Quantifying bubble degassing in entraining free-surface turbulence*. Presented at the 76th Annual Meeting of the APS Division of Fluid Dynamics, Washington, D.C.
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2022, July). *Quantifying Fragmentation Statistics in Two-Phase Turbulent Flows for Ship Wake Applications*. Presented at the 34th Symposium on Naval Hydrodynamics, Washington, D.C.
-[Download <i class="bi bi-file-earmark-pdf"></i>](/files/Quantifying Fragmentation Statistics in Two-Phase Turbulent Flows for Ship Wake Applications.pdf)
+[Download <i class="bi bi-file-earmark-pdf"></i>](/files/Quantifying%20Fragmentation%20Statistics%20in%20Two-Phase%20Turbulent%20Flows%20for%20Ship%20Wake%20Applications.pdf)
 
 Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2021, November). *Effects of split power-law entrainment on bubble fragmentation cascades*. Presented at the 74th Annual Meeting of the APS Division of Fluid Dynamics, Phoenix, AZ.
 
@@ -35,4 +35,4 @@ Gaylo, D. B., Hendrickson, K., & Yue, D. K.P. (2020, November). *Eulerian Label 
 Gaylo, D. B. (2021). *Effects of power-law entrainment on bubble fragmentation cascades* (Master's thesis). Massachusetts Institute of Technology, Cambridge, MA. doi: [1721.1/139428](https://hdl.handle.net/1721.1/139438)
 
 Gaylo, D. B., & Roske, D. (2019). [*Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls*]({filename}/posts/undergradthesis.md) (Bachelor's thesis). Webb Institute, Glen Cove, NY. 
-[Download <i class="bi bi-file-earmark-pdf"></i>](/files/Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls.pdf)
+[Download <i class="bi bi-file-earmark-pdf"></i>](/files/Pressure%20Effects%20of%20Transom%20Lift%20Devices%20on%20Prismatic%20Planing%20Hulls.pdf)
