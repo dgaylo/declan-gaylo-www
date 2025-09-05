@@ -117,7 +117,7 @@ LINKS = (
 )
 
 # Social widget
-RESUME = '/files/Declan Gaylo%20-%20Resume.pdf'
+RESUME = '/files/Declan%20Gaylo%20-%20Resume.pdf'
 SOCIAL_WIDGET_NAME = 'Profiles'
 SOCIAL = (
     ('Resume', RESUME, 'bi bi-file-earmark-pdf-fill'),
