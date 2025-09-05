@@ -94,7 +94,7 @@ Work includes both theoretical models and new CFD tools.
 
 # Site Logo
 SITELOGO = 'images/logo.svg'
-SITELOGO_SIZE = '18px'
+SITELOGO_SIZE = '18'  # pixels
 
 # Banner
 BANNER = 'images/banner.jpg'
