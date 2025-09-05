@@ -47,3 +47,16 @@ body {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
   transform: translateY(-2px); /* subtle lift */
 }
+
+/* icon for PDF downloads */
+.pdf-download-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em;
+  -webkit-mask: url("/theme/file-earmark-pdf.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("/theme/file-earmark-pdf.svg") no-repeat center;
+  mask-size: contain;
+  background-color: currentColor;
+}
