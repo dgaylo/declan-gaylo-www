@@ -67,3 +67,8 @@ body {
   background-color: currentColor;
 }
 
+/* custom size the icon for the darkMode switch */
+label#darkMode-label svg {
+  width: 1em;
+  height: 1em;
+}
