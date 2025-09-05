@@ -48,6 +48,12 @@ body {
   transform: translateY(-2px); /* subtle lift */
 }
 
+/* Bootstrap Icons Adjustment */
+.bi {
+  line-height: 1;
+  vertical-align: -.125em;
+}
+
 /* icon for PDF downloads */
 .pdf-download-icon {
   display: inline-block;
@@ -60,3 +66,4 @@ body {
   mask-size: contain;
   background-color: currentColor;
 }
+
