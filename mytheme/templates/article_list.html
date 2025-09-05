@@ -7,7 +7,7 @@
 {% for article in (articles_page.object_list if articles_page else articles) %}
   <div class="col" id="article-list">
     <div class="card h-100 hover-card">
-      <img src="{{ SITEURL }}/{{article.graphic}}" class="card-img-top object-fit-cover" height="250", {% if article.graphicalt %}alt="{{article.graphicalt}}"{% endif %}>
+      <img src="{{ SITEURL }}/{{article.graphic}}" class="card-img-top object-fit-cover" height="250" {% if article.graphicalt %}alt="{{article.graphicalt}}"{% endif %}>
       <div class="card-body d-flex flex-column justify-content-center">
         <div class="text-center"><a href="{{ SITEURL }}/{{ article.url }}" class="stretched-link"><h2 class="card-title fs-5">{{ article.title }}</h2></a></div>
         <p class="card-text">{{ article.description }}</p>
