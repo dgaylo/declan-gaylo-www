@@ -25,7 +25,7 @@
     <picture>  
         <source srcset="{{ SITEURL }}/{{ AVATAR_WEBP }}" type="image/webp">
         <source srcset="{{ SITEURL }}/{{ AVATAR }}" type="image/jpeg">
-        <img class="img-fluid rounded" {% if AVATAR_WIDTH %}width="{{ AVATAR_WIDTH }}"{% endif %} {% if AVATAR_HEIGHT %}height="{{ AVATAR_HEIGHT }}"{% endif %} src="{{ SITEURL }}/{{ AVATAR }}" alt=""/>
+        <img class="img-fluid rounded" {% if AVATAR_WIDTH %}width="{{ AVATAR_WIDTH }}"{% endif %} {% if AVATAR_HEIGHT %}height="{{ AVATAR_HEIGHT }}"{% endif %} src="{{ SITEURL }}/{{ AVATAR }}" alt="">
     </picture>
     {% else %}
     <img class="img-fluid rounded" src="{{ SITEURL }}/{{ AVATAR }}"/>
