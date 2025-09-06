@@ -2,13 +2,13 @@
 <footer class="footer pt-4 bg-body-tertiary border-top">
   <div class="container-md" id="footer">
     <div class="row" id="footer-widgets">
-      <div class="col-12 col-sm-6 col-md-3 col-xl-2 mb-3" id="links">
+      <div class="col-12 col-sm-6 col-md-3 col-xl-3 mb-3" id="links">
       {% if LINKS %}{% include 'includes/footer/links.html' %}{% endif %}
       </div>
-      <div class="col-12 col-sm-6 col-md-3 col-xl-2 mb-3" id="social">
+      <div class="col-12 col-sm-6 col-md-3 col-xl-4 mb-3" id="social">
       {% if SOCIAL %}{% include 'includes/footer/social.html' %}{% endif %}
       </div>
-      <div class="col-12 col-md-6 col-xl-7 offset-md-0 offset-xl-1 mb-3" id="aboutme">
+      <div class="col-12 col-md-6 col-xl-5 offset-md-0 mb-3" id="aboutme">
       {% if ABOUT_ME %}{% include 'includes/footer/aboutme.html' %}{% endif %}
       </div>
     </div>
