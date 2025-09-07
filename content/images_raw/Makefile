@@ -34,7 +34,7 @@ $(OUTPUTDIR)/banner.% : banner.jpg
 	convert -resize 2500x $< $@
 
 $(OUTPUTDIR)/seal_mit.% : seal_mit.png # MIT requires at least 300px
-	convert -resize 300x $< $@
+	convert -resize 300x -strip $< $@
 
 $(OUTPUTDIR)/seal_webb.% : seal_webb.png
-	convert -resize 300x $< $@
+	convert -resize 300x -strip $< $@
