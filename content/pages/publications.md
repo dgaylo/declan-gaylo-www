@@ -128,7 +128,7 @@ Priority: 0.7
 {{ thesis(
     authors = "Gaylo, D. B., & Roske, D.",
     year = "2019",
-    title = "[Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls]({filename}/posts/undergradthesis.md)",
+    title = "Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls",
     type = "Bachelor's thesis",
     school = "Webb Institute",
     city = "Glen Cove",

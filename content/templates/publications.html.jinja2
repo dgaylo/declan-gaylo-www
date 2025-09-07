@@ -43,16 +43,3 @@
         pdf = pdf
     )}}
 {%- endmacro%}
-
-{#
-{% macro conference_presentation(authors, year, month, title, conference, city, state, pdf) -%}
-{{authors}} ({{year}}, {{month}}). *{{title}}*. Presented at the {{conference}}, {{city}}, {{state}}.
-{% if pdf %}[Download <span class="pdf-download-icon">]({{pdf}}){% endif %}
-{%- endmacro %}
-
-
-{% macro thesis(authors, year, title, type, school, city, state, pdf) -%}
-{{authors}} ({{year}}). *{{title}}* ({{type}}). {{school}}, {{city}}, {{state}}.
-{% if pdf %}[Download <span class="pdf-download-icon">]({{pdf}}){% endif %}
-{%- endmacro%}
-#}
