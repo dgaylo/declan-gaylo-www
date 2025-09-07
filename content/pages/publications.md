@@ -15,7 +15,8 @@ Priority: 0.7
     journal = "Journal of Fluid Mechanics",
     volume = "995",
     pages = "A12",
-    doi = "10.1017/jfm.2024.780"
+    doi = "10.1017/jfm.2024.780",
+    icon = "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0022112024007808/resource/name/S0022112024007808_figAb.png?pub-status=live"
 ) }}
 
 {{ journal_article(
@@ -25,7 +26,8 @@ Priority: 0.7
     journal = "Journal of Fluid Mechanics",
     volume = "962",
     pages = "A25",
-    doi = "10.1017/jfm.2023.281"
+    doi = "10.1017/jfm.2023.281",
+    icon = "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0022112023002811/resource/name/S0022112023002811_figAb.png?pub-status=live"
 ) }}
 
 {{ journal_article(
@@ -45,7 +47,8 @@ Priority: 0.7
     journal = "Journal of Fluid Mechanics",
     volume = "917",
     pages = "R1",
-    doi = "10.1017/jfm.2021.333"
+    doi = "10.1017/jfm.2021.333",
+    icon = "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0022112021003335/resource/name/S0022112021003335_figAb.png?pub-status=live"
 ) }}
 
 ## Conference Presentations
@@ -57,7 +60,8 @@ Priority: 0.7
     title = "Degassing-dominated bubble populations in air-entraining free-surface turbulence",
     conference = "77th Annual Meeting of the APS Division of Fluid Dynamics",
     city = "Salt Lake City",
-    state = "UT"
+    state = "UT",
+    first = true
 )}}
 
 {{ conference_presentation(
@@ -121,13 +125,15 @@ Priority: 0.7
     type = "Master's thesis",
     school = "Massachusetts Institute of Technology",
     city = "Cambridge",
-    state = "MA"
-)}}doi: [1721.1/139428](https://hdl.handle.net/1721.1/139438)
+    state = "MA",
+    link = "https://hdl.handle.net/1721.1/139438",
+    first = true
+)}}
 
 {{ thesis(
     authors = "Gaylo, D. B., & Roske, D.",
     year = "2019",
-    title = "[Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls]({filename}/posts/undergradthesis.md)",
+    title = "Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls",
     type = "Bachelor's thesis",
     school = "Webb Institute",
     city = "Glen Cove",

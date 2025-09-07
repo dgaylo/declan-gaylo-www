@@ -1,13 +1,83 @@
-{% macro journal_article(authors, year, title, journal, volume, pages, doi) -%}
-{{authors}} ({{year}}). {{title}}. *{{journal}}, {{volume}}*, {{pages}}. {% if doi %}doi: [{{doi}}](https://doi.org/{{doi}}){% endif %}
+{% macro publication_card(title, citation, link, pdf, icon, featured) -%}
+    {% if featured %}<div class="h5 card-header"><em>{{ featured }}</em></div>{% endif %}
+    <div class="row g-0">
+        <div class="{% if icon %}col-lg-8 col-xl-9 {% else %}col{% endif %} card-body">
+            <div class="row g-0">
+                <div class="col-lg-10">
+                    <h3 class="h5 card-title">{{title}}</h3>
+                    <p class="card-subtitle text-muted"><small>{{citation}}</small></p>
+                </div>
+                <div class="col-lg-2 d-flex align-items-center justify-content-end">
+                    <div class="d-block gap-2 ">
+                        {% if link %}
+                        <a href="{{link}}" target="_blank" rel="noopener" class="btn btn-outline-primary">Read Online <span class="web-link-icon"></span></a>
+                        {% endif %}
+                        {% if pdf %}
+                        <a href="{{pdf}}" target="_blank" class="btn btn-outline-primary">Download <span class="pdf-download-icon"></span></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if icon %}
+        <div class="col d-none d-lg-block">
+            <a href="{{icon}}"><img src="{{icon}}" class="img-fluid rounded-end" alt="Graphical Abstract"></a>
+        </div>
+        {% endif %}
+    </div>
 {%- endmacro %}
 
-{% macro conference_presentation(authors, year, month, title, conference, city, state, pdf) -%}
-{{authors}} ({{year}}, {{month}}). *{{title}}*. Presented at the {{conference}}, {{city}}, {{state}}.
-{% if pdf %}[Download <span class="pdf-download-icon">]({{pdf}}){% endif %}
+
+{% macro unpublished_journal_article(authors, year, title, journal, status, pdf, icon, featured) -%}
+<div class="card mb-3 {% if featured %}shadow{% else %}shadow-sm{% endif %}">
+    {{ publication_card(
+        title=title,
+        citation= year + ". " + authors + "." + 
+            ((" <em>" + journal + "</em>.") if journal else "") + 
+            ((" ("+ status + ")") if status else ""),
+        link = "https://doi.org/"+doi if doi else None,
+        pdf = pdf,
+        icon = icon,
+        featured = featured
+    )}}
+</div>
 {%- endmacro %}
 
-{% macro thesis(authors, year, title, type, school, city, state, pdf) -%}
-{{authors}} ({{year}}). *{{title}}* ({{type}}). {{school}}, {{city}}, {{state}}.
-{% if pdf %}[Download <span class="pdf-download-icon">]({{pdf}}){% endif %}
+{% macro journal_article(authors, year, title, journal, volume, pages, doi, pdf, icon, featured) -%}
+<div class="card mb-3 {% if featured %}shadow{% else %}shadow-sm{% endif %}">
+    {{ publication_card(
+        title=title,
+        citation= year + ". " + authors + ". <em>" + journal + ", " + volume+"</em>, " + pages,
+        link = "https://doi.org/"+doi if doi else None,
+        pdf = pdf,
+        icon = icon,
+        featured = featured
+    )}}
+</div>
+{%- endmacro %}
+
+{% macro conference_presentation(authors, year, month, title, conference, city, state, link, pdf, first) -%}
+{% if first %}<hr class="border m-2">{% endif %}
+<div class="container">
+    {{ publication_card(
+        title=title,
+        citation = year + ", " + month + ". " + authors +". Presented at the " + conference + ", " + city + ", " + state + ".",
+        link = link,
+        pdf = pdf
+    )}}
+</div>
+<hr class="border m-2">
+{%- endmacro %}
+
+{% macro thesis(authors, year, title, type, school, city, state, link, pdf, first) -%}
+{% if first %}<hr class="border m-2">{% endif %}
+<div class="container">
+    {{ publication_card(
+        title=title+" ("+ type + ")",
+        citation = year + ". " + authors +". " + school + ", " + city + ", " + state + ".",
+        link = link,
+        pdf = pdf
+    )}}
+</div>
+<hr class="border m-2">
 {%- endmacro%}
