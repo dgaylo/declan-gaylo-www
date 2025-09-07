@@ -10,10 +10,10 @@
                 <div class="col-lg-2 d-flex align-items-center justify-content-end">
                     <div class="d-block gap-2 ">
                         {% if link %}
-                        <a href="{{link}}" class="btn btn-outline-primary">Read Online <span class="web-link-icon"></span></a>
+                        <a href="{{link}}" target="_blank" rel="noopener" class="btn btn-outline-primary">Read Online <span class="web-link-icon"></span></a>
                         {% endif %}
                         {% if pdf %}
-                        <a href="{{pdf}}"  class="btn btn-outline-primary">Download <span class="pdf-download-icon"></span></a>
+                        <a href="{{pdf}}" target="_blank" class="btn btn-outline-primary">Download <span class="pdf-download-icon"></span></a>
                         {% endif %}
                     </div>
                 </div>
