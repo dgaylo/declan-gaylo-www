@@ -1,28 +1,36 @@
-{% macro publication_card(title, citation, link, pdf) -%}
+{% macro publication_card(title, citation, link, pdf, icon) -%}
 <div class="card mb-3">
-    <div class="card-body">
-        <div class="row g-0">
-            <div class="col-lg-9">
-                <h3 class="h5 card-title">{{title}}</h3>
-                <p class="card-subtitle text-muted"><small>{{citation}}</small></p>
-            </div>
-            <div class="col-lg-3 d-flex align-items-center justify-content-end">
-                <div class="d-block gap-2 ">
-                    {%if link%}<a href="{{link}}" class="btn btn-outline-primary">Read Online</a>{%endif%}
-                    {%if  pdf%}<a href="{{pdf}}"  class="btn btn-outline-primary">Download <span class="pdf-download-icon"></span></a>{%endif%}
+    <div class="row g-0">
+        <div class="{% if icon %}col-lg-8 col-xl-9 {% else %}col{% endif %} card-body">
+            <div class="row g-0">
+                <div class="col-lg-10">
+                    <h3 class="h5 card-title">{{title}}</h3>
+                    <p class="card-subtitle text-muted"><small>{{citation}}</small></p>
+                </div>
+                <div class="col-lg-2 d-flex align-items-center justify-content-end">
+                    <div class="d-block gap-2 ">
+                        {%if link%}<a href="{{link}}" class="btn btn-outline-primary">Read Online</a>{%endif%}
+                        {%if  pdf%}<a href="{{pdf}}"  class="btn btn-outline-primary">Download <span class="pdf-download-icon"></span></a>{%endif%}
+                    </div>
                 </div>
             </div>
         </div>
+        {% if icon %}
+        <div class="col d-none d-lg-block">
+            <a href="{{icon}}"><img src="{{icon}}" class="img-fluid rounded-end" alt="Graphical Abstract"></a>
+        </div>
+        {% endif %}
     </div>
 </div>
 {%- endmacro %}
 
-{% macro journal_article(authors, year, title, journal, volume, pages, doi, pdf) -%}
+{% macro journal_article(authors, year, title, journal, volume, pages, doi, pdf, icon) -%}
     {{ publication_card(
         title=title,
         citation= year + ". " + authors + ". <em>" + journal + ", " + volume+"</em>, " + pages,
         link = "https://doi.org/"+doi,
-        pdf = pdf
+        pdf = pdf,
+        icon = icon
     )}}
 {%- endmacro %}
 
