@@ -146,8 +146,3 @@ Priority: 0.7
     state = "NY",
     pdf = "/files/Pressure%20Effects%20of%20Transom%20Lift%20Devices%20on%20Prismatic%20Planing%20Hulls.pdf"
 )}}
-
-Gaylo, D. B. (2021). *Effects of power-law entrainment on bubble fragmentation cascades* (Master's thesis). Massachusetts Institute of Technology, Cambridge, MA. doi: [1721.1/139428](https://hdl.handle.net/1721.1/139438)
-
-Gaylo, D. B., & Roske, D. (2019). [*Pressure Effects of Transom Lift Devices on Prismatic Planing Hulls*]({filename}/posts/undergradthesis.md) (Bachelor's thesis). Webb Institute, Glen Cove, NY. 
-[Download <span class="pdf-download-icon">](/files/Pressure%20Effects%20of%20Transom%20Lift%20Devices%20on%20Prismatic%20Planing%20Hulls.pdf)
