@@ -1,5 +1,6 @@
-{% macro publication_card(title, citation, link, pdf, icon) -%}
-<div class="card mb-3">
+{% macro publication_card(title, citation, link, pdf, icon, featured) -%}
+<div class="card mb-3 {% if featured %}shadow-sm{% endif %}">
+    {% if featured %}<div class="h5 card-header"><em>{{ featured }}</em></div>{% endif %}
     <div class="row g-0">
         <div class="{% if icon %}col-lg-8 col-xl-9 {% else %}col{% endif %} card-body">
             <div class="row g-0">
@@ -28,30 +29,33 @@
 </div>
 {%- endmacro %}
 
-{% macro journal_article(authors, year, title, journal, volume, pages, doi, pdf, icon) -%}
+{% macro journal_article(authors, year, title, journal, volume, pages, doi, pdf, icon, featured) -%}
     {{ publication_card(
         title=title,
         citation= year + ". " + authors + ". <em>" + journal + ", " + volume+"</em>, " + pages,
         link = "https://doi.org/"+doi,
         pdf = pdf,
-        icon = icon
+        icon = icon,
+        featured = featured
     )}}
 {%- endmacro %}
 
-{% macro conference_presentation(authors, year, month, title, conference, city, state, link, pdf) -%}
+{% macro conference_presentation(authors, year, month, title, conference, city, state, link, pdf, featured) -%}
     {{ publication_card(
         title=title,
         citation = year + ", " + month + ". " + authors +". Presented at the " + conference + ", " + city + ", " + state + ".",
         link = link,
-        pdf = pdf
+        pdf = pdf,
+        featured = featured
     )}}
 {%- endmacro %}
 
-{% macro thesis(authors, year, title, type, school, city, state, link, pdf) -%}
+{% macro thesis(authors, year, title, type, school, city, state, link, pdf, featured) -%}
     {{ publication_card(
         title=title+" ("+ type + ")",
         citation = year + ". " + authors +". " + school + ", " + city + ", " + state + ".",
         link = link,
-        pdf = pdf
+        pdf = pdf,
+        featured = featured
     )}}
 {%- endmacro%}
