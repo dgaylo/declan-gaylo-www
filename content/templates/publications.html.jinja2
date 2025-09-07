@@ -33,7 +33,7 @@
     {{ publication_card(
         title=title,
         citation= year + ". " + authors + ". <em>" + journal + ", " + volume+"</em>, " + pages,
-        link = "https://doi.org/"+doi,
+        link = "https://doi.org/"+doi if doi else None,
         pdf = pdf,
         icon = icon,
         featured = featured
