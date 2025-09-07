@@ -4,11 +4,9 @@ modified: 2025-03-24 00:00
 ChangeFreq: monthly
 Priority: 0.7
 
-## Journal Papers
+{% from 'templates/publications.html.jinja2' import journal_article, conference_presentation, thesis %}
 
-{% macro journal_article(authors, year, title, journal, volume, pages, doi) -%}
-{{authors}} ({{year}}). {{title}}. *{{journal}}, {{volume}}*, {{pages}}. {% if doi %}doi: [{{doi}}](https://doi.org/{{doi}}){% endif %}
-{%- endmacro %}
+## Journal Papers
 
 {{ journal_article(
     authors = "Gaylo, D. B., Hendrickson, K., & Yue, D. K.P.",
@@ -51,11 +49,6 @@ Priority: 0.7
 ) }}
 
 ## Conference Presentations
-
-{% macro conference_presentation(authors, year, month, title, conference, city, state, pdf) -%}
-{{authors}} ({{year}}, {{month}}). *{{title}}*. Presented at the {{conference}}, {{city}}, {{state}}.
-{% if pdf %}[Download <span class="pdf-download-icon">]({{pdf}}){% endif %}
-{%- endmacro %}
 
 {{ conference_presentation(
     authors = "Gaylo, D. B., Hendrickson, K., & Yue, D. K.P.",
@@ -120,11 +113,6 @@ Priority: 0.7
 )}}
 
 ## Academic Theses
-
-{% macro thesis(authors, year, title, type, school, city, state, pdf) -%}
-{{authors}} ({{year}}). *{{title}}* ({{type}}). {{school}}, {{city}}, {{state}}.
-{% if pdf %}[Download <span class="pdf-download-icon">]({{pdf}}){% endif %}
-{%- endmacro%}
 
 {{ thesis(
     authors = "Gaylo, D. B.",
