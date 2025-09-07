@@ -1,5 +1,4 @@
 {% macro publication_card(title, citation, link, pdf, icon, featured) -%}
-<div class="card mb-3 {% if featured %}shadow-sm{% endif %}">
     {% if featured %}<div class="h5 card-header"><em>{{ featured }}</em></div>{% endif %}
     <div class="row g-0">
         <div class="{% if icon %}col-lg-8 col-xl-9 {% else %}col{% endif %} card-body">
@@ -26,11 +25,11 @@
         </div>
         {% endif %}
     </div>
-</div>
 {%- endmacro %}
 
 
 {% macro unpublished_journal_article(authors, year, title, journal, status, pdf, icon, featured) -%}
+<div class="card mb-3 {% if featured %}shadow{% else %}shadow-sm{% endif %}">
     {{ publication_card(
         title=title,
         citation= year + ". " + authors + "." + 
@@ -41,9 +40,11 @@
         icon = icon,
         featured = featured
     )}}
+</div>
 {%- endmacro %}
 
 {% macro journal_article(authors, year, title, journal, volume, pages, doi, pdf, icon, featured) -%}
+<div class="card mb-3 {% if featured %}shadow{% else %}shadow-sm{% endif %}">
     {{ publication_card(
         title=title,
         citation= year + ". " + authors + ". <em>" + journal + ", " + volume+"</em>, " + pages,
@@ -52,24 +53,31 @@
         icon = icon,
         featured = featured
     )}}
+</div>
 {%- endmacro %}
 
-{% macro conference_presentation(authors, year, month, title, conference, city, state, link, pdf, featured) -%}
+{% macro conference_presentation(authors, year, month, title, conference, city, state, link, pdf, first) -%}
+{% if first %}<hr class="border m-2">{% endif %}
+<div class="container">
     {{ publication_card(
         title=title,
         citation = year + ", " + month + ". " + authors +". Presented at the " + conference + ", " + city + ", " + state + ".",
         link = link,
-        pdf = pdf,
-        featured = featured
+        pdf = pdf
     )}}
+</div>
+<hr class="border m-2">
 {%- endmacro %}
 
-{% macro thesis(authors, year, title, type, school, city, state, link, pdf, featured) -%}
+{% macro thesis(authors, year, title, type, school, city, state, link, pdf, first) -%}
+{% if first %}<hr class="border m-2">{% endif %}
+<div class="container">
     {{ publication_card(
         title=title+" ("+ type + ")",
         citation = year + ". " + authors +". " + school + ", " + city + ", " + state + ".",
         link = link,
-        pdf = pdf,
-        featured = featured
+        pdf = pdf
     )}}
+</div>
+<hr class="border m-2">
 {%- endmacro%}

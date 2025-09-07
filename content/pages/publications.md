@@ -60,7 +60,8 @@ Priority: 0.7
     title = "Degassing-dominated bubble populations in air-entraining free-surface turbulence",
     conference = "77th Annual Meeting of the APS Division of Fluid Dynamics",
     city = "Salt Lake City",
-    state = "UT"
+    state = "UT",
+    first = true
 )}}
 
 {{ conference_presentation(
@@ -125,7 +126,8 @@ Priority: 0.7
     school = "Massachusetts Institute of Technology",
     city = "Cambridge",
     state = "MA",
-    link = "https://hdl.handle.net/1721.1/139438"
+    link = "https://hdl.handle.net/1721.1/139438",
+    first = true
 )}}
 
 {{ thesis(
