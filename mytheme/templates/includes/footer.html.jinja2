@@ -3,13 +3,13 @@
   <div class="container-md" id="footer">
     <div class="row" id="footer-widgets">
       <div class="col-12 col-sm-6 col-md-3 col-xl-3 mb-3" id="links">
-      {% if LINKS %}{% include 'includes/footer/links.html' %}{% endif %}
+      {% if LINKS %}{% include 'includes/footer/links.html.jinja2' %}{% endif %}
       </div>
       <div class="col-12 col-sm-6 col-md-3 col-xl-4 mb-3" id="social">
-      {% if SOCIAL %}{% include 'includes/footer/social.html' %}{% endif %}
+      {% if SOCIAL %}{% include 'includes/footer/social.html.jinja2' %}{% endif %}
       </div>
       <div class="col-12 col-md-6 col-xl-5 offset-md-0 mb-3" id="aboutme">
-      {% if ABOUT_ME %}{% include 'includes/footer/aboutme.html' %}{% endif %}
+      {% if ABOUT_ME %}{% include 'includes/footer/aboutme.html.jinja2' %}{% endif %}
       </div>
     </div>
     <div class="row small">

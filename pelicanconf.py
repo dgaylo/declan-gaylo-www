@@ -62,6 +62,7 @@ SITEMAP = {
 
 # Theme setup
 THEME = './mytheme'
+TEMPLATE_EXTENSIONS = [".html.jinja2", ".html"]
 
 # Bootstrap setup
 BOOTSTRAP_CDN_CSS = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'
