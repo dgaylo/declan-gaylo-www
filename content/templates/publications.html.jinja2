@@ -9,8 +9,12 @@
                 </div>
                 <div class="col-lg-2 d-flex align-items-center justify-content-end">
                     <div class="d-block gap-2 ">
-                        {%if link%}<a href="{{link}}" class="btn btn-outline-primary">Read Online</a>{%endif%}
-                        {%if  pdf%}<a href="{{pdf}}"  class="btn btn-outline-primary">Download <span class="pdf-download-icon"></span></a>{%endif%}
+                        {% if link %}
+                        <a href="{{link}}" class="btn btn-outline-primary">Read Online</a>
+                        {% endif %}
+                        {% if pdf %}
+                        <a href="{{pdf}}"  class="btn btn-outline-primary">Download <span class="pdf-download-icon"></span></a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
