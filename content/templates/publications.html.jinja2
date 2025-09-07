@@ -8,8 +8,8 @@
             </div>
             <div class="col-lg-3 d-flex align-items-center justify-content-end">
                 <div class="d-block gap-2 ">
-                    <a {%if link%}href="{{link}}" class="btn btn-primary"{%else%}class="btn btn-outline-secondary disabled" aria-disabled="true"{%endif%}>Read Online</a>
-                    <a {%if  pdf%}href="{{pdf}}"  class="btn btn-primary"{%else%}class="btn btn-outline-secondary disabled" aria-disabled="true"{%endif%}>Download <span class="pdf-download-icon"></span></a>
+                    {%if link%}<a href="{{link}}" class="btn btn-outline-primary">Read Online</a>{%endif%}
+                    {%if  pdf%}<a href="{{pdf}}"  class="btn btn-outline-primary">Download <span class="pdf-download-icon"></span></a>{%endif%}
                 </div>
             </div>
         </div>
