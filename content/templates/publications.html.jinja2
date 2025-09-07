@@ -1,13 +1,54 @@
-{% macro journal_article(authors, year, title, journal, volume, pages, doi) -%}
-{{authors}} ({{year}}). {{title}}. *{{journal}}, {{volume}}*, {{pages}}. {% if doi %}doi: [{{doi}}](https://doi.org/{{doi}}){% endif %}
+{% macro publication_card(title, citation, link, pdf) -%}
+<div class="card mb-3">
+    <div class="card-body">
+        <h3 class="h5 card-title">{{title}}</h3>
+        <p class="card-subtitle text-muted">{{citation}}</p>
+        <div class="d-flex justify-content-end">
+            <div class="d-block gap-2 ">
+                <a {%if link%}href="{{link}}" class="btn btn-link"{%else%}class="btn btn-link disabled" aria-disabled="true"{%endif%}>Read Online</a>
+                <a {%if  pdf%}href="{{pdf}}"  class="btn btn-link"{%else%}class="btn btn-link disabled" aria-disabled="true"{%endif%}>Download <span class="pdf-download-icon"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
 {%- endmacro %}
 
+{% macro journal_article(authors, year, title, journal, volume, pages, doi, pdf) -%}
+    {{ publication_card(
+        title=title,
+        citation= year + ". " + authors + ". <em>" + journal + ", " + volume+"</em>, " + pages,
+        link = "https://doi.org/"+doi,
+        pdf = pdf
+    )}}
+{%- endmacro %}
+
+{% macro conference_presentation(authors, year, month, title, conference, city, state, link, pdf) -%}
+    {{ publication_card(
+        title=title,
+        citation = year + ", " + month + ". " + authors +". Presented at the " + conference + ", " + city + ", " + state + ".",
+        link = link,
+        pdf = pdf
+    )}}
+{%- endmacro %}
+
+{% macro thesis(authors, year, title, type, school, city, state, link, pdf) -%}
+    {{ publication_card(
+        title=title+" ("+ type + ")",
+        citation = year + ". " + authors +". " + school + ", " + city + ", " + state + ".",
+        link = link,
+        pdf = pdf
+    )}}
+{%- endmacro%}
+
+{#
 {% macro conference_presentation(authors, year, month, title, conference, city, state, pdf) -%}
 {{authors}} ({{year}}, {{month}}). *{{title}}*. Presented at the {{conference}}, {{city}}, {{state}}.
 {% if pdf %}[Download <span class="pdf-download-icon">]({{pdf}}){% endif %}
 {%- endmacro %}
 
+
 {% macro thesis(authors, year, title, type, school, city, state, pdf) -%}
 {{authors}} ({{year}}). *{{title}}* ({{type}}). {{school}}, {{city}}, {{state}}.
 {% if pdf %}[Download <span class="pdf-download-icon">]({{pdf}}){% endif %}
 {%- endmacro%}
+#}

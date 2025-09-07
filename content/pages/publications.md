@@ -121,8 +121,9 @@ Priority: 0.7
     type = "Master's thesis",
     school = "Massachusetts Institute of Technology",
     city = "Cambridge",
-    state = "MA"
-)}}doi: [1721.1/139428](https://hdl.handle.net/1721.1/139438)
+    state = "MA",
+    link = "https://hdl.handle.net/1721.1/139438"
+)}}
 
 {{ thesis(
     authors = "Gaylo, D. B., & Roske, D.",
