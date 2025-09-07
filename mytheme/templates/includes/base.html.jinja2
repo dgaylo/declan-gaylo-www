@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% block meta %}{% endblock %}
-  {% include 'includes/ga.html' %}
+  {% include 'includes/ga.html.jinja2' %}
 
   <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
   {% block canonical_rel %}{% endblock %}
@@ -55,7 +55,7 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-{% include 'includes/navbar.html' %}
+{% include 'includes/navbar.html.jinja2' %}
 
 {% block banner %}{% endblock %}
 
@@ -75,7 +75,7 @@
 </main>
 </div>
 
-{% include 'includes/footer.html' %}
+{% include 'includes/footer.html.jinja2' %}
 
 <script src="{{BOOTSTRAP_CDN_JS}}" integrity="{{BOOTSTRAP_CDN_JS_INTEGRITY}}" crossorigin="anonymous"></script>
 
