@@ -7,9 +7,9 @@
     </head>
     <body>
 
-{% from 'templates/education.html.jinja2' import eductation_item %}
+{% from 'templates/education.html.jinja2' import education_item %}
 
-        {{ eductation_item(
+        {{ education_item(
             degree = "Doctor of Philosophy",
             school = "MIT",
             year = "<em>in progress</em>",
@@ -24,7 +24,7 @@
             flip = false
         )}}
 
-        {{ eductation_item(
+        {{ education_item(
             degree = "Master of Science",
             school = "MIT",
             year = "2021",
@@ -39,7 +39,7 @@
             flip = true
         )}}
 
-        {{ eductation_item(
+        {{ education_item(
             degree = "Bachelor of Science",
             school = "Webb Institute",
             year = "2019",

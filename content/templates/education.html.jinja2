@@ -1,4 +1,4 @@
-{% macro eductation_item(degree, school, year, blurb, school_link, seal, flip) -%}
+{% macro education_item(degree, school, year, blurb, school_link, seal, flip) -%}
         <div class="row py-3">
             <div class="col-3 col-md-2{% if flip %}{% else %} order-md-2{% endif %}">
                 <a href="{{school_link}}" target="_blank"><img src="{{seal}}" alt="{{school}} Seal" class="img-fluid"></a>
