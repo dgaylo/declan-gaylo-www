@@ -37,7 +37,8 @@ Priority: 0.7
     journal = "Journal of Computational Physics",
     volume = "470",
     pages = "111560",
-    doi = "10.1016/j.jcp.2022.111560"
+    doi = "10.1016/j.jcp.2022.111560",
+    icon = "/images/ela_icon.svg"
 ) }}
 
 {{ journal_article(
