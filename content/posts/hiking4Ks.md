@@ -1,5 +1,5 @@
 Title: Hiking New Hampshire's 4,000 Footers
-Date: 2022-09-17 11:59
+Date: 2025-09-20 11:59
 slug: hiking4ks
 ChangeFreq: monthly
 Priority: 0.3
@@ -12,10 +12,10 @@ I've been slowly working on hiking all of <a href="http://4000footers.com/nh.sht
 
 | Complete | <button class="btn sortable">Mountain<span aria-hidden="true"></span></button> | <button class="btn sortable sortable-num">Elevation (ft)<span aria-hidden="true"></span></button> | <button class="btn sortable sortable-date">Date First Hiked<span aria-hidden="true"></span></button> |
 |:----------:|:--------:|:--------------:|:----------------:|
-| | Washington | 6288 | |
+| &#10004; | Washington | 6288 | Sept. 20, 2025 |
 | &#10004; | Adams | 5774 | Sept. 17, 2022 | <!-- Oct. 11, 2022 -->
-| &#10004;  | Jefferson | 5712 | Sept. 17, 2022 |
-| | Monroe | 5384 | |
+| &#10004; | Jefferson | 5712 | Sept. 17, 2022 |
+| &#10004; | Monroe | 5384 | Sept. 20, 2025 |
 | &#10004; | Madison | 5367 | Oct. 11, 2022 |
 | &#10004; | Lafayette | 5260 | Nov. 21, 2020 | <!-- Aug. 6, 2022 -->
 | &#10004; | Lincoln | 5089 | Nov. 21, 2020 | <!-- Aug. 6, 2022 -->
