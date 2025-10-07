@@ -1,12 +1,23 @@
 Title: Publications
 slug: publications
-modified: 2025-03-24 00:00
+modified: 2025-10-07 00:00
 ChangeFreq: monthly
 Priority: 0.7
 
 {% from 'templates/publications.html.jinja2' import journal_article, conference_presentation, thesis %}
 
 ## Journal Papers
+
+{{ journal_article(
+    authors = "Gaylo, D. B., & Yue, D. K.P.",
+    year = "2025",
+    title = "Size distribution of large air bubbles entrained by strong free-surface turbulence",
+    journal = "Journal of Fluid Mechanics",
+    volume = "1020",
+    pages = "A40",
+    doi = "10.1017/jfm.2025.10669",
+    icon = "https://static.cambridge.org//content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0022112025106691/resource/name/optimisedImage-png-S0022112025106691_figAb.jpg?pub-status=live"
+) }}
 
 {{ journal_article(
     authors = "Gaylo, D. B., Hendrickson, K., & Yue, D. K.P.",
