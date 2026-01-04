@@ -104,7 +104,7 @@ SITELOGO_SIZE = '18'  # pixels
 # Banner
 BANNER = 'images/banner.jpg'
 BANNER_WEBP = 'images/banner.webp'
-BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
+BANNER_SUBTITLE = 'Hydrodynamics & Ocean Engineering'
 
 # Nav bar
 DISPLAY_PAGES_ON_MENU = False
