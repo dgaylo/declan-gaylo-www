@@ -38,7 +38,8 @@ Priority: 0.7
     volume = "962",
     pages = "A25",
     doi = "10.1017/jfm.2023.281",
-    icon = "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0022112023002811/resource/name/S0022112023002811_figAb.png?pub-status=live"
+    icon = "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0022112023002811/resource/name/S0022112023002811_figAb.png?pub-status=live",
+    icon_contain = True
 ) }}
 
 {{ journal_article(
@@ -49,7 +50,8 @@ Priority: 0.7
     volume = "470",
     pages = "111560",
     doi = "10.1016/j.jcp.2022.111560",
-    icon = "/images/ela_icon.svg"
+    icon = "/images/ela_icon.svg",
+    icon_contain = True
 ) }}
 
 {{ journal_article(
@@ -60,7 +62,8 @@ Priority: 0.7
     volume = "917",
     pages = "R1",
     doi = "10.1017/jfm.2021.333",
-    icon = "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0022112021003335/resource/name/S0022112021003335_figAb.png?pub-status=live"
+    icon = "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0022112021003335/resource/name/S0022112021003335_figAb.png?pub-status=live",
+    icon_contain = True
 ) }}
 
 ## Conference Presentations

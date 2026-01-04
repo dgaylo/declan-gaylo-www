@@ -1,4 +1,4 @@
-{% macro publication_card(title, citation, link, pdf, icon, featured) -%}
+{% macro publication_card(title, citation, link, pdf, icon, icon_contain, featured) -%}
     {% if featured %}<div class="h5 card-header"><em>{{ featured }}</em></div>{% endif %}
     <div class="row g-0">
         <div class="{% if icon %}col-lg-8 col-xl-9 {% else %}col{% endif %} card-body">
@@ -21,14 +21,24 @@
         </div>
         {% if icon %}
         <div class="col d-none d-lg-block">
-            <a href="{{icon}}"><img src="{{icon}}" class="img-fluid rounded-end" alt="Graphical Abstract"></a>
+            <div class="ratio ratio-4x3">
+                <a href="{{icon}}" class="w-100 h-100">
+                    <img src="{{icon}}"
+                        {% if icon_contain %}
+                        class="img-fluid rounded-end object-fit-contain w-100 h-100"
+                        {% else %}
+                        class="img-fluid rounded-end object-fit-cover w-100 h-100"
+                        {% endif %}
+                        alt="Graphical Abstract">
+                </a>
+            </div>
         </div>
         {% endif %}
     </div>
 {%- endmacro %}
 
 
-{% macro unpublished_journal_article(authors, year, title, journal, status, pdf, icon, featured) -%}
+{% macro unpublished_journal_article(authors, year, title, journal, status, pdf, icon, icon_contain, featured) -%}
 <div class="card mb-3 {% if featured %}shadow{% else %}shadow-sm{% endif %}">
     {{ publication_card(
         title=title,
@@ -38,12 +48,13 @@
         link = "https://doi.org/"+doi if doi else None,
         pdf = pdf,
         icon = icon,
+        icon_contain = icon_contain,
         featured = featured
     )}}
 </div>
 {%- endmacro %}
 
-{% macro journal_article(authors, year, title, journal, volume, pages, doi, pdf, icon, featured) -%}
+{% macro journal_article(authors, year, title, journal, volume, pages, doi, pdf, icon, icon_contain, featured) -%}
 <div class="card mb-3 {% if featured %}shadow{% else %}shadow-sm{% endif %}">
     {{ publication_card(
         title=title,
@@ -51,6 +62,7 @@
         link = "https://doi.org/"+doi if doi else None,
         pdf = pdf,
         icon = icon,
+        icon_contain = icon_contain,
         featured = featured
     )}}
 </div>
