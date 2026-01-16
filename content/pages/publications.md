@@ -141,6 +141,7 @@ Priority: 0.7
     school = "Massachusetts Institute of Technology",
     city = "Cambridge",
     state = "MA",
+    pdf = "https://downloads.dgaylo.com/gaylo-dgaylo-phd-meche-2026-thesis.pdf",
     first = true
 )}}
 
