@@ -135,14 +135,25 @@ Priority: 0.7
 
 {{ thesis(
     authors = "Gaylo, D. B.",
+    year = "2026",
+    title = "Air Entraining Bubbly Flows Driven by Strong Free-Surface Turbulence",
+    type = "PhD thesis",
+    school = "Massachusetts Institute of Technology",
+    city = "Cambridge",
+    state = "MA",
+    pdf = "/files/gaylo-dgaylo-phd-meche-2026-thesis.pdf",
+    first = true
+)}}
+
+{{ thesis(
+    authors = "Gaylo, D. B.",
     year = "2021",
     title = "Effects of power-law entrainment on bubble fragmentation cascades",
     type = "Master's thesis",
     school = "Massachusetts Institute of Technology",
     city = "Cambridge",
     state = "MA",
-    link = "https://hdl.handle.net/1721.1/139438",
-    first = true
+    link = "https://hdl.handle.net/1721.1/139438"
 )}}
 
 {{ thesis(

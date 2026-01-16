@@ -93,9 +93,8 @@ AVATAR_WEBP = 'images/avatar.webp'
 AVATAR_WIDTH = 1067
 AVATAR_HEIGHT = 800
 ABOUT_ME = """
-A PhD student at MIT studying Hydrodynamics.
-Research interests are turbulent bubbly flow near the free surface.
-Work includes both theoretical models and new CFD tools.
+A researcher in Hydrodynamics interested in predicting complex, turbulent flows relevant to Ocean Engineering.
+Work includes developing both theoretical models and new computational tools.
 """
 
 # Site Logo
@@ -105,7 +104,7 @@ SITELOGO_SIZE = '18'  # pixels
 # Banner
 BANNER = 'images/banner.jpg'
 BANNER_WEBP = 'images/banner.webp'
-BANNER_SUBTITLE = 'Naval Architecture & Hydrodynamics'
+BANNER_SUBTITLE = 'Hydrodynamics & Ocean Engineering'
 
 # Nav bar
 DISPLAY_PAGES_ON_MENU = False
