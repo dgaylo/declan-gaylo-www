@@ -11,7 +11,7 @@ My name is Declan Gaylo and I'm a researcher in Hydrodynamics with a passion for
 
 I obtained a PhD from <a href="https://meche.mit.edu/" target="_blank">MIT</a> in 2026, where my research focused on the creation of bubbles at the surface of the ocean by turbulence.
 I developed theoretical models of bubble dynamics and the CFD tools needed to obtain detailed measurement of these dynamics in large simulations.
-This included writing coding for parallel computing on large HPC clusters.
+This included writing code for parallel computing on large HPC clusters.
 In addition to research, I TA'd multiple graduate-level Ocean Engineering courses and obtained a minor in Acoustics.
 
 
