@@ -87,7 +87,7 @@ Priority: 0.7
     conference = "35th Symposium on Naval Hydrodynamics",
     city = "Nantes",
     state = "France",
-    pdf = "/files/Quantifying%20Entrainment%20and%20Degassing%20of%20Bubbles%20by%20Free-Surface%20Turbulence%20for%20Ship%20Wake%20Applications.pdf"
+    pdf = "https://downloads.dgaylo.com/Quantifying%20Entrainment%20and%20Degassing%20of%20Bubbles%20by%20Free-Surface%20Turbulence%20for%20Ship%20Wake%20Applications.pdf"
 )}}
 
 {{ conference_presentation(
@@ -108,7 +108,7 @@ Priority: 0.7
     conference = "34th Symposium on Naval Hydrodynamics",
     city = "Washington",
     state = "D.C.",
-    pdf = "/files/Quantifying%20Fragmentation%20Statistics%20in%20Two-Phase%20Turbulent%20Flows%20for%20Ship%20Wake%20Applications.pdf"
+    pdf = "https://downloads.dgaylo.com/Quantifying%20Fragmentation%20Statistics%20in%20Two-Phase%20Turbulent%20Flows%20for%20Ship%20Wake%20Applications.pdf"
 )}}
 
 {{ conference_presentation(
@@ -164,5 +164,5 @@ Priority: 0.7
     school = "Webb Institute",
     city = "Glen Cove",
     state = "NY",
-    pdf = "/files/Pressure%20Effects%20of%20Transom%20Lift%20Devices%20on%20Prismatic%20Planing%20Hulls.pdf"
+    pdf = "https://downloads.dgaylo.com/Pressure%20Effects%20of%20Transom%20Lift%20Devices%20on%20Prismatic%20Planing%20Hulls.pdf"
 )}}
