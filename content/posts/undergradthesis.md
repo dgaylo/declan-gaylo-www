@@ -35,4 +35,4 @@ Trim tabs and interceptors are two devices used on high-speed planing craft to l
 
 Through our testing, we were able to measure the longitudinal pressure distribution with higher resolution and precision than earlier work. We compared our measurements to the operating principals of interceptors and trim tabs, and to performance prediction methods. From these comparisons, we made suggestions for improvements to current performance prediction methods. Additionally, we were able to observe that both interceptors and trim tabs have similar speed regimes of effectiveness.
 
-For more, download the full [thesis <i class="bi bi-file-earmark-pdf"></i>](https://downloads.dgaylo.com/Pressure%20Effects%20of%20Transom%20Lift%20Devices%20on%20Prismatic%20Planing%20Hulls.pdf).
+For more, download the full [thesis <span class="pdf-download-icon"></span>](https://downloads.dgaylo.com/Pressure%20Effects%20of%20Transom%20Lift%20Devices%20on%20Prismatic%20Planing%20Hulls.pdf).
