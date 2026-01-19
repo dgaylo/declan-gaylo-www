@@ -99,7 +99,7 @@ Work includes developing both theoretical models and new computational tools.
 
 # Site Logo
 SITELOGO = 'images/logo.svg'
-SITELOGO_SIZE = '18'  # pixels
+SITELOGO_SIZE = '30'  # pixels
 
 # Banner
 BANNER = 'images/banner.jpg'
