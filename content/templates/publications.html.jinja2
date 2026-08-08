@@ -3,12 +3,12 @@
     <div class="row g-0">
         <div class="{% if icon %}col-lg-8 col-xl-9 {% else %}col{% endif %} card-body">
             <div class="row g-0">
-                <div class="col-lg-10">
+                <div class="col-lg-9">
                     <h3 class="h5 card-title">{{title}}</h3>
                     <p class="card-subtitle text-muted"><small>{{citation}}</small></p>
                 </div>
-                <div class="col-lg-2 d-flex align-items-center justify-content-end">
-                    <div class="d-block gap-2 ">
+                <div class="col-lg-3 d-flex align-items-center justify-content-end">
+                    <div class="d-flex justify-content-end flex-wrap gap-2 ">
                         {% if link %}
                         <a href="{{link}}" target="_blank" rel="noopener" class="btn btn-outline-primary">Read Online <span class="web-link-icon"></span></a>
                         {% endif %}
