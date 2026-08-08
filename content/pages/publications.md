@@ -153,6 +153,7 @@ Priority: 0.7
     city = "Cambridge",
     state = "MA",
     pdf = "https://downloads.dgaylo.com/gaylo-dgaylo-phd-meche-2026-thesis.pdf",
+    link = "https://dspace.mit.edu/handle/1721.1/171494",
     first = true
 )}}
 
