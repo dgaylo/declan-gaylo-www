@@ -77,4 +77,4 @@ $(OUTPUTDIR)/images:
 # note the commit hash
 .PHONY: $(OUTPUTDIR)/commit.txt
 $(OUTPUTDIR)/commit.txt:
-	$(PY) -c "import sys; import git; sys.stdout.write(git.Repo().head.object.hexsha)" >  $@
+	git rev-parse HEAD > $@
