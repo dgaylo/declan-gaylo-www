@@ -16,7 +16,7 @@ $(OUTPUTDIR)/icon.svg: $(ICON_SVG)
 	cp $< $@
 
 $(OUTPUTDIR)/icon-%.png: $(ICON_SVG)
-	convert -background transparent -density 600 -resize $*x$* $< $@
+	convert -background transparent -density 600 -resize $*x$* -strip $< $@
 
 # Thumbnails
 .PHONY: thumbnails
