@@ -31,7 +31,7 @@ TAG_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 INDEX_SAVE_AS = ''
 
-STATIC_PATHS = ['images', 'static', 'files']
+STATIC_PATHS = ['images', 'static']
 ARTICLE_PATHS = ['posts']
 PAGE_PATHS = ['pages']
 
@@ -116,7 +116,7 @@ LINKS = (
 )
 
 # Social widget
-RESUME = '/files/Declan%20Gaylo%20-%20Resume.pdf'
+RESUME = 'https://downloads.dgaylo.com/Declan%20Gaylo%20-%20Resume.pdf'
 SOCIAL_WIDGET_NAME = 'Profiles'
 SOCIAL = (
     ('Resume', RESUME, 'file-earmark-pdf-fill'),

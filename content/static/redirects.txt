@@ -1,1 +1,2 @@
-/resume /files/Declan%20Gaylo%20-%20Resume.pdf 302
+/files/Declan%20Gaylo%20-%20Resume.pdf https://downloads.dgaylo.com/Declan%20Gaylo%20-%20Resume.pdf 301 
+/resume https://downloads.dgaylo.com/Declan%20Gaylo%20-%20Resume.pdf 302
