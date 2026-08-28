@@ -9,6 +9,10 @@ env:
   YES_DIFF_LABEL: changes-website
   DIFF_EXCLUDE_PAT: "commit.txt"
 
+concurrency:
+  group: pr-checks-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ matrix.branch == 'base' && github.base_ref || github.head_ref }}
+          ref: ${{ matrix.branch == 'base' && github.event.pull_request.base.sha || github.event.pull_request.head.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
@@ -26,7 +30,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install -r requirements.txt
-          sudo apt install -y imagemagick
+          sudo apt-get update
+          sudo apt install -y imagemagick inkscape
       - name: Build website
         run: |
           make publish
