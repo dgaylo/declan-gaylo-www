@@ -80,3 +80,24 @@ label#darkMode-label svg {
   width: 1em;
   height: 1em;
 }
+
+/* For cleaning up tables */
+article table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+article table th,
+article table td {
+    padding: 0.3rem;      /* table-sm: reduced cell padding */
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+article table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+article table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);   /* table-striped */
+}

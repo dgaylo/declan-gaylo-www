@@ -1,6 +1,5 @@
 cssmin==0.2.0
 Markdown==3.10.*
-pelican-add-css-classes==1.0.*
 pelican-jinja2content==1.0.*
 pelican-sitemap==1.2.*
 pelican-webassets==2.1.*

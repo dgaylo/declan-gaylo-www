@@ -39,15 +39,9 @@ PAGE_PATHS = ['pages']
 PLUGINS = [
     'sitemap',
     'webassets',
-    'pelican.plugins.add_css_classes',
     'pelican.plugins.jinja2content'
     ]
 
-ADD_CSS_CLASSES = {}
-ADD_CSS_CLASSES_TO_PAGE = {}
-ADD_CSS_CLASSES_TO_ARTICLE = {
-    "table": ["table table-striped table-sm"],
-}
 
 # Sitemap
 SITEMAP = {
